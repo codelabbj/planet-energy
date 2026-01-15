@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronRight, Cpu, Shield, Zap, Activity, Layers, Settings, Database } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import { resolveImagePath } from '../data/imageImports'
 
 const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
     const { t } = useLanguage()
@@ -25,7 +26,7 @@ const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
           // This function will now retrieve images from the translations.js structure
           // Assuming the image URL is part of the translated item object
           const item = currentItems[index];
-          return item?.img || ""; // Return the image URL from the item, or an empty string
+          return resolveImagePath(item?.img || ""); // Return the resolved image URL
   }
 
   return (
