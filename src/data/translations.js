@@ -11,7 +11,7 @@ export const translations = {
         },
         hero: {
             title: "Powering the Energy of Tomorrow",
-            subtitle: "Authorized National Distributor for Siemens & Helukabel",
+            subtitle: "National Distributor of Solar Energy",
             cta: "Explore Solutions",
             slides: {
                 benin: "Energy Infrastructure • Benin",
@@ -209,12 +209,12 @@ export const translations = {
         home: {
             accueil: {
                 title: "Planet Energy Systems – Your Reliable Partner for Electrical and Energy Solutions",
-                description1: "We are an international company offering you intelligent and innovative solutions",
-                description2: "Our cooperation with German partners enables the best possible implementation of your projects through many years of experience and expertise – from planning to installation through O&M monitoring via SCADA for all our services.",
+                description1: "We are an international company offering you intelligent and innovative solutions.",
+                description2: "Our cooperation with German partners enables the best possible implementation of your projects through many years of experience and expertise, from planning to installation through O&M monitoring via SCADA for all our services.",
                 description3: "Our objective is to sustainably meet the energy needs of today and tomorrow with renewable energies and modernize electrical networks. In Africa in particular, this is a challenging task that we undertake to create training and jobs in this field. In this way, we solve energy problems and give local populations the key to their independent and sustainable development."
             },
             intro: {
-                overline: "WHO WE ARE",
+                overline: "WHO WE ARE ?",
                 title: "Engineering the future of sustainable energy.",
                 description: "Planet Energy is a global leader in electrical infrastructure and renewable energy solutions. We combine German engineering precision with local expertise to deliver reliable, high-performance power systems for industries and utilities.",
                 stats: {
@@ -398,7 +398,7 @@ export const translations = {
         },
         hero: {
             title: "Propulser l'Énergie de Demain",
-            subtitle: "Distributeur National Agréé pour Siemens & Helukabel",
+            subtitle: "Distributeur National d'Energie Solaire",
             cta: "Explorer les Solutions",
             slides: {
                 benin: "Infrastructure Énergétique • Bénin",
@@ -706,12 +706,12 @@ export const translations = {
         home: {
             accueil: {
                 title: "Planet Energy Systems votre partenaire fiable pour vos solutions électriques et énergétiques",
-                description1: "Nous sommes une société internationale qui vous propose des solutions intelligente et innovantes",
-                description2: "La coopération avec nos partenaires allemands permet la meilleure mise en uvre possible de vos projets grâce à de nombreuses années d'expérience et de compétence - de la planification à l'installation jusquau suivi O&M par SCADA pour toutes nos services.",
+                description1: "Nous sommes une société internationale qui vous propose des solutions intelligente et innovantes.",
+                description2: "La coopération avec nos partenaires allemands permet la meilleure mise en œuvre possible de vos projets grâce à de nombreuses années d'expérience et de compétence, de la planification à l'installation jusquau suivi O&M par SCADA pour toutes nos services.",
                 description3: "Notre objectif est de répondre durablement aux besoins énergétiques d'aujourd'hui et de demain avec les énergies renouvelables et de moderniser les réseaux électriques. En Afrique en particulier, c'est une tâche difficile que nous assurons pour créer de la formation et des emplois dans ce domaine. De cette façon, nous résolvons les problèmes énergétiques et donnons aux populations locales la clé de leur développement indépendant et durable."
             },
             intro: {
-                overline: "QUI NOUS SOMMES",
+                overline: "QUI SOMMES NOUS ?",
                 title: "Ingénierie de l'avenir de l'énergie durable.",
                 description: "Planet Energy est un leader mondial dans l'infrastructure électrique et les solutions d'énergie renouvelable. Nous combinons la précision de l'ingénierie allemande avec l'expertise locale pour fournir des systèmes d'alimentation fiables et performants aux industries et aux services publics.",
                 stats: {

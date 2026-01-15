@@ -8,7 +8,7 @@ const Partners = () => {
     const partners = [
         { name: 'Siemens', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/2560px-Siemens-logo.svg.png' },
         { name: 'Helukabel', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Helukabel_Logo.svg/1200px-Helukabel_Logo.svg.png' },
-        { name: 'Rittal', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rittal_Logo.svg/1200px-Rittal_Logo.svg.png' },
+        { name: 'SMA', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rittal_Logo.svg/1200px-Rittal_Logo.svg.png' },
        
     ]
 
