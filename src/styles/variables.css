@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Solar Corporate Palette - Light Mode */
+  --color-primary: #002b49;
+  /* Deep Professional Navy */
+  --color-secondary: #004b7c;
+  /* Lighter Navy */
+
+  --color-accent: #E6A600;
+  /* Solar Gold - Serious, not cartoonish */
+  --color-accent-hover: #C28D00;
+  --color-accent-soft: rgba(230, 166, 0, 0.1);
+
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F4F7F9;
+  /* Very subtle cool grey */
+  --color-bg-dark: #002b49;
+  /* For specific dark sections like Footer */
+
+  --color-text: #1a1a1a;
+  /* Soft Black for readability */
+  --color-text-light: #555555;
+  --color-text-muted: #777777;
+  --color-text-on-dark: #FFFFFF;
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #002b49 0%, #004b7c 100%);
+  --grad-accent: linear-gradient(135deg, #E6A600 0%, #FDB931 100%);
+  --grad-light-overlay: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95));
+
+  /* Glassmorphism - Optimized for Light Backgrounds */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 43, 73, 0.1);
+  /* Subtle Navy Border */
+  --glass-blur: blur(20px);
+  --glass-shadow: 0 10px 40px rgba(0, 43, 73, 0.08);
+
+  /* Spacing */
+  --section-padding: 100px 0;
+  --container-max-width: 1280px;
+  /* Standard corporate width */
+
+  /* Animation */
+  --ease-corporate: cubic-bezier(0.25, 1, 0.5, 1);
+  --trans-smooth: all 0.4s var(--ease-corporate);
+}
