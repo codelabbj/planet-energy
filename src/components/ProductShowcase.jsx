@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, Activity, Zap, Shield } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import dis1Img from '../assets/dis1.jpeg'
-import dis2Img from '../assets/dis2.jpeg'
-import dis3Img from '../assets/dis3.jpeg'
+import dis1Img from '../assets/dis1.jpg'
+import dis2Img from '../assets/dis2.jpg'
+import dis3Img from '../assets/dis3.jpg'
 
 const ProductShowcase = () => {
   const { t } = useLanguage()
