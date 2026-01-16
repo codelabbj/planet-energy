@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import splashImage from '../assets/splash.jpeg'
+import logo from '../assets/logo.png'
 
 const LoadingScreen = ({ onComplete }) => {
   const [count, setCount] = useState(0)
@@ -40,9 +41,7 @@ const LoadingScreen = ({ onComplete }) => {
     >
       <div className="background-overlay"></div>
       <div className="loader-content">
-        <h1 className="loader-title">
-          <span className="stroke">PLANET</span>ENERGY
-        </h1>
+        <img src={logo} alt="Planet Energy System" className="loader-logo" />
         <div className="counter-wrap">
           <div className="progress-bar">
             <motion.div
@@ -78,12 +77,58 @@ const LoadingScreen = ({ onComplete }) => {
           gap: 24px;
         }
 
+        .loader-logo {
+          height: 100px;
+          width: auto;
+          object-fit: contain;
+          animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
         .loader-title {
           font-family: 'Syne', sans-serif;
           font-size: 80px;
           font-weight: 800;
-          letter-spacing: -2px;
+          letter-spacing: 2px;
           margin: 0;
+          display: flex;
+          gap: 4px;
+          align-items: center;
+        }
+
+        .loader-planet {
+          color: white;
+        }
+
+        .loader-e {
+          color: white;
+        }
+
+        .loader-s {
+          color: white;
+        }
+
+        .loader-dot {
+          color: var(--color-accent);
+          font-weight: 800;
+        }
+
+        .loader-subtitle {
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          letter-spacing: 2px;
+          color: rgba(255, 255, 255, 0.7);
+          text-transform: uppercase;
+          margin-top: -8px;
         }
 
         .stroke {

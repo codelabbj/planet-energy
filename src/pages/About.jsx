@@ -34,7 +34,7 @@ const About = () => {
                             {t('about.main.description2')}
                         </p>
 
-                        <div className="stats-row">
+                        {/* <div className="stats-row">
                             <div className="stat">
                                 <span className="val">25+</span>
                                 <span className="lbl">{t('about.main.stats.years')}</span>
@@ -43,7 +43,7 @@ const About = () => {
                                 <span className="val">50+</span>
                                 <span className="lbl">{t('about.main.stats.projects')}</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Right Column: Image */}

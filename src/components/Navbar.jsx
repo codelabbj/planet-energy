@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import MegaMenu from './MegaMenu'
 import { useLanguage } from '../context/LanguageContext'
+import logo from '../assets/logo.png'
 
-const Navbar = () => {
+const Navbar = () => {2
   const [scrolled, setScrolled] = useState(false)
   const [isMegaOpen, setIsMegaOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState('')
@@ -30,7 +31,8 @@ const Navbar = () => {
     { title: t('nav.hv'), path: '/products?cat=hv', mega: 'hv' },
     { title: t('nav.cabling'), path: '/products?cat=cables', mega: 'cables' },
     { title: t('nav.solar'), path: '/products?cat=solar', mega: 'solar' },
-    { title: t('nav.om'), path: '/operations' }
+    { title: t('nav.om'), path: '/operations' },
+    { title: t('nav.about'), path: '/about' }
   ]
 
   const handleMouseEnter = (item) => {
@@ -46,7 +48,7 @@ const Navbar = () => {
     <nav className={`nav-corporate ${scrolled || isMegaOpen ? 'scrolled' : ''}`}>
       <div className="container nav-inner">
         <Link to="/" className="brand-corporate">
-          PLANET <span className="text-light">ENERGY</span>
+          <img src={logo} alt="Planet Energy System" className="logo-image" />
         </Link>
 
         {/* Corporate Menu */}
@@ -204,14 +206,71 @@ const Navbar = () => {
         }
 
         .brand-corporate {
-          font-family: 'Outfit', sans-serif; /* Clean, modern sans-serif */
+          font-family: 'Outfit', sans-serif;
           font-weight: 700;
-          font-size: 24px; /* Reduced from 32px */
+          font-size: 24px;
           letter-spacing: -0.5px;
           color: white;
           text-decoration: none;
           display: flex;
           gap: 6px;
+          align-items: center;
+          transition: opacity 0.3s ease;
+        }
+
+        .brand-corporate:hover {
+          opacity: 0.8;
+        }
+
+        .logo-image {
+          height: 60px;
+          width: auto;
+          object-fit: contain;
+          transition: height 0.3s ease;
+        }
+
+        .nav-corporate.scrolled .logo-image {
+          height: 50px;
+        }
+        
+        .brand-logo-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .brand-main {
+          font-family: 'Outfit', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          letter-spacing: 1px;
+          color: white;
+          display: flex;
+          align-items: center;
+          gap: 2px;
+        }
+
+        .brand-dot {
+          color: var(--color-accent);
+          font-weight: 900;
+        }
+
+        .brand-subtitle {
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 9px;
+          letter-spacing: 1.5px;
+          color: rgba(255, 255, 255, 0.7);
+          text-transform: uppercase;
+          margin-top: -2px;
+        }
+
+        .nav-corporate.scrolled .brand-main {
+          color: var(--color-primary);
+        }
+
+        .nav-corporate.scrolled .brand-subtitle {
+          color: var(--color-secondary);
         }
         
         .brand-corporate .text-light {

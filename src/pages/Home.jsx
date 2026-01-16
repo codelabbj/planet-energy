@@ -102,6 +102,8 @@ const Home = () => {
                     color: #475569;
                     margin-bottom: 24px;
                     font-weight: 500;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
                 }
                 
                 .accueil-text:last-child {

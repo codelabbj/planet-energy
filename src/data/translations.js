@@ -7,6 +7,7 @@ export const translations = {
             cabling: "Cabling",
             solar: "Solar",
             om: "O&M",
+            about: "About Us",
             contact: "Contact Us"
         },
         hero: {
@@ -88,9 +89,13 @@ export const translations = {
                 cotonou: {
                     name: "Cotonou (HQ)",
                     description: "La Haie Vive - Immeuble KARLS, Rue Face à la nouvelle Brasserie, Cotonou, Benin"
+                },
+                ghana: {
+                    name: "Ghana (Regional Hub)",
+                    description: "CRA House Mile 7, Plot 331 Before Achimota Mall P.O.Box WY 807 Kwabenya, GPS: GE-366-5451"
                 }
             },
-            phone: "+229 69.34.55.55 / 69.34.66.66",
+            phone: "+229 01 97 62 00 01 / +229 01 97 62 00 02",
             email: "info@planet-es.com",
             form: {
                 title: "Send us a message",
@@ -330,38 +335,38 @@ export const translations = {
                     {
                         title: "Air Circuit Breakers (ACB)",
                         desc: "Robust power protection for high-current industrial applications, ensuring safety and reliability of large electrical systems.",
-                        img: "src/assets/acb.jpg"
+                        img: "src/assets/dis1.jpeg"
                     },
                     {
                         title: "Moulded Case Breakers (MCCB)",
                         desc: "Compact and efficient protection for diverse electrical systems, covering a wide range of currents from 16A to 1250A.",
-                        img: "src/assets/mccb.jpg"
+                        img: "src/assets/dis2.jpeg"
                     },
                     {
                         title: "Miniature Breakers (MCB)",
                         desc: "Precision protection for final distribution circuits in residential, commercial, and industrial settings, ensuring electrical safety.",
-                        img: "src/assets/mcb.jpg"
+                        img: "src/assets/dis3.jpeg"
                     }
                 ],
                 hv: [
-                    {
-                        img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=400"
-                    },
-                    {
-                        img: "src/assets/Haute-Tension1.jpg"
-                    },
                     {
                         img: "src/assets/Haute-Tension2.jpeg"
                     }
                 ],
                 cables: [
                     {
+                        title: "H07RN-F",
+                        desc: "Rubber-sheathed cable. Heavy duty rubber-sheathed flexible cables are suited for use for medium mechanical stress in dry, damp and wet areas as well as in open air and in agriculture plants.",
                         img: "src/assets/cable1.png"
                     },
                     {
+                        title: "U1000 R2V",
+                        desc: "Rigid industrial power cable, low voltage 0,6/1 kv. Power distribution cables for connections in industrial facilities, for inside and outside use in buildings or high risers. Well suited for high and low operating temperatures.",
                         img: "src/assets/cable2.png"
                     },
                     {
+                        title: "H07V-K / 07V-K",
+                        desc: "PVC single core, finely stranded. Suitable for protected and fixed installation in lighting systems or switching and control devices up to and including 1000 V AC voltage or up to 750 V DC voltage against earth.",
                         img: "src/assets/cable3.png"
                     }
                 ],
@@ -369,17 +374,17 @@ export const translations = {
                     {
                         title: "Solar Inverters",
                         desc: "High-efficiency string and central inverters optimize solar energy harvest and conversion for various applications.",
-                        img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=400"
+                        img: "https://images.pexels.com/photos/159243/solar-solar-cells-photovoltaic-environmentally-friendly-159243.jpeg?auto=compress&cs=tinysrgb&w=600"
                     },
                     {
                         title: "PV Modules",
                         desc: "Tier-1 monocrystalline photovoltaic panels deliver superior performance and durability, even in low light conditions.",
-                        img: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=400"
+                        img: "https://images.pexels.com/photos/8853509/pexels-photo-8853509.jpeg?auto=compress&cs=tinysrgb&w=600"
                     },
                     {
                         title: "Mounting Structures",
                         desc: "Robust aluminum and steel mounting solutions for rooftop and ground-mounted solar systems, ensuring stability and longevity.",
-                        img: "https://images.unsplash.com/photo-1566093097221-ac2335b09e70?auto=format&fit=crop&q=80&w=400"
+                        img: "https://images.pexels.com/photos/4320480/pexels-photo-4320480.jpeg?auto=compress&cs=tinysrgb&w=600"
                     }
                 ]
             },
@@ -394,6 +399,7 @@ export const translations = {
             cabling: "Câblerie",
             solar: "Solaire",
             om: "O&M",
+            about: "À Propos",
             contact: "Contactez-nous"
         },
         hero: {
@@ -475,9 +481,13 @@ export const translations = {
                 cotonou: {
                     name: "Cotonou (HQ)",
                     description: "La Haie Vive - Immeuble KARLS, Rue Face à la nouvelle Brasserie, Cotonou, Benin"
+                },
+                ghana: {
+                    name: "Ghana (Centre Régional)",
+                    description: "CRA House Mile 7, Plot 331 Before Achimota Mall P.O.Box WY 807 Kwabenya, GPS: GE-366-5451"
                 }
             },
-            phone: "+229 69.34.55.55 / 69.34.66.66",
+            phone: "+229 01 97 62 00 01 / +229 01 97 62 00 02",
             email: "info@planet-es.com",
             form: {
                 title: "Envoyez-nous un message",
@@ -648,38 +658,38 @@ export const translations = {
                     {
                         title: "Disjoncteurs à Air (ACB)",
                         desc: "Protection robuste pour les applications industrielles à courant élevé, garantissant la sécurité et la fiabilité des grands systèmes électriques.",
-                        img: "src/assets/acb.jpg"
+                        img: "src/assets/dis1.jpeg"
                     },
                     {
                         title: "Disjoncteurs Moulded Case (MCCB)",
                         desc: "Protection compacte et efficace pour divers systèmes électriques, couvrant une large gamme de courants de 16A à 1250A.",
-                        img: "src/assets/mccb.jpg"
+                        img: "src/assets/dis2.jpeg"
                     },
                     {
                         title: "Disjoncteurs Miniatures (MCB)",
                         desc: "Protection de précision pour les circuits de distribution finale dans les environnements résidentiels, commerciaux et industriels, assurant la sécurité électrique.",
-                        img: "src/assets/mcb.jpg"
+                        img: "src/assets/dis3.jpeg"
                     }
                 ],
                 hv: [
-                    {
-                        img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=400"
-                    },
-                    {
-                        img: "src/assets/Haute-Tension1.jpg"
-                    },
                     {
                         img: "src/assets/Haute-Tension2.jpeg"
                     }
                 ],
                 cables: [
                     {
+                        title: "H07RN-F",
+                        desc: "Câble à gaine caoutchouc. Les câbles flexibles robustes à gaine caoutchouc conviennent à une utilisation avec contraintes mécaniques moyennes dans les zones sèches, humides et mouillées ainsi qu'en plein air et dans les installations agricoles.",
                         img: "src/assets/cable1.png"
                     },
                     {
+                        title: "U1000 R2V",
+                        desc: "Câble d'alimentation industriel rigide, basse tension 0,6/1 kv. Câbles de distribution électrique pour les connexions dans les installations industrielles, pour une utilisation à l'intérieur et à l'extérieur dans les bâtiments ou les immeubles. Bien adapté aux températures de fonctionnement élevées et basses.",
                         img: "src/assets/cable2.png"
                     },
                     {
+                        title: "H07V-K / 07V-K",
+                        desc: "Câble monoconducteur PVC finement toronné. Convient pour les installations protégées et fixes dans les systèmes d'éclairage ou les appareils de commutation et de contrôle jusqu'à et y compris 1000 V CA ou jusqu'à 750 V CC par rapport à la terre.",
                         img: "src/assets/cable3.png"
                     }
                 ],
@@ -687,17 +697,17 @@ export const translations = {
                     {
                         title: "Onduleurs Solaires",
                         desc: "Onduleurs string et centraux à haut rendement optimisent la récolte et la conversion de l'énergie solaire pour diverses applications.",
-                        img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=400"
+                        img: "https://images.pexels.com/photos/159243/solar-solar-cells-photovoltaic-environmentally-friendly-159243.jpeg?auto=compress&cs=tinysrgb&w=600"
                     },
                     {
                         title: "Modules PV",
                         desc: "Les panneaux photovoltaïques monocristallins de niveau 1 offrent des performances et une durabilité supérieures, même par faible luminosité.",
-                        img: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=400"
+                        img: "https://images.pexels.com/photos/8853509/pexels-photo-8853509.jpeg?auto=compress&cs=tinysrgb&w=600"
                     },
                     {
                         title: "Structures de Montage",
                         desc: "Solutions robustes de montage en aluminium et en acier pour les systèmes solaires sur toit et au sol, garantissant stabilité et longévité.",
-                        img: "https://images.unsplash.com/photo-1566093097221-ac2335b09e70?auto=format&fit=crop&q=80&w=400"
+                        img: "https://images.pexels.com/photos/4320480/pexels-photo-4320480.jpeg?auto=compress&cs=tinysrgb&w=600"
                     }
                 ]
             },
@@ -706,9 +716,9 @@ export const translations = {
         home: {
             accueil: {
                 title: "Planet Energy Systems votre partenaire fiable pour vos solutions électriques et énergétiques",
-                description1: "Nous sommes une société internationale qui vous propose des solutions intelligente et innovantes.",
-                description2: "La coopération avec nos partenaires allemands permet la meilleure mise en œuvre possible de vos projets grâce à de nombreuses années d'expérience et de compétence, de la planification à l'installation jusquau suivi O&M par SCADA pour toutes nos services.",
-                description3: "Notre objectif est de répondre durablement aux besoins énergétiques d'aujourd'hui et de demain avec les énergies renouvelables et de moderniser les réseaux électriques. En Afrique en particulier, c'est une tâche difficile que nous assurons pour créer de la formation et des emplois dans ce domaine. De cette façon, nous résolvons les problèmes énergétiques et donnons aux populations locales la clé de leur développement indépendant et durable."
+                description1: "Planet Energy Systems est une entreprise bénino-allemande spécialisée dans la fourniture et la distribution de matériels et de solutions techniques dans les domaines de l'électricité, de l'énergie et des télécommunications.\nNous accompagnons les entreprises, les institutions et nos partenaires dans le choix des équipements, la mise à disposition des solutions et le suivi technique, sans intervenir dans les travaux d'installation.",
+                description2: "Nos domaines d'expertise\n• Disjoncteurs – fourniture et distribution de solutions de protection électrique\n• Haute tension – équipements pour réseaux électriques performants\n• Câblerie – matériels et solutions pour infrastructures\n• Solaire – solutions en énergie renouvelable\n• O&M (Operation & Maintenance) – suivi, maintenance et télésurveillance des installations",
+                description3: "Grâce à une équipe d'experts africains et européens et à de solides partenariats internationaux, Planet Energy Systems met son expertise au service du développement énergétique en Afrique et à l'international, tout en favorisant la formation et la création d'emplois."
             },
             intro: {
                 overline: "QUI SOMMES NOUS ?",

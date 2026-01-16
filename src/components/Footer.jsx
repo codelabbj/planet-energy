@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Linkedin, Facebook, ShieldCheck, ArrowRight } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import logo from '../assets/logo.png'
 
 const Footer = () => {
    const { t } = useLanguage()
@@ -12,10 +13,7 @@ const Footer = () => {
 
             {/* Column 1: Brand */}
             <div className="footer-col brand-col">
-               <div className="footer-logo">
-                  <span className="logo-text">PLANET ENERGY</span>
-                  <div className="logo-dot"></div>
-               </div>
+               <img src={logo} alt="Planet Energy System" className="footer-logo-image" />
                <p className="footer-desc">
                   {t('footer.desc')}
                </p>
@@ -51,15 +49,29 @@ const Footer = () => {
             <div className="footer-col contact-col">
                <h4>{t('footer.contact')}</h4>
                <div className="contact-list">
-                  <div className="c-item">
-                     <MapPin size={16} className="c-icon" />
-                     <span>{t('contact.offices.cotonou.description')}</span>
+                  <div className="contact-section">
+                     <p className="contact-section-title" style={{fontWeight: 700, marginBottom: '8px'}}>{t('contact.offices.cotonou.name')}</p>
+                     <div className="c-item">
+                        <MapPin size={16} className="c-icon" />
+                        <span>{t('contact.offices.cotonou.description')}</span>
+                     </div>
+                     <div className="c-item">
+                        <Phone size={16} className="c-icon" />
+                        <span>{t('contact.phone')}</span>
+                     </div>
                   </div>
-                  <div className="c-item">
-                     <Phone size={16} className="c-icon" />
-                     <span>{t('contact.phone')}</span>
+                  <div className="contact-section" style={{marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)'}}>
+                     <p className="contact-section-title" style={{fontWeight: 700, marginBottom: '8px'}}>{t('contact.offices.ghana.name')}</p>
+                     <div className="c-item">
+                        <MapPin size={16} className="c-icon" />
+                        <span>{t('contact.offices.ghana.description')}</span>
+                     </div>
+                     <div className="c-item">
+                        <Phone size={16} className="c-icon" />
+                        <span>0302-446195 | 0593824311 | 0540119272</span>
+                     </div>
                   </div>
-                  <div className="c-item">
+                  <div className="c-item" style={{marginTop: '16px'}}>
                      <Mail size={16} className="c-icon" />
                      <span>{t('contact.email')}</span>
                   </div>
@@ -98,9 +110,41 @@ const Footer = () => {
 
         .footer-logo {
            display: flex;
-           align-items: center;
-           gap: 8px;
+           flex-direction: column;
+           gap: 4px;
            margin-bottom: 24px;
+        }
+
+        .footer-logo-image {
+           height: 70px;
+           width: auto;
+           object-fit: contain;
+           margin-bottom: 16px;
+        }
+
+        .footer-logo-main {
+           font-family: 'Outfit', sans-serif;
+           font-weight: 800;
+           font-size: 18px;
+           letter-spacing: 1px;
+           color: white;
+           display: flex;
+           align-items: center;
+           gap: 2px;
+        }
+
+        .footer-logo-dot {
+           color: var(--color-accent);
+           font-weight: 900;
+        }
+
+        .footer-logo-subtitle {
+           font-family: 'Outfit', sans-serif;
+           font-weight: 400;
+           font-size: 8px;
+           letter-spacing: 1.5px;
+           color: rgba(255, 255, 255, 0.5);
+           text-transform: uppercase;
         }
 
         .logo-text {

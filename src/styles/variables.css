@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Solar Corporate Palette - Light Mode */
-  --color-primary: #002b49;
-  /* Deep Professional Navy */
-  --color-secondary: #004b7c;
-  /* Lighter Navy */
+  /* Planet Energy System - Green & Gray Palette */
+  --color-primary: #1B6B3D;
+  /* Deep Professional Green */
+  --color-secondary: #2A8E54;
+  /* Lighter Green */
 
-  --color-accent: #E6A600;
-  /* Solar Gold - Serious, not cartoonish */
-  --color-accent-hover: #C28D00;
-  --color-accent-soft: rgba(230, 166, 0, 0.1);
+  --color-accent: #6B8E6B;
+  /* Gray-Green - Professional and balanced */
+  --color-accent-hover: #5A7D5A;
+  --color-accent-soft: rgba(107, 142, 107, 0.1);
 
   --color-bg: #FFFFFF;
   --color-bg-alt: #F4F7F9;
@@ -25,8 +25,8 @@
   --color-text-on-dark: #FFFFFF;
 
   /* Gradients */
-  --grad-primary: linear-gradient(135deg, #002b49 0%, #004b7c 100%);
-  --grad-accent: linear-gradient(135deg, #E6A600 0%, #FDB931 100%);
+  --grad-primary: linear-gradient(135deg, #1B6B3D 0%, #2A8E54 100%);
+  --grad-accent: linear-gradient(135deg, #6B8E6B 0%, #8BA88B 100%);
   --grad-light-overlay: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95));
 
   /* Glassmorphism - Optimized for Light Backgrounds */

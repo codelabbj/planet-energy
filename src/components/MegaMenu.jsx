@@ -82,6 +82,11 @@ const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
           padding: 60px 40px;
         }
 
+        /* Full width for single item categories */
+        .mega-grid:has(.mega-card:only-child) {
+          grid-template-columns: 1fr;
+        }
+
         .mega-card {
            group: true;
            cursor: pointer;
@@ -93,6 +98,11 @@ const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
             overflow: hidden;
             position: relative;
             margin-bottom: 20px;
+        }
+
+        /* Taller image for full-width display */
+        .mega-grid:has(.mega-card:only-child) .card-img {
+          height: 400px;
         }
 
         .card-img img {

@@ -36,12 +36,19 @@ const Contact = () => {
                                         <p>{t('contact.offices.cotonou.description')}</p>
                                     </div>
                                 </div>
+                                <div className="office-item">
+                                    <div className="icon-box"><MapPin size={20} /></div>
+                                    <div className="details">
+                                        <h4>{t('contact.offices.ghana.name')}</h4>
+                                        <p>{t('contact.offices.ghana.description')}</p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="direct-contact">
                                 <h3 className="sub-header">{t('contact.info.directContact')}</h3>
                                 <div className="contact-methods">
-                                    <a href="tel:+22969345555" className="c-link">
+                                    <a href="tel:+22901976200001" className="c-link">
                                         <Phone size={18} /> <span>{t('contact.phone')}</span>
                                     </a>
                                     <a href="mailto:info@planet-es.com" className="c-link">

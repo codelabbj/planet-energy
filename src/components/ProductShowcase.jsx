@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, Activity, Zap, Shield } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import acbImg from '../assets/acb.jpg'
-import mcbImg from '../assets/mccb.jpg'
+import dis1Img from '../assets/dis1.jpeg'
+import dis2Img from '../assets/dis2.jpeg'
+import dis3Img from '../assets/dis3.jpeg'
 
 const ProductShowcase = () => {
   const { t } = useLanguage()
@@ -16,7 +17,7 @@ const ProductShowcase = () => {
       ...baseProducts[0],
       items: baseProducts[0].items.map((item, idx) => ({
         ...item,
-        img: idx === 0 ? acbImg : idx === 1 ? mcbImg : 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600'
+        img: idx === 0 ? dis1Img : idx === 1 ? dis2Img : dis3Img
       }))
     },
     {
