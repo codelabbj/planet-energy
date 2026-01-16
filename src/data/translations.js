@@ -335,17 +335,17 @@ export const translations = {
                     {
                         title: "Air Circuit Breakers (ACB)",
                         desc: "Robust power protection for high-current industrial applications, ensuring safety and reliability of large electrical systems.",
-                        img: "src/assets/dis1.jpeg"
+                        img: "src/assets/dis1.jpg"
                     },
                     {
                         title: "Moulded Case Breakers (MCCB)",
                         desc: "Compact and efficient protection for diverse electrical systems, covering a wide range of currents from 16A to 1250A.",
-                        img: "src/assets/dis2.jpeg"
+                        img: "src/assets/dis2.jpg"
                     },
                     {
                         title: "Miniature Breakers (MCB)",
                         desc: "Precision protection for final distribution circuits in residential, commercial, and industrial settings, ensuring electrical safety.",
-                        img: "src/assets/dis3.jpeg"
+                        img: "src/assets/dis3.jpg"
                     }
                 ],
                 hv: [
@@ -658,17 +658,17 @@ export const translations = {
                     {
                         title: "Disjoncteurs à Air (ACB)",
                         desc: "Protection robuste pour les applications industrielles à courant élevé, garantissant la sécurité et la fiabilité des grands systèmes électriques.",
-                        img: "src/assets/dis1.jpeg"
+                        img: "src/assets/dis1.jpg"
                     },
                     {
                         title: "Disjoncteurs Moulded Case (MCCB)",
                         desc: "Protection compacte et efficace pour divers systèmes électriques, couvrant une large gamme de courants de 16A à 1250A.",
-                        img: "src/assets/dis2.jpeg"
+                        img: "src/assets/dis2.jpg"
                     },
                     {
                         title: "Disjoncteurs Miniatures (MCB)",
                         desc: "Protection de précision pour les circuits de distribution finale dans les environnements résidentiels, commerciaux et industriels, assurant la sécurité électrique.",
-                        img: "src/assets/dis3.jpeg"
+                        img: "src/assets/dis3.jpg"
                     }
                 ],
                 hv: [
