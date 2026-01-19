@@ -7,11 +7,11 @@ const Partners = () => {
     const { t } = useLanguage()
     const partners = [
         { name: 'Siemens', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/2560px-Siemens-logo.svg.png' },
-        { name: 'Helukabel', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Helukabel_Logo.svg/1200px-Helukabel_Logo.svg.png' },
-        { name: 'SMA', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/SMA_Solar_logo.svg/1200px-SMA_Solar_logo.svg.png' },
+        { name: 'Helukabel', logo: 'src/assets/logo1.png' },
+        { name: 'SMA', logo: 'src/assets/logo2.gif' },
         { name: 'Aiko Solar', logo: '' },
-        { name: 'Ammonit', logo: 'https://www.ammonit.com/images/logos/ammonit-group.png' },
-        { name: 'Firnasshuman', logo: 'https://www.firnas.com/images/logo.png' }
+        { name: 'Ammonit', logo: 'src/assets/logo4.webp' },
+        { name: 'Firnasshuman', logo: 'src/assets/logo5.webp' }
     ]
 
     return (

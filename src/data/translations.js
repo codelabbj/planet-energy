@@ -355,19 +355,10 @@ export const translations = {
                 ],
                 cables: [
                     {
-                        title: "H07RN-F",
-                        desc: "Rubber-sheathed cable. Heavy duty rubber-sheathed flexible cables are suited for use for medium mechanical stress in dry, damp and wet areas as well as in open air and in agriculture plants.",
-                        img: "src/assets/cable1.png"
-                    },
-                    {
-                        title: "U1000 R2V",
-                        desc: "Rigid industrial power cable, low voltage 0,6/1 kv. Power distribution cables for connections in industrial facilities, for inside and outside use in buildings or high risers. Well suited for high and low operating temperatures.",
-                        img: "src/assets/cable2.png"
-                    },
-                    {
-                        title: "H07V-K / 07V-K",
-                        desc: "PVC single core, finely stranded. Suitable for protected and fixed installation in lighting systems or switching and control devices up to and including 1000 V AC voltage or up to 750 V DC voltage against earth.",
-                        img: "src/assets/cable3.png"
+                        title: "Résistance à la flamme pour les câbles sans halogène",
+                        desc: "Le transport d’énergie est stable et de bonne qualité sans chute de tension grâce au câble électrique de bonne marque raison pour laquelle nous choisissons pour vous HELUKABEL, le meilleur fabricant mondiale de câble électrique qui vous offrons une grande variété de câbles et même d’autres sans halogène.",
+                        promo: "PLANET ENERGYS SYSTEMS DISTRIBUTEUR EXCLUSIF DE HELUKABEL AU BENIN",
+                        img: "src/assets/Cable.jpg"
                     }
                 ],
                 solar: [
@@ -389,6 +380,125 @@ export const translations = {
                 ]
             },
             selectCategory: "Select a category"
+        },
+        cablingLanding: {
+            intro: "PLANET ENERGY SYSTEMS your exclusive partner in BENIN, and distributor in GHANA, offers HELUKABEL solutions in the following domains:",
+            domains: [
+                "Cables for industry and machines",
+                "Cables for infrastructure and buildings",
+                "Solutions for renewable energy",
+                "Solutions for transport and traffic",
+                "Event and stage technology",
+                "Spiral cables and pre-assembled cables",
+                "Cable glands",
+                "Connectors and connectivity",
+                "Cable accessories and tools",
+                "Winding, measuring and storage systems",
+                "Cable carrier systems"
+            ],
+            hero: {
+                title: "Global Expertise in Electrical Connectivity",
+                subtitle: "Providing high-quality solutions for complex industrial environments.",
+                searchPlaceholder: "Search for products, norms or keywords..."
+            },
+            sections: {
+                movement: {
+                    featured: {
+                        title: "Cables for use in continuous motion",
+                        subtitle: "Optimal solutions for cable carriers, robotics and much more",
+                        btn: "Find out more"
+                    },
+                    cards: [
+                        {
+                            title: "TOPFLEX motor cables",
+                            subtitle: "Our connection and power cables. Everything for drive technology.",
+                            btn: "Find out more"
+                        },
+                        {
+                            title: "Single cores and wires",
+                            subtitle: "Flexible connections for joining from the control cabinet to machine wiring.",
+                            btn: "Find out more"
+                        },
+                        {
+                            title: "Cables for infrastructure and buildings",
+                            subtitle: "Fixed or mobile: perfect cabling for every application.",
+                            btn: "Find out more"
+                        }
+                    ]
+                },
+                catalog: {
+                    consulted: {
+                        title: "Most viewed products",
+                        subtitle: "Other customers have frequently viewed these items",
+                        btn: "View article",
+                        products: [
+                            { name: "H07RN-F black 3 G 1.5 mm²", artNo: "37028" },
+                            { name: "HELUTHERM® 145 MULTI black 4 G 2.5 mm²", artNo: "53474" },
+                            { name: "HELUTHERM® 145 black 1 x 1.5 mm²", artNo: "51323" },
+                            { name: "NSGAFÖU 1.8/3 kV BLACK 1 x 2.5 mm²", artNo: "38502" }
+                        ]
+                    },
+                    halogenFree: {
+                        title: "Halogen-free control and connection cables",
+                        subtitle: "High-performance components for machine and plant construction",
+                        btn: "View product",
+                        products: [
+                            { name: "JZ-600 HMH-C", desc: "Control and connection cables, 0.6/1 kV, numbered marking, shielded" },
+                            { name: "JZ-500 HMH-C / OZ-500 HMH-C", desc: "Control and connection cables, 300/500 V, numbered marking, shielded" },
+                            { name: "JZ-500 HMH / OZ-500 HMH", desc: "Control and connection cables, 300/500 V, numbered marking, unshielded" },
+                            { name: "JZ-600 HMH / OZ-600 HMH", desc: "Control and connection cables, 0.6/1 kV, numbered marking, unshielded" }
+                        ]
+                    }
+                }
+            }
+        },
+        cableArticle: {
+            breadcrumb: "Newsroom",
+            title: "Flame resistance for halogen-free cables",
+            intro: "Halogen-free cables are mandatory in many industrial and infrastructure applications. Over time, different designations have been established, such as FRNC, HFFR, LS0H, or LSZH. But what is the meaning of these abbreviations and what are the advantages of halogen-free cables compared to halogen-containing products? Planet Energy informs you.",
+            section1: {
+                title: "What are halogens?",
+                content: "Halogens (also known as \"salt-forming agents\") are chemical elements such as chlorine (Cl), bromine (Br), fluorine (F), and iodine (I). In cable manufacturing, they are used to make certain conductor insulation and jacket materials flame retardant: Chlorine (as a component of PVC plastic or chloroprene rubber) and fluorine (as part of high-temperature FEP, PTFE, and ETFE materials) are particularly used here. Bromine is also used in flame retardants for cables and wires.",
+                problem: "The problem: in the event of a fire, halogens are extremely aggressive and harmful. They produce hydrogen halides which, on contact with moisture, turn into acids and can cause respiratory burns. In addition, the released acids cause corrosion of metal parts and can thus damage machines and even the reinforcement of concrete elements in buildings. This in turn can lead to complex and costly decontamination work."
+            },
+            section2: {
+                title: "Safety first",
+                content: "For fire protection reasons, the flame resistance of cables and wires is obviously an important criterion. However, there are many applications that also require explicitly halogen-free products, i.e., cables and wires whose materials are free of chlorine, bromine, fluorine, and iodine. In the event of a fire, these produce only little acid, smoke, and lower toxicity, which considerably reduces consequential damage to people, buildings, and machines. However, even halogen-free lines produce toxic gases like carbon monoxide in the event of a fire.",
+                examples: [
+                    {
+                        category: "Building",
+                        text: "Public buildings such as offices, shopping centers, schools, hospitals, and airports are subject to strict fire and health regulations. Most cables and wires are fixed there and do not need to have special chemical and mechanical properties. Plastic mixtures based on PE or PP are often used, which are halogen-free, flame retardant, low smoke, and low toxicity."
+                    },
+                    {
+                        category: "Industrial Automation",
+                        text: "When wiring machines and installations, high chemical and mechanical resistance of cables and wires is often required. Requirements are particularly high for moving applications like cable carriers or robotics. For this, jacket mixtures based on TPE-O or -U (PUR or Santoprene) are generally used."
+                    }
+                ]
+            },
+            designations: {
+                title: "Typical designations for halogen-free cables",
+                intro: "Over the years, different designations for halogen-free and flame-retardant cables have emerged depending on manufacturers, markets, regions, and standards:",
+                list: [
+                    "FRNC: Flame Retardant Non Corrosive",
+                    "HFFR: Halogen Free Flame Retardant",
+                    "LS0H: Low Smoke 0 Halogen (also: LSOH)",
+                    "LSZH: Low Smoke Zero Halogen"
+                ],
+                footer: "However, none of these designations provide concrete information on flame resistance, corrosivity, toxicity, and translucency. For this, users should refer to the standards listed in the data sheet of the relevant supplier."
+            },
+            norms: {
+                title: "What are the typical standards for halogen-free cables?",
+                list: [
+                    "The DIN EN 60754-1 VDE 0482-754-1:2021-02 standard defines the test devices and the test method for determining the acid content. The test result must be less than 5 mg/g for the cable to be considered halogen-free.",
+                    "DIN EN 60754-2 VDE 0482-754-2:2021-02 defines the measurement of pH and conductivity. The test result must be less than 4.3 for pH and 10 µS/mm for conductivity.",
+                    "DIN EN 61034-2 VDE 0482-1034-2:2021-02 defines the measurement of smoke density of burning cables. The test result must reach at least 60% light transmission."
+                ]
+            },
+            conclusion: {
+                title: "Result",
+                text: "Halogen-free cables and wires have clear advantages in many safety-critical applications, as they produce fewer toxic substances and smoke in the event of a fire. But at the same time, these products must have high flame resistance to meet different standards and regulations. As an expert in electrical connectivity with many years of experience, Planet Energy will be happy to help you choose the right cables and conductors."
+            },
+            back: "Back"
         }
     },
     fr: {
@@ -678,19 +788,10 @@ export const translations = {
                 ],
                 cables: [
                     {
-                        title: "H07RN-F",
-                        desc: "Câble à gaine caoutchouc. Les câbles flexibles robustes à gaine caoutchouc conviennent à une utilisation avec contraintes mécaniques moyennes dans les zones sèches, humides et mouillées ainsi qu'en plein air et dans les installations agricoles.",
-                        img: "src/assets/cable1.png"
-                    },
-                    {
-                        title: "U1000 R2V",
-                        desc: "Câble d'alimentation industriel rigide, basse tension 0,6/1 kv. Câbles de distribution électrique pour les connexions dans les installations industrielles, pour une utilisation à l'intérieur et à l'extérieur dans les bâtiments ou les immeubles. Bien adapté aux températures de fonctionnement élevées et basses.",
-                        img: "src/assets/cable2.png"
-                    },
-                    {
-                        title: "H07V-K / 07V-K",
-                        desc: "Câble monoconducteur PVC finement toronné. Convient pour les installations protégées et fixes dans les systèmes d'éclairage ou les appareils de commutation et de contrôle jusqu'à et y compris 1000 V CA ou jusqu'à 750 V CC par rapport à la terre.",
-                        img: "src/assets/cable3.png"
+                        title: "Résistance à la flamme pour les câbles sans halogène",
+                        desc: "Le transport d’énergie est stable et de bonne qualité sans chute de tension grâce au câble électrique de bonne marque raison pour laquelle nous choisissons pour vous HELUKABEL, le meilleur fabricant mondiale de câble électrique qui vous offrons une grande variété de câbles et même d’autres sans halogène.",
+                        promo: "PLANET ENERGYS SYSTEMS DISTRIBUTEUR EXCLUSIF DE HELUKABEL AU BENIN",
+                        img: "src/assets/Cable.jpg"
                     }
                 ],
                 solar: [
@@ -781,6 +882,125 @@ export const translations = {
                     }
                 }
             }
+        },
+        cablingLanding: {
+            intro: "PLANET ENERGY SYSTEMS votre interlocuteur exclusif au BENIN, simple distributeur au GHANA vous offre les solutions HELUKABEL DANS LES DOMAINES SUIVANTS :",
+            domains: [
+                "Câbles pour l’industrie et les machines",
+                "Câbles pour infrastructures et bâtiments",
+                "Solutions pour les énergies renouvelables",
+                "Solutions pour le transport et le trafic",
+                "Technique évènementielle et le scénique",
+                "Câble spiralés et câbles confectionnés",
+                "Presse – étoupes",
+                "Connecteurs et connectique",
+                "Accessoires de câble et outils",
+                "Systèmes d’enroulement, de mesure et de stockage",
+                "Chain porte-câbles"
+            ],
+            hero: {
+                title: "Expertise Mondiale en Connectique Électrique",
+                subtitle: "Fournir des solutions de haute qualité pour les environnements industriels complexes.",
+                searchPlaceholder: "Rechercher des produits, des normes ou des mots-clés..."
+            },
+            sections: {
+                movement: {
+                    featured: {
+                        title: "Câbles pour utilisation en mouvement permanent",
+                        subtitle: "Des solutions optimales pour les chaînes porte-câbles, la robotique et bien plus encore",
+                        btn: "En savoir plus"
+                    },
+                    cards: [
+                        {
+                            title: "Câbles de moteur TOPFLEX",
+                            subtitle: "Nos câbles de raccordement et d'alimentation. Tout pour la technologie d'entraînement.",
+                            btn: "En savoir plus"
+                        },
+                        {
+                            title: "Monoconducteur et fils",
+                            subtitle: "Connexions flexibles pour la jonction de l'armoire de commande jusqu'au câblage des machines.",
+                            btn: "En savoir plus"
+                        },
+                        {
+                            title: "Câbles pour l'infrastructure et les bâtiments",
+                            subtitle: "Fixe ou mobile : un câblage parfait pour chaque application.",
+                            btn: "En savoir plus"
+                        }
+                    ]
+                },
+                catalog: {
+                    consulted: {
+                        title: "Produits les plus consultés",
+                        subtitle: "Autres clients ont fréquemment consulté ces articles",
+                        btn: "Voir l'article",
+                        products: [
+                            { name: "H07RN-F noir 3 G 1,5 mm²", artNo: "37028" },
+                            { name: "HELUTHERM® 145 MULTI noir 4 G 2,5 mm²", artNo: "53474" },
+                            { name: "HELUTHERM® 145 noir 1 x 1,5 mm²", artNo: "51323" },
+                            { name: "NSGAFÖU 1,8/3 kV BLACK 1 x 2,5 mm²", artNo: "38502" }
+                        ]
+                    },
+                    halogenFree: {
+                        title: "Câbles de commande et de raccordement sans halogène",
+                        subtitle: "Composants performants pour la construction de machines et d'installations",
+                        btn: "Voir le produit",
+                        products: [
+                            { name: "JZ-600 HMH-C", desc: "Câbles de commande et de raccordement, 0,6/1 kV, repérage numéroté, blindé" },
+                            { name: "JZ-500 HMH-C / OZ-500 HMH-C", desc: "Câbles de commande et de raccordement, 300/500 V, repérage numéroté, blindé" },
+                            { name: "JZ-500 HMH / OZ-500 HMH", desc: "Câbles de commande et de raccordement, 300/500 V, repérage numéroté, non blindé" },
+                            { name: "JZ-600 HMH / OZ-600 HMH", desc: "Câbles de commande et de raccordement, 0,6/1 kV, repérage numéroté, non blindé" }
+                        ]
+                    }
+                }
+            }
+        },
+        cableArticle: {
+            breadcrumb: "Newsroom",
+            title: "Résistance à la flamme pour les câbles sans halogène",
+            intro: "Les câbles sans halogène sont obligatoires dans de nombreuses applications de l'industrie et de l'infrastructure. Avec le temps, différentes désignations se sont établies, comme FRNC, HFFR, LS0H ou LSZH. Mais quelle est la signification de ces abréviations et quels sont les avantages des câbles sans halogène par rapport aux produits contenant des halogènes ? Planet Energy vous informe.",
+            section1: {
+                title: "Que sont les halogènes ?",
+                content: "Les halogènes (également connus sous le nom \"d'agents salifiants\") sont des éléments chimiques tels que le chlore (Cl), le brome (Br), le fluor (F) et l'iode (I). Dans la fabrication de câbles, ils servent à rendre certains matériaux d'isolation des conducteurs et de gaine ignifuges : Le chlore (en tant que composant du plastique PVC ou du caoutchouc chloroprène) et le fluor (en tant que partie des matériaux haute température FEP, PTFE et ETFE) sont notamment utilisés ici. Le brome est également utilisé dans les produits ignifuges pour les câbles et les fils.",
+                problem: "Le problème : en cas d'incendie, les halogènes sont extrêmement agressifs et nocifs. Ils produisent des halogénures d'hydrogène qui, au contact de l'humidité, se transforment en acides et peuvent provoquer des brûlures des voies respiratoires. En outre, les acides libérés entraînent la corrosion des pièces métalliques et peuvent ainsi endommager les machines et même l'armature des éléments en béton dans les bâtiments. Cela peut à son tour entraîner des travaux de décontamination complexes et coûteux."
+            },
+            section2: {
+                title: "La sécurité avant tout",
+                content: "Pour des raisons de protection contre l'incendie, la résistance à la flamme des câbles et des fils est évidemment un critère important. Il existe toutefois de nombreuses applications qui nécessitent également des produits explicitement sans halogène, c'est-à-dire des câbles et des fils dont les matériaux sont exempts de chlore, de brome, de fluor et d'iode. En cas d'incendie, ceux-ci ne produisent que peu d'acide, de fumée et une toxicité moindre, ce qui permet de réduire considérablement les dommages consécutifs sur les personnes, les bâtiments et les machines. Toutefois, même les conduites sans halogène produisent des gaz toxiques comme le monoxyde de carbone en cas d'incendie.",
+                examples: [
+                    {
+                        category: "Bâtiment",
+                        text: "Les bâtiments publics tels que les bureaux, les centres commerciaux, les écoles, les hôpitaux et les aéroports sont soumis à des réglementations strictes en matière d'incendie et de santé. La plupart des câbles et fils y sont posés de manière fixe et ne doivent pas présenter de propriétés chimiques et mécaniques particulières. On utilise souvent des mélanges de matières plastiques à base de PE ou de PP, qui sont sans halogène, ignifuges, peu enfumés et peu toxiques."
+                    },
+                    {
+                        category: "Automatisation industrielle",
+                        text: "Lors du câblage de machines et d'installations, une résistance chimique et mécanique élevée des câbles et des fils est souvent exigée. Les exigences sont particulièrement élevées pour les applications en mouvement comme les chaînes porte-câbles ou la robotique. Pour cela, on utilise généralement des mélanges de gaines à base de TPE-O ou -U (PUR ou Santoprène)."
+                    }
+                ]
+            },
+            designations: {
+                title: "Désignations typiques des câbles sans halogène",
+                intro: "Au fil des années, différentes désignations de câbles sans halogène et de câbles ignifuges ont vu le jour en fonction des fabricants, des marchés, des régions et des normes :",
+                list: [
+                    "FRNC: Flame Retardant Non Corrosive",
+                    "HFFR: Halogen Free Flame Retardant",
+                    "LS0H: Low Smoke 0 Halogen (aussi : LSOH)",
+                    "LSZH: Low Smoke Zero Halogen"
+                ],
+                footer: "Toutefois, aucune de ces désignations ne donne d'information concrète sur la résistance à la flamme, la corrosivité, la toxicité et la translucidité. Pour cela, les utilisateurs doivent se référer aux normes figurant dans la fiche technique du fournisseur concerné."
+            },
+            norms: {
+                title: "Quelles sont les normes typiques pour les câbles sans halogène ?",
+                list: [
+                    "La norme DIN EN 60754-1 VDE 0482-754-1:2021-02 définit les appareils de contrôle et la méthode d'essai pour déterminer la teneur en acide. Le résultat du test doit être inférieur à 5 mg/g pour que le câble soit considéré comme exempt d'halogène.",
+                    "DIN EN 60754-2 VDE 0482-754-2:2021-02 définit la mesure du pH et de la conductivité. Le résultat du test doit être inférieur à 4,3 pour le pH et à 10 µS/mm pour la conductivité.",
+                    "DIN EN 61034-2 VDE 0482-1034-2:2021-02 définit la mesure de la densité des fumées de câbles en feu. Le résultat du test doit atteindre au moins 60% de transmission lumineuse."
+                ]
+            },
+            conclusion: {
+                title: "Résultat",
+                text: "Les câbles et les fils sans halogène présentent des avantages évidents dans de nombreuses applications critiques en matière de sécurité, car ils produisent moins de substances toxiques et de fumée en cas d'incendie. Mais en même temps, ces produits doivent présenter une résistance élevée aux flammes pour répondre à différentes normes et réglementations. En tant qu'expert en connectique électrique avec de nombreuses années d'expérience, Planet Energy se fera un plaisir de vous aider à choisir les bons câbles et les bons conducteurs."
+            },
+            back: "Retour"
         }
     }
 };

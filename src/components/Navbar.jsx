@@ -6,7 +6,8 @@ import MegaMenu from './MegaMenu'
 import { useLanguage } from '../context/LanguageContext'
 import logo from '../assets/logo.png'
 
-const Navbar = () => {2
+const Navbar = () => {
+  2
   const [scrolled, setScrolled] = useState(false)
   const [isMegaOpen, setIsMegaOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState('')
@@ -29,7 +30,7 @@ const Navbar = () => {2
     { title: t('nav.home'), path: '/' },
     { title: t('nav.breakers'), path: '/products?cat=breakers', mega: 'breakers' },
     { title: t('nav.hv'), path: '/products?cat=hv', mega: 'hv' },
-    { title: t('nav.cabling'), path: '/products?cat=cables', mega: 'cables' },
+    { title: t('nav.cabling'), path: '/products/cables', mega: 'cables' },
     { title: t('nav.solar'), path: '/products?cat=solar', mega: 'solar' },
     { title: t('nav.om'), path: '/operations' },
     { title: t('nav.about'), path: '/about' }
@@ -91,7 +92,7 @@ const Navbar = () => {2
           </button>
 
           {/* Mobile Hamburger Menu */}
-          <button 
+          <button
             className="hamburger-menu"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -120,10 +121,10 @@ const Navbar = () => {2
                 {item.title}
               </Link>
             ))}
-            
+
             <div className="mobile-menu-divider"></div>
-            
-            <button 
+
+            <button
               className="mobile-contact-button"
               onClick={() => {
                 navigate('/contact')

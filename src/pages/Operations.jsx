@@ -52,7 +52,7 @@ const Operations = () => {
                     <div className="ops-visual">
                         <div className="visual-card">
                             <img
-                                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80&w=800"
+                                src=""
                                 alt="Maintenance Engineer"
                                 className="ops-img"
                             />

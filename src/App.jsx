@@ -9,6 +9,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Operations from './pages/Operations'
 import Legal from './pages/Legal'
+import CableNews from './pages/CableNews'
+import CablesLanding from './pages/CablesLanding'
 import LoadingScreen from './components/LoadingScreen'
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
                                 <Route path="/contact" element={<Contact />} />
                                 <Route path="/operations" element={<Operations />} />
                                 <Route path="/legal" element={<Legal />} />
+                                <Route path="/newsroom/halogen-free-cables" element={<CableNews />} />
+                                <Route path="/products/cables" element={<CablesLanding />} />
                             </Routes>
                         </main>
                         <Footer />

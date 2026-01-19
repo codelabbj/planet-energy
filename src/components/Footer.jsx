@@ -66,10 +66,10 @@ const Footer = () => {
                         <MapPin size={16} className="c-icon" />
                         <span>{t('contact.offices.ghana.description')}</span>
                      </div>
-                     <div className="c-item">
+                     {/* <div className="c-item">
                         <Phone size={16} className="c-icon" />
                         <span>0302-446195 | 0593824311 | 0540119272</span>
-                     </div>
+                     </div> */}
                   </div>
                   <div className="c-item" style={{marginTop: '16px'}}>
                      <Mail size={16} className="c-icon" />
