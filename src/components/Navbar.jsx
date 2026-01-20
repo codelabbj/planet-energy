@@ -30,7 +30,7 @@ const Navbar = () => {
     { title: t('nav.home'), path: '/' },
     { title: t('nav.breakers'), path: '/products?cat=breakers', mega: 'breakers' },
     { title: t('nav.hv'), path: '/products?cat=hv', mega: 'hv' },
-    { title: t('nav.cabling'), path: '/products/cables', mega: 'cables' },
+    { title: t('nav.cabling'), path: '/products/cables' },
     { title: t('nav.solar'), path: '/products?cat=solar', mega: 'solar' },
     { title: t('nav.om'), path: '/operations' },
     { title: t('nav.about'), path: '/about' }

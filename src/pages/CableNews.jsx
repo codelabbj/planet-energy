@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
-import heroImg from '../assets/cable-article-hero.png'
+import heroImg from '../assets/Cableeee.jpg'
 import '../styles/CableNews.css'
 
 const CableNews = () => {
@@ -17,11 +17,11 @@ const CableNews = () => {
             className="cable-news-page"
         >
             <div className="article-container">
-                <div className="article-breadcrumbs">
+                {/* <div className="article-breadcrumbs">
                     <Link to="/">{t('nav.home')}</Link>
                     <span>/</span>
                     <Link to="/news">{t('cableArticle.breadcrumb')}</Link>
-                </div>
+                </div> */}
 
                 <h1 className="article-title">{t('cableArticle.title')}</h1>
                 <p className="article-intro">{t('cableArticle.intro')}</p>

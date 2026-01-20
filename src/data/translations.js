@@ -382,6 +382,7 @@ export const translations = {
             selectCategory: "Select a category"
         },
         cablingLanding: {
+            brandStory: "Energy transport is stable and high quality without voltage drops thanks to high-quality brand electrical cables, which is why we choose HELUKABEL for you, the world's leading manufacturer of electrical cables offering a wide variety of cables, including halogen-free ones.",
             intro: "PLANET ENERGY SYSTEMS your exclusive partner in BENIN, and distributor in GHANA, offers HELUKABEL solutions in the following domains:",
             domains: [
                 "Cables for industry and machines",
@@ -394,7 +395,8 @@ export const translations = {
                 "Connectors and connectivity",
                 "Cable accessories and tools",
                 "Winding, measuring and storage systems",
-                "Cable carrier systems"
+                "Cable carrier systems",
+                "Industrial LED lighting"
             ],
             hero: {
                 title: "Global Expertise in Electrical Connectivity",
@@ -435,7 +437,10 @@ export const translations = {
                             { name: "H07RN-F black 3 G 1.5 mm²", artNo: "37028" },
                             { name: "HELUTHERM® 145 MULTI black 4 G 2.5 mm²", artNo: "53474" },
                             { name: "HELUTHERM® 145 black 1 x 1.5 mm²", artNo: "51323" },
-                            { name: "NSGAFÖU 1.8/3 kV BLACK 1 x 2.5 mm²", artNo: "38502" }
+                            { name: "NSGAFÖU 1.8/3 kV BLACK 1 x 2.5 mm²", artNo: "38502" },
+                            { name: "H07Z-K black 1 x 1.5 mm²", artNo: "51768" },
+                            { name: "FIVENORM H07V2-K black 1 x 2.5 mm²", artNo: "64139" },
+                            { name: "H01N2-D black 1 x 16 mm²", artNo: "31002" }
                         ]
                     },
                     halogenFree: {
@@ -884,6 +889,7 @@ export const translations = {
             }
         },
         cablingLanding: {
+            brandStory: "Le transport d’énergie est stable et de bonne qualité sans chute de tension grâce au câble électrique de bonne marque raison pour laquelle nous choisissons pour vous HELUKABEL, le meilleur fabricant mondiale de câble électrique qui vous offrons une grande variété de câbles et même d’autres sans halogène.",
             intro: "PLANET ENERGY SYSTEMS votre interlocuteur exclusif au BENIN, simple distributeur au GHANA vous offre les solutions HELUKABEL DANS LES DOMAINES SUIVANTS :",
             domains: [
                 "Câbles pour l’industrie et les machines",
@@ -896,7 +902,8 @@ export const translations = {
                 "Connecteurs et connectique",
                 "Accessoires de câble et outils",
                 "Systèmes d’enroulement, de mesure et de stockage",
-                "Chain porte-câbles"
+                "Chain porte-câbles",
+                "Luminaires industriels à LED"
             ],
             hero: {
                 title: "Expertise Mondiale en Connectique Électrique",
@@ -937,7 +944,10 @@ export const translations = {
                             { name: "H07RN-F noir 3 G 1,5 mm²", artNo: "37028" },
                             { name: "HELUTHERM® 145 MULTI noir 4 G 2,5 mm²", artNo: "53474" },
                             { name: "HELUTHERM® 145 noir 1 x 1,5 mm²", artNo: "51323" },
-                            { name: "NSGAFÖU 1,8/3 kV BLACK 1 x 2,5 mm²", artNo: "38502" }
+                            { name: "NSGAFÖU 1,8/3 kV BLACK 1 x 2,5 mm²", artNo: "38502" },
+                            { name: "H07Z-K noir 1 x 1,5 mm²", artNo: "51768" },
+                            { name: "FIVENORM H07V2-K noir 1 x 2,5 mm²", artNo: "64139" },
+                            { name: "H01N2-D noir 1 x 16 mm²", artNo: "31002" }
                         ]
                     },
                     halogenFree: {

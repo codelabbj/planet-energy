@@ -8,6 +8,8 @@ import cable1 from '../assets/cable1.png'
 import cable2 from '../assets/cable2.png'
 import cable3 from '../assets/cable3.png'
 import cableFull from '../assets/Cable.jpg'
+import cableArticleHero from '../assets/cable-article-hero.png'
+import cableeee from '../assets/Cableeee.jpg'
 import im1 from '../assets/IM1.jpg'
 import im2 from '../assets/IM2.jpg'
 import im3 from '../assets/IM3.jpg'
@@ -19,6 +21,9 @@ import pic5 from '../assets/PIC5.jpg'
 import pic6 from '../assets/PIC6.jpg'
 import pic7 from '../assets/PIC7.jpg'
 import pic8 from '../assets/PIC8.jpg'
+import pic9 from '../assets/PIC9.jpg'
+import pic10 from '../assets/PIC10.jpg'
+import pic11 from '../assets/PIC11.jpg'
 import im4 from '../assets/IM4.jpg'
 import imc1 from '../assets/IM C1.jpg'
 import imc2 from '../assets/IM C2.jpg'
@@ -39,6 +44,8 @@ export const imageMap = {
   'cable2.png': cable2,
   'cable3.png': cable3,
   'Cable.jpg': cableFull,
+  'cable-article-hero.png': cableArticleHero,
+  'Cableeee.jpg': cableeee,
   'IM1.jpg': im1,
   'IM2.jpg': im2,
   'IM3.jpg': im3,
@@ -50,6 +57,9 @@ export const imageMap = {
   'PIC6.jpg': pic6,
   'PIC7.jpg': pic7,
   'PIC8.jpg': pic8,
+  'PIC9.jpg': pic9,
+  'PIC10.jpg': pic10,
+  'PIC11.jpg': pic11,
   'IM4.jpg': im4,
   'IM C1.jpg': imc1,
   'IM C2.jpg': imc2,
