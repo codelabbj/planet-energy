@@ -33,6 +33,7 @@ import '../styles/CablesLanding.css'
 const CablesLanding = () => {
     const { t } = useLanguage()
     const [currentSlide, setCurrentSlide] = useState(0)
+    const [isAutoPlayPaused, setIsAutoPlayPaused] = useState(false)
     const scrollRef = React.useRef(null)
 
     const slideData = [
@@ -89,14 +90,22 @@ const CablesLanding = () => {
 
     // Auto-advance carousel
     useEffect(() => {
+        if (isAutoPlayPaused) return
+
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slideData.length)
         }, 6000)
         return () => clearInterval(timer)
-    }, [slideData.length])
+    }, [slideData.length, isAutoPlayPaused])
 
-    const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slideData.length)
-    const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slideData.length) % slideData.length)
+    const nextSlide = () => {
+        setCurrentSlide((prev) => (prev + 1) % slideData.length)
+        setIsAutoPlayPaused(true)
+    }
+    const prevSlide = () => {
+        setCurrentSlide((prev) => (prev - 1 + slideData.length) % slideData.length)
+        setIsAutoPlayPaused(true)
+    }
 
     return (
         <div className="cables-landing-container">
@@ -112,7 +121,7 @@ const CablesLanding = () => {
                         className="carousel-slide"
                     >
                         <img src={slideData[currentSlide].image} alt={`Slide ${currentSlide + 1}`} />
-                        <div className="carousel-overlay dark"></div>
+                        <div className={`carousel-overlay dark ${currentSlide === 0 ? 'darker-overlay' : ''}`}></div>
 
                         {/* Slide Content Overlay */}
                         <div className="carousel-content-wrapper left">
@@ -153,7 +162,10 @@ const CablesLanding = () => {
                         <div
                             key={idx}
                             className={`indicator ${idx === currentSlide ? 'active' : ''}`}
-                            onClick={() => setCurrentSlide(idx)}
+                            onClick={() => {
+                                setCurrentSlide(idx)
+                                setIsAutoPlayPaused(true)
+                            }}
                         >
                             <span className="dot"></span>
                         </div>
@@ -207,6 +219,11 @@ const CablesLanding = () => {
             {/* Section 0: Movement Solutions */}
             <section className="movement-solutions-section">
                 <div className="container">
+                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <h2 className="section-title" style={{ color: 'var(--color-primary)', fontSize: '2.5rem', fontWeight: '700' }}>
+                            {t('cablingLanding.sections.movement.title')}
+                        </h2>
+                    </div>
                     <div className="movement-cards-grid">
                         {/* Featured Card */}
                         <motion.div

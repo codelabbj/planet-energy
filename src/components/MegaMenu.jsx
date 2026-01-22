@@ -2,10 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronRight, Cpu, Shield, Zap, Activity, Layers, Settings, Database } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
-import { resolveImagePath } from '../data/imageImports'
 
 const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
-  const { t } = useLanguage()
+    const { t } = useLanguage()
 
   // Get current language translations for megamenu products
   const getCurrentItems = () => {
@@ -23,54 +22,57 @@ const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
 
   // Static images for products (not translated)
   const getProductImage = (category, index) => {
-    const item = currentItems[index];
-    return resolveImagePath(item?.img || "");
+    const images = {
+      breakers: [
+        "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1617529497471-9218633199c0?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&q=80&w=400"
+      ],
+      hv: [
+        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1544724569-5f546fd6dd2d?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1565514020176-dbf22378f825?auto=format&fit=crop&q=80&w=400"
+      ],
+      cables: [
+        "https://images.unsplash.com/photo-1544724569-5f546fd6dd2d?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=400"
+      ],
+      solar: [
+        "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=400",
+        "https://images.unsplash.com/photo-1566093097221-ac2335b09e70?auto=format&fit=crop&q=80&w=400"
+      ]
+    }
+    return images[category]?.[index] || ""
   }
-
-  // Check if it's the specific "cables" category for full-screen redesign
-  const isCables = activeCategory === 'cables';
 
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className={`mega-menu-overlay ${isOpen ? 'active' : ''} ${isCables ? 'cables-special' : ''}`}
+      className={`mega-menu-overlay ${isOpen ? 'active' : ''}`}
       onMouseLeave={onClose}
     >
-      {isCables && currentItems.length > 0 ? (
-        <div className="cables-fullscreen">
-          <img src={getProductImage('cables', 0)} alt="Cables" className="bg-image" />
-          <div className="content-overlay">
-            <div className="top-right-text">
-              {currentItems[0].title}
-            </div>
-            <div className="center-bottom-content">
-              <h2 className="promo-text">{currentItems[0].promo}</h2>
-              <p className="description-text">{currentItems[0].desc}</p>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div className="container mega-grid">
-          {currentItems.length > 0 ? (
-            currentItems.map((item, idx) => (
-              <div key={idx} className="mega-card">
-                <div className="card-img">
-                  <img src={getProductImage(activeCategory, idx)} alt={item.title} />
-                  <div className="overlay"></div>
-                </div>
-                <div className="card-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
+      <div className="container mega-grid">
+        {currentItems.length > 0 ? (
+          currentItems.map((item, idx) => (
+            <div key={idx} className="mega-card">
+              <div className="card-img">
+                <img src={getProductImage(activeCategory, idx)} alt={item.title} />
+                <div className="overlay"></div>
               </div>
-            ))
-          ) : (
-            <div className="empty-state">{t('megamenu.selectCategory')}</div>
-          )}
-        </div>
-      )}
+              <div className="card-content">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="empty-state">Select a category</div>
+        )}
+      </div>
 
       <style jsx>{`
         .mega-menu-overlay {
@@ -98,12 +100,8 @@ const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
           padding: 60px 40px;
         }
 
-        /* Full width for single item categories */
-        .mega-grid:has(.mega-card:only-child) {
-          grid-template-columns: 1fr;
-        }
-
         .mega-card {
+           group: true;
            cursor: pointer;
         }
 
@@ -140,99 +138,6 @@ const MegaMenu = ({ isOpen, onClose, activeCategory }) => {
             margin-bottom: 16px;
         }
 
-        /* Cables Special Redesign */
-        .cables-special {
-          background: #000;
-          border-top: none;
-        }
-
-        .cables-fullscreen {
-          position: relative;
-          width: 100%;
-          height: calc(100vh - 80px); /* Covers the rest of the screen below the navbar */
-          overflow: hidden;
-        }
-
-        .bg-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-
-        .content-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%);
-          display: flex;
-          flex-direction: column;
-          padding: 80px 10%;
-        }
-
-        .top-right-text {
-          position: absolute;
-          top: 60px;
-          left: 10%; /* Changed from right 60px to left 10% */
-          color: white;
-          font-family: 'Syne', sans-serif;
-          font-size: 32px;
-          font-weight: 800;
-          max-width: 600px;
-          text-align: left;
-          text-transform: uppercase;
-          line-height: 1.1;
-          letter-spacing: -1px;
-        }
-
-        /* Decorative line under title */
-        .top-right-text::after {
-          content: '';
-          display: block;
-          width: 80px;
-          height: 4px;
-          background: var(--color-primary);
-          margin-top: 20px;
-        }
-
-        .center-bottom-content {
-          margin-top: auto;
-          text-align: center;
-          max-width: 1200px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 60px;
-        }
-
-        .promo-text {
-          color: var(--color-primary);
-          font-family: 'Outfit', sans-serif;
-          font-size: 36px;
-          font-weight: 900;
-          margin-bottom: 24px;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-        }
-
-        .description-text {
-          color: #ffffff;
-          font-size: 20px;
-          line-height: 1.6;
-          max-width: 1000px;
-          margin: 0 auto;
-          font-weight: 400;
-          text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        }
-
-        @media (max-width: 768px) {
-          .cables-fullscreen { height: 100vh; }
-          .top-right-text { font-size: 24px; top: 40px; left: 5%; }
-          .promo-text { font-size: 22px; }
-          .description-text { font-size: 16px; }
-          .content-overlay { padding: 40px 5%; }
-        }
       `}</style>
     </motion.div>
   )

@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ShieldCheck, Activity } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import opsHeroImg from '../assets/Monitoring.jpg.jpeg'
+import engineerImg from '../assets/MaintenanceEngineer.png'
 
 const Operations = () => {
     const { t } = useLanguage()
@@ -9,7 +11,8 @@ const Operations = () => {
         <div className="operations-page">
             {/* Hero Section */}
             <section className="ops-hero">
-                <div className="container">
+                <div className="hero-overlay"></div>
+                <div className="container hero-content">
                     <span className="overline">{t('operations.hero.overline')}</span>
                     <h1>{t('operations.hero.title')}</h1>
                     <p>{t('operations.hero.subtitle')}</p>
@@ -52,7 +55,7 @@ const Operations = () => {
                     <div className="ops-visual">
                         <div className="visual-card">
                             <img
-                                src=""
+                                src={engineerImg}
                                 alt="Maintenance Engineer"
                                 className="ops-img"
                             />
@@ -91,54 +94,59 @@ const Operations = () => {
                 }
 
                 .ops-hero {
-                    background: linear-gradient(135deg, rgba(0, 31, 53, 0.82) 0%, rgba(15, 51, 85, 0.82) 100%),
-                                url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1400') center/cover;
-                    background-attachment: fixed;
+                    background-image: url(${opsHeroImg});
                     color: white;
-                    padding: 120px 0 100px;
+                    height: 100vh;
+                    min-height: 800px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     text-align: center;
+                    background-size: cover;
+                    background-position: center;
                     position: relative;
-                    overflow: hidden;
                 }
-                
-                .ops-hero::before {
-                    content: '';
+
+                .hero-overlay {
                     position: absolute;
                     top: 0;
-                    left: -50%;
-                    bottom: 0;
+                    left: 0;
                     width: 100%;
-                    background: radial-gradient(circle at 0% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
-                    pointer-events: none;
+                    height: 100%;
+                    background: linear-gradient(135deg, rgba(0, 31, 53, 0.72), rgba(15, 51, 85, 0.42));
+                    z-index: 1;
                 }
-                
-                .ops-hero .container {
+
+                .hero-content {
                     position: relative;
                     z-index: 2;
                 }
-                
+
                 .ops-hero h1 {
-                    color: #fff;
-                    font-size: 64px;
+                    font-size: 60px;
                     font-weight: 700;
-                    margin: 16px 0;
-                    line-height: 1.1;
-                    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                    margin: 12px 0;
+                    line-height: 1.05;
+                    text-shadow: 0 8px 24px rgba(0,0,0,0.4);
                 }
-                
+
                 .ops-hero p {
                     font-size: 18px;
-                    color: rgba(255,255,255,0.85);
-                    max-width: 600px;
+                    color: rgba(255,255,255,0.9);
+                    max-width: 680px;
                     margin: 0 auto;
-                    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
                 }
                 
                 .overline {
+                    display: inline-block;
+                    background: rgba(255,255,255,0.06);
                     color: var(--color-accent);
                     font-weight: 700;
-                    letter-spacing: 2px;
-                    font-size: 13px;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    border-radius: 999px;
+                    text-transform: uppercase;
                 }
 
                 .ops-grid {

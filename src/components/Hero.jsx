@@ -1,37 +1,32 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronRight, Globe, Zap, Users, Activity } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import accraImage from '../assets/Acrra Rue.jpg.jpeg'
+import amazoneeImage from '../assets/Amazonee.jpg.jpeg'
+import berlinImage from '../assets/Tour de berlin.jpg.jpeg'
+
+
 
 const Hero = () => {
+
   const { t } = useLanguage()
 
   // Video/Image Slides Configuration
   const slides = [
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/27552677/pexels-photo-27552677.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      label: 'Monument Amazone - Cotonou, Benin'
+      src: amazoneeImage,
+      label: t('hero.slides.label_benin')
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/33213616/pexels-photo-33213616.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      label: 'Berlin TV Tower - Deutschland'
+      src: accraImage,
+      label: t('hero.slides.label_ghana')
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/35175022/pexels-photo-35175022.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      label: 'Accra Skyline - Ghana'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      label: 'Installation Électrique - Disjoncteur'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/414967/pexels-photo-414967.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      label: 'Haute Tension - Transmission'
+      src: berlinImage,
+      label: t('hero.slides.label_berlin')
     }
   ]
 
@@ -72,7 +67,7 @@ const Hero = () => {
               className="hero-media"
             />
           )}
-          <div className="hero-overlay"></div>
+          <div className={`hero-overlay ${index === 0 ? 'darker' : ''}`}></div>
         </motion.div>
       </AnimatePresence>
 
@@ -84,15 +79,10 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="hero-overline">
-            <span className="dot"></span> GLOBAL ENERGY PARTNER
-          </div>
-          <h1>{t('hero.title')}</h1>
-          <p className="hero-subtitle">{t('hero.subtitle')}</p>
-
-          <button className="btn-hero-primary">
-            {t('hero.cta')} <ChevronRight size={18} />
-          </button>
+          <h1 className="hero-title-main">
+            <span className="company-name">{t('hero.companyName')}</span>
+            <span className="distributor-text">{t('hero.distributorText')}</span>
+          </h1>
         </motion.div>
 
         {/* Animated Slide Label */}
@@ -103,6 +93,9 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+
+
+
           <div className="slide-line"></div>
           <span>{slides[index].label}</span>
         </motion.div>
@@ -114,7 +107,7 @@ const Hero = () => {
             min-height: 800px;
             position: relative;
             display: flex;
-            align-items: center;
+            /* align-items: center; Removed to allow child to fill height */
             overflow: hidden;
             background: linear-gradient(135deg, #001f35 0%, #0f3355 100%);
         }
@@ -153,8 +146,13 @@ const Hero = () => {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(0, 31, 53, 0.72), rgba(15, 51, 85, 0.42));
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15));
       z-index: 1;
+      transition: background 0.5s ease;
+    }
+
+    .hero-overlay.darker {
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
     }
 
     .hero-content {
@@ -162,13 +160,14 @@ const Hero = () => {
       z-index: 3;
       color: white;
       display: flex;
+      height: 100%; /* Full height */
+      align-items: center; /* Center text vertically */
       justify-content: space-between;
-      align-items: flex-end;
       width: 100%;
     }
 
         .text-block {
-            max-width: 700px;
+            max-width: 1000px;
         }
 
         .hero-overline {
@@ -190,14 +189,38 @@ const Hero = () => {
             box-shadow: 0 0 10px rgba(230, 166, 0, 0.5);
         }
 
-    h1 {
+    .hero-title-main {
       color: #fff;
-      font-size: 64px;
-      line-height: 1.1;
-      font-weight: 700;
-      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 80px;
       font-family: 'Outfit', sans-serif;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.45);
+      text-shadow: 0 4px 30px rgba(0,0,0,0.6);
+      border-left: 5px solid var(--color-accent);
+      padding-left: 32px;
+    }
+
+    .company-name {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-transform: uppercase;
+      display: block;
+      line-height: 1.1;
+      white-space: nowrap;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .distributor-text {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: var(--color-accent);
+      display: block;
+      text-transform: uppercase;
+      text-shadow: 0 2px 15px rgba(0, 0, 0, 0.82);
     }
 
         .hero-subtitle {
@@ -231,6 +254,9 @@ const Hero = () => {
         }
 
         .slide-indicator {
+            position: absolute;
+            bottom: 60px;
+            right: 0;
             display: flex;
             align-items: center;
             gap: 16px;
@@ -251,8 +277,14 @@ const Hero = () => {
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 40px; }
-            .hero-content { flex-direction: column; align-items: flex-start; gap: 40px; }
+            .company-name { font-size: 28px; white-space: normal; }
+            .distributor-text { font-size: 13px; letter-spacing: 2px; white-space: normal; }
+            
+            /* On mobile, let's keep it absolute but align left or adjust */
+            .slide-indicator { left: 0; right: auto; bottom: 30px; }
+            
+            .hero-content { align-items: flex-start; }
+            .hero-title-main { border-left-width: 3px; padding-left: 20px; }
         }
       `}</style>
     </div>

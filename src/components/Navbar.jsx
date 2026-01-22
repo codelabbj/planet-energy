@@ -7,7 +7,6 @@ import { useLanguage } from '../context/LanguageContext'
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
-  2
   const [scrolled, setScrolled] = useState(false)
   const [isMegaOpen, setIsMegaOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState('')
@@ -28,10 +27,10 @@ const Navbar = () => {
   // Dynamic Menu Config using translations
   const menuConfig = [
     { title: t('nav.home'), path: '/' },
-    { title: t('nav.breakers'), path: '/products?cat=breakers', mega: 'breakers' },
-    { title: t('nav.hv'), path: '/products?cat=hv', mega: 'hv' },
+    { title: t('nav.industrial'), path: '/industrial' },
+    { title: t('nav.hv'), path: '/high-voltage' },
     { title: t('nav.cabling'), path: '/products/cables' },
-    { title: t('nav.solar'), path: '/products?cat=solar', mega: 'solar' },
+    { title: t('nav.solar'), path: '/solar' },
     { title: t('nav.om'), path: '/operations' },
     { title: t('nav.about'), path: '/about' }
   ]
@@ -45,12 +44,53 @@ const Navbar = () => {
     }
   }
 
+  const isSolidNav = [
+    '/industrial',
+    '/solar',
+    '/high-voltage',
+    '/newsroom/halogen-free-cables',
+    '/products',
+    '/legal'
+  ].includes(location.pathname)
+
   return (
-    <nav className={`nav-corporate ${scrolled || isMegaOpen ? 'scrolled' : ''}`}>
+    <nav className={`nav-corporate ${scrolled || isMegaOpen || isSolidNav ? 'scrolled' : ''}`}>
       <div className="container nav-inner">
-        <Link to="/" className="brand-corporate">
-          <img src={logo} alt="Planet Energy System" className="logo-image" />
-        </Link>
+        <div className="nav-top">
+          <Link to="/" className="brand-corporate">
+            <img src={logo} alt="Planet Energy System" className="logo-image" />
+          </Link>
+
+          <div className="nav-actions">
+            <div className="lang-selector">
+              <span
+                className={`lang ${language === 'en' ? 'active' : ''}`}
+                onClick={() => toggleLanguage('en')}
+              >
+                EN
+              </span>
+              <span className="divider">/</span>
+              <span
+                className={`lang ${language === 'fr' ? 'active' : ''}`}
+                onClick={() => toggleLanguage('fr')}
+              >
+                FR
+              </span>
+            </div>
+
+            <button className="btn-contact-nav" onClick={() => navigate('/contact')}>
+              {t('nav.contact')}
+            </button>
+
+            {/* Mobile Hamburger Menu */}
+            <button
+              className="hamburger-menu"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
 
         {/* Corporate Menu */}
         <div className="nav-menu">
@@ -68,36 +108,6 @@ const Navbar = () => {
               </Link>
             </div>
           ))}
-        </div>
-
-        <div className="nav-actions">
-          <div className="lang-selector">
-            <span
-              className={`lang ${language === 'en' ? 'active' : ''}`}
-              onClick={() => toggleLanguage('en')}
-            >
-              EN
-            </span>
-            <span className="divider">/</span>
-            <span
-              className={`lang ${language === 'fr' ? 'active' : ''}`}
-              onClick={() => toggleLanguage('fr')}
-            >
-              FR
-            </span>
-          </div>
-
-          <button className="btn-contact-nav" onClick={() => navigate('/contact')}>
-            {t('nav.contact')}
-          </button>
-
-          {/* Mobile Hamburger Menu */}
-          <button
-            className="hamburger-menu"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
       </div>
 
@@ -202,8 +212,15 @@ const Navbar = () => {
 
         .nav-inner {
           display: flex;
-          justify-content: space-between;
-          align-items: center;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .nav-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .brand-corporate {
@@ -281,8 +298,9 @@ const Navbar = () => {
 
         .nav-menu {
           display: flex;
-          gap: 56px; /* Increased from 40px for "steady" feel */
-          height: 100%;
+          gap: 40px;
+          width: 100%;
+          justify-content: center;
           align-items: center;
         }
 

@@ -11,21 +11,35 @@ import Operations from './pages/Operations'
 import Legal from './pages/Legal'
 import CableNews from './pages/CableNews'
 import CablesLanding from './pages/CablesLanding'
+import IndustrialPage from './pages/IndustrialPage'
+import SolarPage from './pages/SolarPage'
+import HighVoltagePage from './pages/HighVoltagePage'
 import LoadingScreen from './components/LoadingScreen'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
     const [isLoading, setIsLoading] = useState(true)
+    const [showContent, setShowContent] = useState(false)
+
+    const handleLoadingComplete = () => {
+        setIsLoading(false)
+    }
+
+    useEffect(() => {
+        console.log("isLoading:", isLoading, "showContent:", showContent)
+    }, [isLoading, showContent])
 
     return (
         <Router>
+            <ScrollToTop />
             <div className="app-container">
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="wait" onExitComplete={() => setShowContent(true)}>
                     {isLoading && (
-                        <LoadingScreen key="loader" onComplete={() => setIsLoading(false)} />
+                        <LoadingScreen key="loader" onComplete={handleLoadingComplete} />
                     )}
                 </AnimatePresence>
 
-                {!isLoading && (
+                {showContent && (
                     <>
                         <Navbar />
                         <main>
@@ -38,6 +52,9 @@ function App() {
                                 <Route path="/legal" element={<Legal />} />
                                 <Route path="/newsroom/halogen-free-cables" element={<CableNews />} />
                                 <Route path="/products/cables" element={<CablesLanding />} />
+                                <Route path="/industrial" element={<IndustrialPage />} />
+                                <Route path="/solar" element={<SolarPage />} />
+                                <Route path="/high-voltage" element={<HighVoltagePage />} />
                             </Routes>
                         </main>
                         <Footer />

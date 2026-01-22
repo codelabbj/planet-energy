@@ -2,16 +2,22 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import { useLanguage } from '../context/LanguageContext'
+import logo1 from '../assets/logo1.png'
+import logo2 from '../assets/logo2.gif'
+import logo3 from '../assets/logo3.png'
+import logo4 from '../assets/logo4.webp'
+import logo5 from '../assets/logo5.webp'
+// import logo6 from '../assets/plogo6.png'
 
 const Partners = () => {
     const { t } = useLanguage()
     const partners = [
         { name: 'Siemens', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/2560px-Siemens-logo.svg.png' },
-        { name: 'Helukabel', logo: 'src/assets/logo1.png' },
-        { name: 'SMA', logo: 'src/assets/logo2.gif' },
-        { name: 'Aiko Solar', logo: '' },
-        { name: 'Ammonit', logo: 'src/assets/logo4.webp' },
-        { name: 'Firnasshuman', logo: 'src/assets/logo5.webp' }
+        { name: 'Helukabel', logo: logo1 },
+        { name: 'SMA', logo: logo2 },
+        { name: 'Aiko Solar', logo: logo3 },
+        { name: 'Ammonit', logo: logo4 },
+        { name: 'Firnasshuman', logo: logo5 }
     ]
 
     return (

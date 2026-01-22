@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import splashImage from '../assets/splash.jpeg'
-import logo from '../assets/logo.png'
 
 const LoadingScreen = ({ onComplete }) => {
   const [count, setCount] = useState(0)
@@ -39,9 +37,10 @@ const LoadingScreen = ({ onComplete }) => {
       initial={{ y: 0 }}
       exit={{ y: '-100%', transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
     >
-      <div className="background-overlay"></div>
       <div className="loader-content">
-        <img src={logo} alt="Planet Energy System" className="loader-logo" />
+        <h1 className="loader-title">
+          <span className="stroke">PLANET</span>ENERGY
+        </h1>
         <div className="counter-wrap">
           <div className="progress-bar">
             <motion.div
@@ -60,8 +59,7 @@ const LoadingScreen = ({ onComplete }) => {
           left: 0;
           width: 100%;
           height: 100vh;
-          background: url(${splashImage}) no-repeat center center fixed;
-          background-size: cover;
+          background: var(--color-bg-dark);
           z-index: 9999;
           display: flex;
           align-items: center;
@@ -77,58 +75,12 @@ const LoadingScreen = ({ onComplete }) => {
           gap: 24px;
         }
 
-        .loader-logo {
-          height: 100px;
-          width: auto;
-          object-fit: contain;
-          animation: fadeIn 0.8s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-
         .loader-title {
           font-family: 'Syne', sans-serif;
           font-size: 80px;
           font-weight: 800;
-          letter-spacing: 2px;
+          letter-spacing: -2px;
           margin: 0;
-          display: flex;
-          gap: 4px;
-          align-items: center;
-        }
-
-        .loader-planet {
-          color: white;
-        }
-
-        .loader-e {
-          color: white;
-        }
-
-        .loader-s {
-          color: white;
-        }
-
-        .loader-dot {
-          color: var(--color-accent);
-          font-weight: 800;
-        }
-
-        .loader-subtitle {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 400;
-          font-size: 12px;
-          letter-spacing: 2px;
-          color: rgba(255, 255, 255, 0.7);
-          text-transform: uppercase;
-          margin-top: -8px;
         }
 
         .stroke {
@@ -170,21 +122,6 @@ const LoadingScreen = ({ onComplete }) => {
         @media (max-width: 768px) {
           .loader-title { font-size: 40px; }
           .counter-wrap { width: 200px; }
-        }
-
-        .background-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-          z-index: 1;
-        }
-
-        .loader-content {
-          position: relative;
-          z-index: 2;
         }
       `}</style>
     </motion.div>

@@ -50,7 +50,7 @@ const Footer = () => {
                <h4>{t('footer.contact')}</h4>
                <div className="contact-list">
                   <div className="contact-section">
-                     <p className="contact-section-title" style={{fontWeight: 700, marginBottom: '8px'}}>{t('contact.offices.cotonou.name')}</p>
+                     <p className="contact-section-title" style={{ fontWeight: 700, marginBottom: '8px' }}>{t('contact.offices.cotonou.name')}</p>
                      <div className="c-item">
                         <MapPin size={16} className="c-icon" />
                         <span>{t('contact.offices.cotonou.description')}</span>
@@ -60,18 +60,14 @@ const Footer = () => {
                         <span>{t('contact.phone')}</span>
                      </div>
                   </div>
-                  <div className="contact-section" style={{marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)'}}>
-                     <p className="contact-section-title" style={{fontWeight: 700, marginBottom: '8px'}}>{t('contact.offices.ghana.name')}</p>
+                  <div className="contact-section" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                     <p className="contact-section-title" style={{ fontWeight: 700, marginBottom: '8px' }}>{t('contact.offices.accra.name')}</p>
                      <div className="c-item">
                         <MapPin size={16} className="c-icon" />
-                        <span>{t('contact.offices.ghana.description')}</span>
+                        <span>{t('contact.offices.accra.description')}</span>
                      </div>
-                     {/* <div className="c-item">
-                        <Phone size={16} className="c-icon" />
-                        <span>0302-446195 | 0593824311 | 0540119272</span>
-                     </div> */}
                   </div>
-                  <div className="c-item" style={{marginTop: '16px'}}>
+                  <div className="c-item" style={{ marginTop: '16px' }}>
                      <Mail size={16} className="c-icon" />
                      <span>{t('contact.email')}</span>
                   </div>
@@ -85,8 +81,8 @@ const Footer = () => {
             <div className="container bottom-flex">
                <p>&copy; {new Date().getFullYear()} Planet Energy. {t('footer.rights')}</p>
                <div className="legal-links">
-                  <Link to="/legal">{t('footer.links.terms')}</Link>
-                  <Link to="/privacy">{t('footer.links.privacy')}</Link>
+                  {/* <Link to="/legal">{t('footer.links.terms')}</Link> */}
+                  <Link to="/legal">{t('footer.links.privacy')}</Link>
                   <Link to="/sitemap">{t('footer.links.sitemap')}</Link>
                </div>
             </div>

@@ -8,8 +8,7 @@ const Sitrain = () => {
     return (
         <div className="sitrain-page">
             <section className="sitrain-hero" style={{
-                backgroundImage: `linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.4))`,
-                backgroundColor: '#0a192f',
+                backgroundImage: `linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.4)), url('C:/Users/USER/.gemini/antigravity/brain/3843a227-aef4-4977-baed-571cf3f98db2/siemens_academy_classroom_modern_1768237308059.png')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>

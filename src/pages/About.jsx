@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { CheckCircle, Award, Briefcase, Globe } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import aboutHeroImg from '../assets/Au bureau.jpg.jpeg'
 
 const About = () => {
     const { t } = useLanguage()
@@ -11,7 +12,8 @@ const About = () => {
 
             {/* Header / Hero */}
             <section className="corporate-hero">
-                <div className="container">
+                <div className="hero-overlay"></div>
+                <div className="container hero-content">
                     <div className="hero-content-simple">
                         <span className="overline">{t('about.hero.overline')}</span>
                         <h1>{t('about.hero.title')}</h1>
@@ -21,12 +23,10 @@ const About = () => {
 
             {/* Main Content Grid */}
             <section className="section-padding bg-white">
-                <div className="container corporate-grid">
-
-                    {/* Left Column: Text */}
-                    <div className="corp-text">
+                <div className="container">
+                    <div className="corp-text full-width">
                         <h2 className="section-title">{t('about.main.title')}</h2>
-                        <div className="divider-line"></div>
+                        <div className="divider-line full-width"></div>
                         <p className="lead-text">
                             {t('about.main.description1')}
                         </p>
@@ -34,7 +34,7 @@ const About = () => {
                             {t('about.main.description2')}
                         </p>
 
-                        {/* <div className="stats-row">
+                        <div className="stats-row">
                             <div className="stat">
                                 <span className="val">25+</span>
                                 <span className="lbl">{t('about.main.stats.years')}</span>
@@ -43,21 +43,8 @@ const About = () => {
                                 <span className="val">50+</span>
                                 <span className="lbl">{t('about.main.stats.projects')}</span>
                             </div>
-                        </div> */}
-                    </div>
-
-                    {/* Right Column: Image */}
-                    <div className="corp-image-block">
-                        <img
-                            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1000"
-                            alt="Engineering Team"
-                            className="main-img"
-                        />
-                        <div className="img-caption">
-                            <span>{t('about.imageCaption')}</span>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -82,14 +69,7 @@ const About = () => {
 
                         {/* Executive Slots */}
                         <div className="exec-grid">
-                            {[
-                                t('about.leadership.executives.adjoint'),
-                                t('about.leadership.executives.technical'),
-                                t('about.leadership.executives.legal'),
-                                t('about.leadership.executives.financial'),
-                                t('about.leadership.executives.commercial'),
-                                t('about.leadership.executives.chef')
-                            ].map((role, i) => (
+                            {[t('about.leadership.executives.technical'), t('about.leadership.executives.financial'), t('about.leadership.executives.legal')].map((role, i) => (
                                 <div key={i} className="exec-slot">
                                     <div className="slot-icon"><Briefcase size={20} /></div>
                                     <h4>{role}</h4>
@@ -109,45 +89,51 @@ const About = () => {
                 }
 
                 .corporate-hero {
-                    background: linear-gradient(135deg, rgba(0, 31, 53, 0.85) 0%, rgba(15, 51, 85, 0.85) 100%), 
-                                url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1400') center/cover;
-                    background-attachment: fixed;
-                    padding: 140px 0 100px;
+                    background-image: url(${aboutHeroImg});
+                    height: 100vh;
+                    min-height: 800px;
+                    display: flex;
+                    align-items: center;
                     color: white;
+                    background-size: cover;
+                    background-position: center;
                     position: relative;
                     overflow: hidden;
                 }
-                
-                .corporate-hero::before {
-                    content: '';
+
+                .hero-overlay {
                     position: absolute;
                     top: 0;
-                    right: -50%;
-                    bottom: 0;
+                    left: 0;
                     width: 100%;
-                    background: radial-gradient(circle at 100% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
-                    pointer-events: none;
+                    height: 100%;
+                    background: linear-gradient(135deg, rgba(0, 31, 53, 0.72), rgba(15, 51, 85, 0.42));
+                    z-index: 1;
                 }
-                
-                .corporate-hero .container {
+
+                .hero-content {
                     position: relative;
                     z-index: 2;
                 }
-                
+
                 .hero-content-simple h1 {
-                    color: #fff;
                     font-size: 64px;
                     font-weight: 700;
-                    line-height: 1.1;
-                    margin-top: 16px;
-                    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                    line-height: 1.05;
+                    margin-top: 12px;
+                    text-shadow: 0 10px 30px rgba(0,0,0,0.45);
                 }
 
                 .overline {
+                    display: inline-block;
+                    background: rgba(255,255,255,0.06);
                     color: var(--color-accent);
                     font-weight: 700;
-                    letter-spacing: 2px;
-                    font-size: 13px;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    border-radius: 999px;
+                    text-transform: uppercase;
                 }
                 
                 .bg-white { background: #ffffff; }
@@ -160,16 +146,22 @@ const About = () => {
                     align-items: start;
                 }
 
+                .corp-text.full-width {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+
                 .section-title {
                     font-size: 42px;
                     color: var(--color-primary);
                     line-height: 1.2;
                     margin-bottom: 32px;
                     font-weight: 700;
+                    text-align: center;
                 }
 
-                .divider-line {
-                    width: 60px;
+                .divider-line.full-width {
+                    width: 100%;
                     height: 4px;
                     background: var(--color-accent);
                     margin-bottom: 32px;
@@ -279,7 +271,6 @@ const About = () => {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     gap: 30px;
-                    margin-top: 30px;
                 }
                 
                 .exec-slot {

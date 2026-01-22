@@ -7,84 +7,86 @@ import dis2Img from '../assets/dis2.jpg'
 import dis3Img from '../assets/dis3.jpg'
 
 const ProductShowcase = () => {
-  const { t } = useLanguage()
-  const [activeSet, setActiveSet] = useState(0)
+   const { t } = useLanguage()
+   const [activeSet, setActiveSet] = useState(0)
 
-  // Get product sets from translations and add images
-  const baseProducts = t('productShowcase.sets')
-  const productSets = [
-    {
-      ...baseProducts[0],
-      items: baseProducts[0].items.map((item, idx) => ({
-        ...item,
-        img: idx === 0 ? dis1Img : idx === 1 ? dis2Img : dis3Img
-      }))
-    },
-    {
-      ...baseProducts[1],
-      items: baseProducts[1].items.map((item, idx) => ({
-        ...item,
-        img: idx === 0 ? 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600' : idx === 1 ? 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=600' : 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=600'
-      }))
-    }
-  ]
+   // Get product sets from translations and add images
+   const baseProducts = t('productShowcase.sets', { returnObjects: true })
+   if (!baseProducts || !Array.isArray(baseProducts)) return null;
 
-  return (
-    <section className="product-showcase-corporate section-padding">
-      <div className="container">
+   const productSets = [
+      {
+         ...baseProducts[0],
+         items: baseProducts[0].items.map((item, idx) => ({
+            ...item,
+            img: idx === 0 ? dis1Img : idx === 1 ? dis2Img : dis3Img
+         }))
+      },
+      {
+         ...baseProducts[1],
+         items: baseProducts[1].items.map((item, idx) => ({
+            ...item,
+            img: idx === 0 ? 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600' : idx === 1 ? 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=600' : 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=600'
+         }))
+      }
+   ]
 
-        <div className="showcase-header">
-          <div className="header-left">
-            <span className="overline-light">{t('productShowcase.overline')}</span>
-            <h2 className="title-light">{t('productShowcase.title')}</h2>
-          </div>
+   return (
+      <section className="product-showcase-corporate section-padding">
+         <div className="container">
 
-          <div className="header-controls">
-            {productSets.map((set, i) => (
-              <button
-                key={i}
-                className={`tab-btn ${activeSet === i ? 'active' : ''}`}
-                onClick={() => setActiveSet(i)}
-              >
-                {set.category}
-              </button>
-            ))}
-          </div>
-        </div>
+            <div className="showcase-header">
+               <div className="header-left">
+                  <span className="overline-light">{t('productShowcase.overline')}</span>
+                  <h2 className="title-light">{t('productShowcase.title')}</h2>
+               </div>
 
-        <div className="showcase-content">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeSet}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="products-grid"
-            >
-              {productSets[activeSet].items.map((item, idx) => (
-                <div key={idx} className="project-card">
-                  <div className="card-bg">
-                    <img src={item.img} alt={item.name} />
-                    <div className="card-overlay"></div>
-                  </div>
-                  <div className="card-info">
-                    <span className="card-spec">{item.spec}</span>
-                    <h3>{item.name}</h3>
-                    <div className="card-hover-detail">
-                      <div className="divider-w"></div>
-                      <p>{item.detail}</p>
-                      <span className="view-link">{t('productShowcase.viewProduct')} <ArrowRight size={16} /></span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
+               <div className="header-controls">
+                  {productSets.map((set, i) => (
+                     <button
+                        key={i}
+                        className={`tab-btn ${activeSet === i ? 'active' : ''}`}
+                        onClick={() => setActiveSet(i)}
+                     >
+                        {set.category}
+                     </button>
+                  ))}
+               </div>
+            </div>
 
-      <style jsx>{`
+            <div className="showcase-content">
+               <AnimatePresence mode="wait">
+                  <motion.div
+                     key={activeSet}
+                     initial={{ opacity: 0, y: 20 }}
+                     animate={{ opacity: 1, y: 0 }}
+                     exit={{ opacity: 0, y: -20 }}
+                     transition={{ duration: 0.5 }}
+                     className="products-grid"
+                  >
+                     {productSets[activeSet].items.map((item, idx) => (
+                        <div key={idx} className="project-card">
+                           <div className="card-bg">
+                              <img src={item.img} alt={item.name} />
+                              <div className="card-overlay"></div>
+                           </div>
+                           <div className="card-info">
+                              <span className="card-spec">{item.spec}</span>
+                              <h3>{item.name}</h3>
+                              <div className="card-hover-detail">
+                                 <div className="divider-w"></div>
+                                 <p>{item.detail}</p>
+                                 <span className="view-link">{t('productShowcase.viewProduct')} <ArrowRight size={16} /></span>
+                              </div>
+                           </div>
+                        </div>
+                     ))}
+                  </motion.div>
+               </AnimatePresence>
+            </div>
+         </div>
+
+         <style jsx>{`
         .product-showcase-corporate {
           background: #002b49; /* Deep Corporate Navy */
           color: white;
@@ -274,8 +276,8 @@ const ProductShowcase = () => {
            }
         }
       `}</style>
-    </section>
-  )
+      </section>
+   )
 }
 
 export default ProductShowcase

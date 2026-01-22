@@ -99,53 +99,39 @@ const Products = () => {
                 }
 
                 .prod-header {
-                    background: linear-gradient(135deg, rgba(0, 31, 53, 0.85) 0%, rgba(15, 51, 85, 0.85) 100%),
-                                url('https://images.unsplash.com/photo-1581092161562-40038e57e238?auto=format&fit=crop&q=80&w=1400') center/cover;
-                    background-attachment: fixed;
+                    background-image: radial-gradient(circle at 15% 25%, rgba(255,255,255,0.02), transparent 12%), linear-gradient(135deg, #003a57 0%, #006a86 100%);
                     color: white;
-                    padding: 140px 0 120px;
+                    padding: 140px 0 100px;
                     text-align: center;
+                    background-size: cover;
+                    background-position: center;
                     position: relative;
-                    overflow: hidden;
                 }
-                
-                .prod-header::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    right: -30%;
-                    width: 100%;
-                    height: 100%;
-                    background: radial-gradient(circle at 100% 50%, rgba(3, 102, 214, 0.1) 0%, transparent 50%);
-                    pointer-events: none;
-                }
-                
-                .prod-header .container {
-                    position: relative;
-                    z-index: 2;
-                }
-                
+
                 .prod-header h1 {
-                    color: #fff;
                     font-size: 56px;
                     font-weight: 700;
-                    margin: 16px 0;
-                    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                    margin: 12px 0;
+                    text-shadow: 0 8px 20px rgba(0,0,0,0.42);
                 }
-                
+
                 .prod-header p {
                     font-size: 18px;
-                    color: rgba(255,255,255,0.85);
-                    max-width: 600px;
+                    color: rgba(255,255,255,0.9);
+                    max-width: 680px;
                     margin: 0 auto;
-                    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
                 }
                 
                 .overline {
+                    display: inline-block;
+                    background: rgba(255,255,255,0.06);
                     color: var(--color-accent);
                     font-weight: 700;
-                    letter-spacing: 2px;
-                    font-size: 13px;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    border-radius: 999px;
+                    text-transform: uppercase;
                 }
 
                 .tab-sticky-bar {

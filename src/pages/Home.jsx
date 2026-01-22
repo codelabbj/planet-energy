@@ -1,7 +1,5 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import ProductShowcase from '../components/ProductShowcase'
-import CompatibilityTool from '../components/CompatibilityTool'
 import NetworkAtlas from '../components/NetworkAtlas'
 import Partners from '../components/Partners'
 import { useLanguage } from '../context/LanguageContext'
@@ -11,131 +9,121 @@ const Home = () => {
     return (
         <div className="home-page">
             <Hero />
+            <div className="accueil-divider"></div>
 
-            {/* Accueil / Welcome Section */}
-            <section className="accueil-section section-padding">
+            {/* Accueil Section - Full Width Title */}
+            <section className="accueil-section">
                 <div className="container">
-                    <div className="accueil-content">
-                        <h2 className="accueil-title">{t('home.accueil.title')}</h2>
-                        <div className="accueil-divider"></div>
-                        <p className="accueil-text">
-                            {t('home.accueil.description1')}
-                        </p>
-                        <p className="accueil-text">
-                            {t('home.accueil.description2')}
-                        </p>
-                        <p className="accueil-text">
-                            {t('home.accueil.description3')}
-                        </p>
+                    <div className="accueil-content-centered">
+                        <h2 className="accueil-title-full">
+                            {t('home.accueil.title')}
+                        </h2>
+                        <div className="accueil-divider-full"></div>
                     </div>
                 </div>
             </section>
 
-            {/* Corporate Intro / Stats Section */}
-            <section className="intro-corporate section-padding">
-                <div className="container intro-grid">
-                    <div className="intro-text">
-                        <span className="overline-corporate">{t('home.intro.overline')}</span>
-                        <h2 className="section-title-corporate">{t('home.intro.title')}</h2>
-                        <p className="intro-desc">
-                            {t('home.intro.description')}
-                        </p>
+            <div className="accueil-divider"></div>
 
-                        <div className="corporate-stats-row">
-                            <div className="stat-item">
-                                <span className="stat-number">20+</span>
-                                <span className="stat-label">{t('home.intro.stats.years')}</span>
+
+            {/* Corporate Intro Section */}
+            <section className="corporate-intro">
+                <div className="container">
+                    <div className="intro-grid">
+                        <div className="intro-text-column">
+                            <span className="overline">{t('home.intro.overline')}</span>
+                            <h2 className="section-title-corporate">{t('home.intro.title')}</h2>
+                            <p className="intro-description">
+                                {t('home.intro.description')}
+                            </p>
+
+                            <div className="corporate-stats-row">
+                                <div className="stat-item">
+                                    <span className="stat-number">10+</span>
+                                    <span className="stat-label">{t('home.intro.stats.years')}</span>
+                                </div>
+                                <div className="stat-item">
+                                    <span className="stat-number">3</span>
+                                    <span className="stat-label">{t('home.intro.stats.countries')}</span>
+                                </div>
+                                <div className="stat-item">
+                                    <span className="stat-number">24/7</span>
+                                    <span className="stat-label">{t('home.intro.stats.support')}</span>
+                                </div>
                             </div>
-                            <div className="stat-item">
-                                <span className="stat-number">5GW</span>
-                                <span className="stat-label">{t('home.intro.stats.power')}</span>
-                            </div>
-                            <div className="stat-item">
-                                <span className="stat-number">15</span>
-                                <span className="stat-label">{t('home.intro.stats.offices')}</span>
+                        </div>
+                        <div className="intro-image-block">
+                            <div className="reach-map-container">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/2000px-World_map_blank_without_borders.svg.png"
+                                    alt="Global Map"
+                                    className="map-graphic"
+                                    style={{ opacity: 0.1 }}
+                                />
+                                <div className="map-dots">
+                                    <div className="map-dot" style={{ top: '30%', left: '48%' }} title="Germany"></div>
+                                    <div className="map-dot" style={{ top: '55%', left: '48%' }} title="Benin"></div>
+                                    <div className="map-dot" style={{ top: '58%', left: '52%' }} title="Ghana"></div>
+                                    <div className="map-dot" style={{ top: '45%', left: '70%' }} title="India"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="intro-image-block">
-                        <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-                            alt="Corporate Office"
-                            className="corp-img-main"
-                        />
-                        <div className="corp-img-accent"></div>
-                    </div>
                 </div>
             </section>
 
+            <div className="accueil-divider-full"></div>
+
             <style jsx>{`
                 .accueil-section {
-                    background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
-                    color: var(--color-text);
+                    padding: 60px 0;
+                    background: #fff;
                 }
                 
-                .accueil-content {
-                    max-width: 900px;
-                    margin: 0 auto;
+                .accueil-content-centered {
+                    text-align: left;
+                    width: 100%;
                 }
                 
-                .accueil-title {
-                    font-size: 42px;
-                    font-weight: 700;
-                    color: var(--color-primary);
-                    line-height: 1.3;
-                    margin-bottom: 32px;
+                .accueil-title-full {
                     font-family: 'Outfit', sans-serif;
+                    font-size: 32px;
+                    color: var(--color-primary);
+                    margin: 0;
+                    padding-bottom: 20px;
+                    width: 100%;
+                    line-height: 1.3;
+                    font-weight: 600;
                 }
                 
-                .accueil-divider {
-                    width: 80px;
+                .accueil-divider-full {
                     height: 4px;
                     background: var(--color-accent);
-                    margin-bottom: 32px;
+                    width: 100%;
                     border-radius: 2px;
                 }
                 
-                .accueil-text {
-                    font-size: 16px;
-                    line-height: 1.8;
-                    color: #475569;
-                    margin-bottom: 24px;
-                    font-weight: 500;
-                    white-space: pre-wrap;
-                    word-wrap: break-word;
-                }
-                
-                .accueil-text:last-child {
-                    margin-bottom: 0;
-                }
-                
-                @media (max-width: 768px) {
-                    .accueil-title {
-                        font-size: 32px;
-                    }
-                    .accueil-text {
-                        font-size: 15px;
-                    }
+                .accueil-divider {
+                    height: 1px;
+                    background: rgba(0,0,0,0.1);
+                    width: 100%;
+                    max-width: 1100px;
+                    margin: 0 auto;
                 }
 
-                .intro-corporate {
-                    background-color: var(--color-bg); /* White/Light background */
-                    color: var(--color-text);
-                }
-                
                 .intro-grid {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 80px;
                     align-items: center;
+                    padding: 80px 0;
                 }
                 
-                .intro-text {
-                    max-width: 600px;
+                .corporate-intro {
+                    padding-top: 100px;
                 }
                 
-                .overline-corporate {
+                .overline {
                     color: var(--color-accent);
                     font-weight: 700;
                     font-size: 13px;
@@ -155,11 +143,12 @@ const Home = () => {
                     font-weight: 700;
                 }
                 
-                .intro-desc {
+                .intro-description {
                     font-size: 18px;
                     line-height: 1.7;
-                    color: var(--color-text-light); /* Dark grey */
+                    color: var(--color-text-light);
                     margin-bottom: 48px;
+                    white-space: pre-line;
                 }
                 
                 .corporate-stats-row {
@@ -197,9 +186,11 @@ const Home = () => {
                 
                 .corp-img-main {
                     width: 100%;
-                    border-radius: 4px; /* Slight round, mostly square corporate */
+                    border-radius: 4px;
                     position: relative;
                     z-index: 2;
+                    background: #f8f9fa;
+                    padding: 20px;
                     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
                 }
                 
@@ -213,205 +204,144 @@ const Home = () => {
                     z-index: 1;
                     border-radius: 4px;
                 }
+
+                .reach-map-container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
                 
+                .map-graphic {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                
+                .map-dots {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                }
+                
+                .map-dot {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: var(--color-accent);
+                    border-radius: 50%;
+                    box-shadow: 0 0 15px var(--color-accent);
+                }
+                
+                /* Split Layout Styles */
+                .split-layout {
+                    display: flex;
+                    align-items: center;
+                    gap: 80px;
+                    padding: 80px 0;
+                }
+                
+                .split-layout.reverse {
+                    flex-direction: row-reverse;
+                }
+                
+                .split-image {
+                    flex: 1;
+                    position: relative;
+                }
+                
+                .feature-img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                }
+                
+                .split-content {
+                    flex: 1;
+                }
+                
+                .split-description {
+                    font-size: 18px;
+                    line-height: 1.7;
+                    color: var(--color-text);
+                    white-space: pre-line;
+                }
+
                 @media (max-width: 1024px) {
-                    .intro-grid {
+                    .intro-grid, .split-layout {
                         grid-template-columns: 1fr;
-                        gap: 50px;
+                        flex-direction: column;
+                        gap: 40px;
                     }
-                    .section-title-corporate {
-                        font-size: 36px;
+                    .split-layout.reverse {
+                        flex-direction: column;
                     }
-                    .corporate-stats-row {
-                        gap: 24px;
+                    .feature-img {
+                        height: 300px;
+                    }
+                    .accueil-title-full {
+                        white-space: normal;
                     }
                 }
             `}</style>
 
 
-            <ProductShowcase />
-
-            {/* Global Reach Section - Light Theme */}
-            <section className="global-reach-corporate">
+            {/* Connection International Section */}
+            <section className="connection-section">
                 <div className="container">
-                    <div className="reach-grid">
-                        <div className="reach-content">
-                            <span className="overline-dark">{t('home.reach.overline')}</span>
-                            <h2 className="title-dark">{t('home.reach.title')}</h2>
-                            <p className="reach-desc">
-                                {t('home.reach.description')}
-                            </p>
-
-                            <div className="reach-stats">
-                                <div className="r-stat">
-                                    <span className="r-val">3</span>
-                                    <span className="r-label">{t('home.reach.stats.continents')}</span>
-                                </div>
-                                <div className="r-stat">
-                                    <span className="r-val">12+</span>
-                                    <span className="r-label">{t('home.reach.stats.hubs')}</span>
-                                </div>
-                                <div className="r-stat">
-                                    <span className="r-val" style={{ color: 'var(--color-accent)' }}>24/7</span>
-                                    <span className="r-label">{t('home.reach.stats.support')}</span>
-                                </div>
-                            </div>
-
-                            <button className="btn-link-dark">
-                                {t('home.reach.button')} <span className="arrow">→</span>
-                            </button>
-                        </div>
-
-                        <div className="reach-map-container">
-                            {/* Stylized Abstract Map - Placeholder or CSS visual */}
+                    <div className="split-layout">
+                        <div className="split-image">
                             <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/2000px-World_map_blank_without_borders.svg.png"
-                                alt="Global Map"
-                                className="map-graphic"
-                                style={{ opacity: 0.1 }}
+                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                                alt="International Partnership"
+                                className="feature-img"
                             />
-                            <div className="map-dots">
-                                {/* Example Hotspots */}
-                                <div className="map-dot" style={{ top: '30%', left: '48%' }} title="Germany"></div>
-                                <div className="map-dot" style={{ top: '55%', left: '48%' }} title="Benin"></div>
-                                <div className="map-dot" style={{ top: '58%', left: '52%' }} title="Ghana"></div>
-                                <div className="map-dot" style={{ top: '45%', left: '70%' }} title="India"></div>
-                            </div>
+                        </div>
+                        <div className="split-content">
+                            <span className="overline">{t('home.connection.overline')}</span>
+                            <h2 className="section-title-corporate">{t('home.connection.title')}</h2>
+                            <p className="split-description">
+                                {t('home.connection.description')}
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* <CompatibilityTool /> */}
+            <div className="accueil-divider-full"></div>
+
+            {/* Mission Section */}
+            <section className="mission-section">
+                <div className="container">
+                    <div className="split-layout">
+                        <div className="split-content">
+                            <span className="overline">{t('home.mission.overline')}</span>
+                            <h2 className="section-title-corporate">{t('home.mission.title')}</h2>
+                            <p className="split-description">
+                                {t('home.mission.description')}
+                            </p>
+                        </div>
+                        <div className="split-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                                alt="Sustainable Mission"
+                                className="feature-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="accueil-divider-full"></div>
 
             <Partners />
             {/* NetworkAtlas removed as it's redundant with the cleaner Global Reach section for simple home page */}
 
-            <style jsx>{`
-                .global-reach-corporate {
-                    background: #f4f4f5; /* Light Grey */
-                    padding: 120px 0;
-                    overflow: hidden;
-                }
-                
-                .reach-grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1.5fr;
-                    gap: 60px;
-                    align-items: center;
-                }
-                
-                .overline-dark {
-                    color: var(--color-accent);
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    font-size: 13px;
-                    display: block;
-                    margin-bottom: 24px;
-                    font-family: 'Outfit', sans-serif;
-                }
-                
-                .title-dark {
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 48px;
-                    color: var(--color-primary);
-                    line-height: 1.1;
-                    margin-bottom: 32px;
-                    font-weight: 700;
-                }
-                
-                .reach-desc {
-                    color: var(--color-text-light);
-                    font-size: 18px;
-                    margin-bottom: 48px;
-                    max-width: 500px;
-                    line-height: 1.6;
-                }
-                
-                .reach-stats {
-                    display: flex;
-                    gap: 60px;
-                    margin-bottom: 50px;
-                }
-                
-                .r-val {
-                    display: block;
-                    font-size: 36px;
-                    font-weight: 700;
-                    color: var(--color-primary);
-                    font-family: 'Outfit', sans-serif;
-                }
-                
-                .r-label {
-                    font-size: 13px;
-                    color: #64748b;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
-                    font-weight: 600;
-                }
-                
-                .btn-link-dark {
-                    background: none;
-                    border: none;
-                    padding: 0;
-                    color: var(--color-primary);
-                    font-weight: 700;
-                    font-size: 16px;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                    transition: gap 0.2s;
-                    font-family: 'Outfit', sans-serif;
-                }
-                
-                .btn-link-dark:hover {
-                    gap: 16px;
-                    color: var(--color-accent);
-                }
-                
-                .reach-map-container {
-                    position: relative;
-                    height: 500px;
-                }
-                
-                .map-graphic {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                    filter: grayscale(100%);
-                }
-                
-                .map-dot {
-                    position: absolute;
-                    width: 12px;
-                    height: 12px;
-                    background: var(--color-accent);
-                    border-radius: 50%;
-                    transform: translate(-50%, -50%);
-                    box-shadow: 0 0 0 4px rgba(255, 140, 0, 0.2);
-                    animation: pulse 2s infinite;
-                }
-                
-                @keyframes pulse {
-                    0% { box-shadow: 0 0 0 0 rgba(255, 140, 0, 0.4); }
-                    70% { box-shadow: 0 0 0 15px rgba(255, 140, 0, 0); }
-                    100% { box-shadow: 0 0 0 0 rgba(255, 140, 0, 0); }
-                }
-
-                @media (max-width: 1024px) {
-                    .reach-grid {
-                        grid-template-columns: 1fr;
-                    }
-                    .reach-map-container {
-                        height: 300px;
-                        order: -1; /* Map on top for mobile? Or stick to bottom. Let's keep distinct. */
-                    }
-                    .title-dark {
-                        font-size: 36px;
-                    }
-                }
-            `}</style>
         </div>
     )
 }
