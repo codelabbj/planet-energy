@@ -28,6 +28,25 @@ import imc1 from '../assets/IM C1.jpg'
 import imc2 from '../assets/IM C2.jpg'
 import imc3 from '../assets/IM C3.jpg'
 
+// PDF Imports
+import pdf11201 from '../assets/HELUKABEL_M11201_FR_FR.pdf'
+import pdf11656 from '../assets/HELUKABEL_M11656_FR_FR.pdf'
+import pdf12723 from '../assets/HELUKABEL_M12723_FR_FR.pdf'
+import pdf12850 from '../assets/HELUKABEL_M12850_FR_FR.pdf'
+import pdf31001 from '../assets/HELUKABEL_M31001_FR_FR.pdf'
+import pdf37001 from '../assets/HELUKABEL_M37001_FR_FR.pdf'
+import pdf38501 from '../assets/HELUKABEL_M38501_FR_FR.pdf'
+import pdf51768 from '../assets/HELUKABEL_M51768_FR_FR.pdf'
+import pdf52630 from '../assets/HELUKABEL_M52630_FR_FR.pdf'
+import pdf64123 from '../assets/HELUKABEL_M64123_FR_FR.pdf'
+
+import h1 from '../assets/H1.pdf'
+import h2 from '../assets/H2.pdf'
+import h3 from '../assets/H3.pdf'
+import h4 from '../assets/H4.pdf'
+import h5 from '../assets/H5.pdf'
+import h6 from '../assets/H6.pdf'
+
 import '../styles/CablesLanding.css'
 
 const CablesLanding = () => {
@@ -39,7 +58,7 @@ const CablesLanding = () => {
     const slideData = [
         {
             image: heroImg,
-            title: "PLANET ENERGYS SYSTEMS",
+            title: "PLANET ENERGY SYSTEMS",
             subtitle: "DISTRIBUTEUR EXCLUSIF DE HELUKABEL AU BENIN",
             hasButton: false
         },
@@ -57,7 +76,7 @@ const CablesLanding = () => {
             subtitle: "Des solutions robustes pour les environnements exigeants",
             hasButton: true,
             btnText: "DÉCOUVRIR",
-            link: "/products/cables"
+            pdf: h5
         },
         {
             image: im2,
@@ -65,7 +84,7 @@ const CablesLanding = () => {
             subtitle: "Solutions de câblage pour le solaire et l'éolien",
             hasButton: true,
             btnText: "DÉCOUVRIR",
-            link: "/products/cables"
+            pdf: h6
         },
         {
             image: im3,
@@ -79,6 +98,20 @@ const CablesLanding = () => {
 
     const consultedImages = [picc1, pic2, pic3, pic4, pic9, pic10, pic11]
     const halogenFreeImages = [pic5, pic6, pic7, pic8]
+
+    // PDF Mappings (matching the order of products in translations.js)
+    const consultedPdfs = [pdf37001, pdf52630, pdf12850, pdf38501, pdf51768, pdf64123, pdf31001]
+    const halogenFreePdfs = [pdf11201, pdf11656, pdf12723, null]
+
+    // Additional PDFs for movement category cards
+    const movementFeaturedPdf = h1
+    const movementSubPdfs = [h2, h3, h4]
+
+    const handleViewPdf = (pdfUrl) => {
+        if (pdfUrl) {
+            window.open(pdfUrl, '_blank')
+        }
+    }
 
     const scroll = (direction) => {
         if (scrollRef.current) {
@@ -142,9 +175,18 @@ const CablesLanding = () => {
                                         transition={{ delay: 0.7, duration: 0.6 }}
                                         className="carousel-cta-container"
                                     >
-                                        <Link to={slideData[currentSlide].link} className="carousel-btn premium">
-                                            {slideData[currentSlide].btnText} <ChevronRight size={20} />
-                                        </Link>
+                                        {slideData[currentSlide].pdf ? (
+                                            <button
+                                                className="carousel-btn premium"
+                                                onClick={() => handleViewPdf(slideData[currentSlide].pdf)}
+                                            >
+                                                {slideData[currentSlide].btnText} <ChevronRight size={20} />
+                                            </button>
+                                        ) : (
+                                            <Link to={slideData[currentSlide].link} className="carousel-btn premium">
+                                                {slideData[currentSlide].btnText} <ChevronRight size={20} />
+                                            </Link>
+                                        )}
                                     </motion.div>
                                 )}
                             </div>
@@ -237,7 +279,12 @@ const CablesLanding = () => {
                             <div className="card-content">
                                 <h2>{t('cablingLanding.sections.movement.featured.title')}</h2>
                                 <p>{t('cablingLanding.sections.movement.featured.subtitle')}</p>
-                                <button className="terracotta-btn">{t('cablingLanding.sections.movement.featured.btn')}</button>
+                                <button
+                                    className="terracotta-btn"
+                                    onClick={() => handleViewPdf(movementFeaturedPdf)}
+                                >
+                                    {t('cablingLanding.sections.movement.featured.btn')}
+                                </button>
                             </div>
                         </motion.div>
 
@@ -258,7 +305,12 @@ const CablesLanding = () => {
                                 <div className="card-content">
                                     <h3>{card.title}</h3>
                                     <p>{card.subtitle}</p>
-                                    <button className="terracotta-btn">{card.btn}</button>
+                                    <button
+                                        className="terracotta-btn"
+                                        onClick={() => handleViewPdf(movementSubPdfs[idx])}
+                                    >
+                                        {card.btn}
+                                    </button>
                                 </div>
                             </motion.div>
                         ))}
@@ -305,7 +357,12 @@ const CablesLanding = () => {
                                                 <span className="badge-placeholder"></span>
                                             </div>
                                         </div>
-                                        <button className="terracotta-btn-outline">{t('cablingLanding.sections.catalog.consulted.btn')}</button>
+                                        <button
+                                            className="terracotta-btn-outline"
+                                            onClick={() => handleViewPdf(consultedPdfs[idx])}
+                                        >
+                                            {t('cablingLanding.sections.catalog.consulted.btn')}
+                                        </button>
                                     </motion.div>
                                 ))}
                             </div>
@@ -332,7 +389,12 @@ const CablesLanding = () => {
                                         <h4 className="product-name">{product.name}</h4>
                                         <p className="product-desc">{product.desc}</p>
                                     </div>
-                                    <button className="terracotta-btn-outline">{t('cablingLanding.sections.catalog.halogenFree.btn')}</button>
+                                    <button
+                                        className="terracotta-btn-outline"
+                                        onClick={() => handleViewPdf(halogenFreePdfs[idx])}
+                                    >
+                                        {t('cablingLanding.sections.catalog.halogenFree.btn')}
+                                    </button>
                                 </motion.div>
                             ))}
                         </div>

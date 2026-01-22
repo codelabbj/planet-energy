@@ -79,7 +79,7 @@ const Footer = () => {
          {/* Footer Bottom */}
          <div className="footer-bottom">
             <div className="container bottom-flex">
-               <p>&copy; {new Date().getFullYear()} Planet Energy. {t('footer.rights')}</p>
+               <p>&copy; {new Date().getFullYear()} Planet Energy System. {t('footer.rights')}</p>
                <div className="legal-links">
                   {/* <Link to="/legal">{t('footer.links.terms')}</Link> */}
                   <Link to="/legal">{t('footer.links.privacy')}</Link>

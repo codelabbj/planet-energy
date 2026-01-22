@@ -3,11 +3,29 @@ import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 import heroImg from '../assets/Cableeee.jpg'
+import pdfH7 from '../assets/H7.pdf'
+import pdfHelukabel from '../assets/HELUKABEL_WB_M15001_EN_GB.pdf'
 import '../styles/CableNews.css'
 
 const CableNews = () => {
     const { t } = useLanguage()
     const navigate = useNavigate()
+
+    const handleDownloadAll = () => {
+        const files = [
+            { url: pdfH7, name: 'H7_Technical_Sheet.pdf' },
+            { url: pdfHelukabel, name: 'HELUKABEL_White_Paper.pdf' }
+        ];
+
+        files.forEach(file => {
+            const link = document.createElement('a');
+            link.href = file.url;
+            link.download = file.name;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    };
 
     return (
         <motion.div
@@ -24,6 +42,11 @@ const CableNews = () => {
                 </div> */}
 
                 <h1 className="article-title">{t('cableArticle.title')}</h1>
+                <div className="download-section">
+                    <button onClick={handleDownloadAll} className="download-link-btn">
+                        {t('cableArticle.downloadText')}
+                    </button>
+                </div>
                 <p className="article-intro">{t('cableArticle.intro')}</p>
 
                 <div className="article-hero">

@@ -69,11 +69,11 @@ const About = () => {
 
                         {/* Executive Slots */}
                         <div className="exec-grid">
-                            {[t('about.leadership.executives.technical'), t('about.leadership.executives.financial'), t('about.leadership.executives.legal')].map((role, i) => (
-                                <div key={i} className="exec-slot">
+                            {['deputy', 'legal', 'financial', 'technical', 'commercial', 'service'].map((key) => (
+                                <div key={key} className="exec-slot">
                                     <div className="slot-icon"><Briefcase size={20} /></div>
-                                    <h4>{role}</h4>
-                                    <span>{t('about.leadership.executives.board')}</span>
+                                    <h4>{t(`about.leadership.executives.${key}`)}</h4>
+                                    <span>{t('about.leadership.executives.nomination')}</span>
                                 </div>
                             ))}
                         </div>
@@ -269,7 +269,7 @@ const About = () => {
 
                 .exec-grid {
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
                     gap: 30px;
                 }
                 

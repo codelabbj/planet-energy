@@ -45,30 +45,32 @@ export const translations = {
         about: {
             hero: {
                 overline: "COMPANY PROFILE",
-                title: "About us"
+                title: "About Us"
             },
             main: {
                 title: "Bridging German Precision with Local Expertise.",
-                description1: "Planet Energy Systems is a premier Benino-German enterprise delivering innovative solutions in electrical infrastructure, high-voltage telecommunications, and industrial automation.",
-                description2: "Our team combines European engineering standards with deep African market insights. Founded in 2000, we have grown from a specialized consultancy to a full-service EPC partner, ensuring reliable power supply for industries and utilities across the continent.",
+                description1: "Planet Energy Systems is a Beninese-German company offering innovative solutions in the supply of low and high voltage electrical and telecommunications equipment across all sectors, security systems (Smart Home), and O&M monitoring with SCADA remote surveillance for all our installations.",
+                description2: "Our team is comprised of European and African employees who bring proven expertise in the aforementioned fields and within the framework of international projects. Through collaboration with our German partners, we are an international network offering comprehensive and appropriate solutions in our fields of activity. In Africa specifically, this is a challenging task, but we take on the challenge with the goal of creating jobs and enriching training in this field. Our work's drive and goal are to ensure a reliable energy supply worldwide, particularly on the African continent, with stable electrical grids to help citizens achieve independent and sustainable development.",
                 stats: {
                     years: "Years Active",
                     projects: "Major Projects"
                 }
             },
             leadership: {
-                title: "Leadership",
+                title: "Team",
                 founder: {
                     name: "Mauriel Ahodi",
-                    role: "Founder, President and Chief Executive Officer",
-                    bio: "Mauriel Ahodi was born and raised in Benin. In 2008, he began his studies as an electrical engineering technician at the Technical University of Berlin. Throughout his studies, he worked for four (04) years at Skytron Energy GmbH as a system analyst in the O&M department and as a Project Engineer for solar power plants. In 2015 he was International Director of Renewable Energy at Luxra AG. During his youth, he identified the need to modernize Benin's electrical networks, his native country, and the integration of renewable energy to meet long-term energy needs safely. Thus, after his studies, he decided to dedicate himself to his great dream of solving the energy problems of Benin and other African countries to achieve a sustainable future and development. Thus, Mr. Mauriel Romaric AHODI, following the creation of the international company Planet Energy Systems, specialized in renewable energies, decided to put the skills and experience acquired during his professional journey at the service of the direction of this company in relation with its German partners."
+                    role: "Founder, President & CEO",
+                    bio: "Mauriel Ahodi was born and raised in Benin. In 2008, he began his electrical engineering studies at the Technical University of Berlin. Alongside his studies, he worked for four (04) years at Skytron Energy GmbH as a systems analyst in the O&M department and as a project engineer for solar power plants. In 2015, he was International Director of Renewable Energy at Luxra AG. Since his youth, he identified the need for modernizing electrical grids in Benin, his native country, and integrating renewable energy to meet energy needs long-term and safely. Thus, after his studies, he decided to devote himself to his great dream of solving energy problems in Benin and other African countries to achieve a sustainable future and development. M. Mauriel Romaric AHODI, following the creation of the international company Planet Energy Systems specializing in renewable energies, decided to put the skills and experience acquired during his career at the service of this company in partnership with its German counterparts."
                 },
                 executives: {
-                    technical: "Technical Director",
+                    deputy: "Deputy Director",
+                    legal: "Legal Director",
                     financial: "Financial Director",
+                    technical: "Technical Director",
                     commercial: "Commercial Director",
-                    chef: "Technical Service Manager",
-                    board: "Under Appointment"
+                    service: "Technical Service Manager",
+                    nomination: "Under Appointment"
                 }
             },
             imageCaption: "Berlin, Germany Headquarters"
@@ -245,7 +247,7 @@ export const translations = {
             },
             intro: {
                 overline: "QUI SOMMES NOUS",
-                title: "Nous sommes une société internationale qui vous propose des solutions intelligente et innovantes",
+                title: "Nous sommes une société internationale qui vous propose des solutions intelligentes et innovantes",
                 description: "",
                 stats: {
                     years: "years",
@@ -316,19 +318,19 @@ export const translations = {
                         { title: "ROBOTICS", subtitle: "Flexible cables for high dynamics.", btn: "DISCOVER" }
                     ]
                 },
-                 catalog: {
+                catalog: {
                     consulted: {
                         title: "Most viewed products",
                         subtitle: "Other customers have frequently viewed these items",
                         btn: "View article",
                         products: [
-                            { name: "H07RN-F black 3 G 1.5 mm²", artNo: "37028" },
-                            { name: "HELUTHERM® 145 MULTI black 4 G 2.5 mm²", artNo: "53474" },
-                            { name: "HELUTHERM® 145 black 1 x 1.5 mm²", artNo: "51323" },
-                            { name: "NSGAFÖU 1.8/3 kV BLACK 1 x 2.5 mm²", artNo: "38502" },
+                            { name: "H07RN-F black 3 G 1.5 mm²", artNo: "37001" },
+                            { name: "HELUTHERM® 145 MULTI black 4 G 2.5 mm²", artNo: "52630" },
+                            { name: "HELUTHERM® 145 black 1 x 1.5 mm²", artNo: "12850" },
+                            { name: "NSGAFÖU 1.8/3 kV BLACK 1 x 2.5 mm²", artNo: "38501" },
                             { name: "H07Z-K black 1 x 1.5 mm²", artNo: "51768" },
-                            { name: "FIVENORM H07V2-K black 1 x 2.5 mm²", artNo: "64139" },
-                            { name: "H01N2-D black 1 x 16 mm²", artNo: "31002" }
+                            { name: "FIVENORM H07V2-K black 1 x 2.5 mm²", artNo: "64123" },
+                            { name: "H01N2-D black 1 x 16 mm²", artNo: "31001" }
                         ]
                     },
                     halogenFree: {
@@ -348,6 +350,7 @@ export const translations = {
         cableArticle: {
             breadcrumb: "Newsroom",
             title: "Flame resistance for halogen-free cables",
+            downloadText: "Product technical data sheet downloads.",
             intro: "Halogen-free cables are mandatory in many industrial and infrastructure applications. Over time, different designations have been established, such as FRNC, HFFR, LS0H, or LSZH. But what is the meaning of these abbreviations and what are the advantages of halogen-free cables compared to halogen-containing products? Planet Energy informs you.",
             section1: {
                 title: "What are halogens?",
@@ -439,30 +442,33 @@ export const translations = {
         },
         about: {
             hero: {
-                overline: "PROFIL DE L'ENTREPRISE",
-                title: "A propos"
+                overline: "PROFIL DE LA SOCIÉTÉ",
+                title: "À propos"
             },
             main: {
                 title: "Allier la Précision Allemande à l'Expertise Locale.",
-                description1: "Planet Energy Systems est une entreprise bénino-allemande de premier plan offrant des solutions innovantes dans l'infrastructure électrique, les télécommunications haute tension et l'automatisation industrielle.",
-                description2: "Notre équipe combine les normes d'ingénierie européennes avec une profonde connaissance du marché africain. Fondée en 2000, nous avons évolué d'un cabinet de conseil spécialisé vers un partenaire EPC à service complet, garantissant un approvisionnement énergétique fiable pour les industries et les services publics du continent.",
+                description1: "Planet Energy Systems est une entreprise Bénino-Allemande offrant des solutions innovantes dans la fourniture des matériels électriques et télécommunication basse et haute tensions dans tous les secteurs d’activités, les systèmes de sécurité (Smart Home) et le suivi 0&M avec une télésurveillance par SCADA pour toutes nos installations.",
+                description2: "Notre équipe est composée d'employés européens et africains qui apportent une expertise avérée dans le domaine sus-indiqué et dans le cadre des projets internationaux. Grâce à la collaboration avec nos partenaires Allemands, nous sommes un réseau international qui vous offre des solutions complètes et appropriées dans nos domaines d’activités. En particulier en Afrique, cela est une tâche difficile, mais nous relevons le défi dans le but de créer des emplois et d’enrichir la formation dans ce domaine. La conduite et le but de notre travail est d'assurer un bon approvisionnement énergétique dans le monde, et particulièrement sur le continent Africain, avec des réseaux électriques très stables afin d'aider les citoyens à réaliser un développement indépendante et durable.",
                 stats: {
                     years: "Années Actives",
                     projects: "Projets Majeurs"
                 }
             },
             leadership: {
-                title: "Direction",
+                title: "Team",
                 founder: {
                     name: "Mauriel Ahodi",
-                    role: "Fondateur & PDG",
-                    bio: "Ingénieur électricien diplômé de la TU Berlin avec plus de 15 ans d'expérience dans les systèmes O&M et les énergies renouvelables chez des entreprises allemandes comme Skytron Energy et Luxra AG. Mauriel a créé Planet Energy pour apporter une stabilité énergétique durable en Afrique de l'Ouest."
+                    role: "Fondateur, Président et Directeur Général",
+                    bio: "Mauriel Ahodi né et grandi au bénin. En 2008, il a commencé ses études d’ingénieur en électrotechnique à l'Université Technique de Berlin. Parallèlement durant ses études, il a travaillé pendant quatre (04) ans dans la société Skytron Energy GmbH en tant qu'analyste système dans le département O & M et comme Ingénieur de projets pour des centrales solaires. En 2015 il a été directeur international des énergies renouvelables dans la société Luxra AG. Déjà pendant sa jeunesse, il a identifié la nécessité de la modernisation des réseaux électriques du Bénin son pays natal et l'intégration de l'énergie renouvelable pour répondre aux besoins énergétiques à long terme et en toute sécurité. Ainsi, après ses études, il a décidé de se consacrer sur son grand rêve qui est de résoudre les problèmes énergétiques du Bénin et des autres pays d'Afrique afin d'aboutir à un avenir et développement durable. C'est ainsi que M. Mauriel Romaric AHODI, suite à la création de la Société internationale Planet Energy Systems, spécialisée dans les énergies renouvelables, a décidé de mettre les compétences et les expériences acquises durant son parcours professionnel au service de la direction de cette entreprise en relation avec ces partenaires allemands."
                 },
                 executives: {
-                    technical: "Directeur Technique",
+                    deputy: "Directeur Adjoint",
+                    legal: "Directeur Juridique",
                     financial: "Directeur Financier",
-                    legal: "Conseil Juridique",
-                    board: "Conseil d'Administration"
+                    technical: "Directeur Technique",
+                    commercial: "Directeur Commercial",
+                    service: "Chef Service Technique",
+                    nomination: "En nomination"
                 }
             },
             imageCaption: "Siège Berlin, Allemagne"
@@ -724,13 +730,13 @@ export const translations = {
                         subtitle: "Autres clients ont fréquemment consulté ces articles",
                         btn: "Voir l'article",
                         products: [
-                            { name: "H07RN-F noir 3 G 1,5 mm²", artNo: "37028" },
-                            { name: "HELUTHERM® 145 MULTI noir 4 G 2,5 mm²", artNo: "53474" },
-                            { name: "HELUTHERM® 145 noir 1 x 1,5 mm²", artNo: "51323" },
-                            { name: "NSGAFÖU 1,8/3 kV BLACK 1 x 2,5 mm²", artNo: "38502" },
+                            { name: "H07RN-F noir 3 G 1,5 mm²", artNo: "37001" },
+                            { name: "HELUTHERM® 145 MULTI noir 4 G 2,5 mm²", artNo: "52630" },
+                            { name: "HELUTHERM® 145 noir 1 x 1,5 mm²", artNo: "12850" },
+                            { name: "NSGAFÖU 1,8/3 kV BLACK 1 x 2,5 mm²", artNo: "38501" },
                             { name: "H07Z-K noir 1 x 1,5 mm²", artNo: "51768" },
-                            { name: "FIVENORM H07V2-K noir 1 x 2,5 mm²", artNo: "64139" },
-                            { name: "H01N2-D noir 1 x 16 mm²", artNo: "31002" }
+                            { name: "FIVENORM H07V2-K noir 1 x 2,5 mm²", artNo: "64123" },
+                            { name: "H01N2-D noir 1 x 16 mm²", artNo: "31001" }
                         ]
                     },
                     halogenFree: {
@@ -750,6 +756,7 @@ export const translations = {
         cableArticle: {
             breadcrumb: "Newsroom",
             title: "Résistance à la flamme pour les câbles sans halogène",
+            downloadText: "Téléchargements de la fiche technique du produit.",
             intro: "Les câbles sans halogène sont obligatoires dans de nombreuses applications de l'industrie et de l'infrastructure. Avec le temps, différentes désignations se sont établies, comme FRNC, HFFR, LS0H ou LSZH. Mais quelle est la signification de ces abréviations et quels sont les avantages des câbles sans halogène par rapport aux produits contenant des halogènes ? Planet Energy vous informe.",
             section1: {
                 title: "Que sont les halogènes ?",
