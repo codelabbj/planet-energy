@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import NetworkAtlas from '../components/NetworkAtlas'
 import Partners from '../components/Partners'
 import { useLanguage } from '../context/LanguageContext'
+import missionImg from '../assets/mission_energy_africa.png'
 
 const Home = () => {
     const { t } = useLanguage()
@@ -61,10 +62,10 @@ const Home = () => {
                                     style={{ opacity: 0.1 }}
                                 />
                                 <div className="map-dots">
-                                    <div className="map-dot" style={{ top: '30%', left: '48%' }} title="Germany"></div>
-                                    <div className="map-dot" style={{ top: '55%', left: '48%' }} title="Benin"></div>
-                                    <div className="map-dot" style={{ top: '58%', left: '52%' }} title="Ghana"></div>
-                                    <div className="map-dot" style={{ top: '45%', left: '70%' }} title="India"></div>
+                                    <div className="map-dot" style={{ top: '20%', left: '50%' }} title="Germany"></div>
+                                    <div className="map-dot" style={{ top: '45%', left: '47%' }} title="Benin"></div>
+                                    <div className="map-dot" style={{ top: '40%', left: '45%' }} title="Ghana"></div>
+                                    {/* <div className="map-dot" style={{ top: '45%', left: '70%' }} title="India"></div> */}
                                 </div>
                             </div>
                         </div>
@@ -328,7 +329,7 @@ const Home = () => {
                         </div>
                         <div className="split-image">
                             <img
-                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                                src={missionImg}
                                 alt="Sustainable Mission"
                                 className="feature-img"
                             />
