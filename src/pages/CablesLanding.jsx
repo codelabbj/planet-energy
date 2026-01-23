@@ -68,7 +68,7 @@ const CablesLanding = () => {
             subtitle: "et sans halogène",
             hasButton: true,
             btnText: "VOIR PLUS",
-            link: "/newsroom/halogen-free-cables"
+            link: "/cables/newsroom"
         },
         {
             image: im1,

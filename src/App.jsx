@@ -16,6 +16,7 @@ import SolarPage from './pages/SolarPage'
 import HighVoltagePage from './pages/HighVoltagePage'
 import LoadingScreen from './components/LoadingScreen'
 import ScrollToTop from './components/ScrollToTop'
+import Sitemap from './pages/Sitemap'
 
 function App() {
     const [isLoading, setIsLoading] = useState(true)
@@ -50,11 +51,12 @@ function App() {
                                 <Route path="/contact" element={<Contact />} />
                                 <Route path="/operations" element={<Operations />} />
                                 <Route path="/legal" element={<Legal />} />
-                                <Route path="/newsroom/halogen-free-cables" element={<CableNews />} />
+                                <Route path="/cables/newsroom" element={<CableNews />} />
                                 <Route path="/products/cables" element={<CablesLanding />} />
                                 <Route path="/industrial" element={<IndustrialPage />} />
                                 <Route path="/solar" element={<SolarPage />} />
                                 <Route path="/high-voltage" element={<HighVoltagePage />} />
+                                <Route path="/sitemap" element={<Sitemap />} />
                             </Routes>
                         </main>
                         <Footer />

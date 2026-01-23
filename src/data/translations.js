@@ -36,7 +36,7 @@ export const translations = {
                 about: "About Us",
                 om: "O&M Services",
                 careers: "Careers",
-                news: "News & Press",
+                news: "Cables Newsroom",
                 privacy: "Privacy Policy",
                 terms: "Terms of Service",
                 sitemap: "Sitemap"
@@ -112,6 +112,18 @@ export const translations = {
                     other: "Other"
                 },
                 submit: "Send Message"
+            },
+            sitemap: {
+                hero: {
+                    title: "Sitemap",
+                    subtitle: "Full directory of Planet Energy Systems services and corporate resources."
+                },
+                sections: {
+                    corporate: "Corporate",
+                    solutions: "Energy Solutions",
+                    specialized: "Specialized Infrastructure",
+                    support: "Support & Legal"
+                }
             }
         },
         operations: {
@@ -434,7 +446,7 @@ export const translations = {
                 about: "À Propos",
                 om: "Services O&M",
                 careers: "Carrières",
-                news: "Actualités & Presse",
+                news: "Espace Presse Câbles",
                 privacy: "Politique de Confidentialité",
                 terms: "Conditions de Service",
                 sitemap: "Plan du Site"
@@ -801,6 +813,18 @@ export const translations = {
                 text: "Les câbles et les fils sans halogène présentent des avantages évidents dans de nombreuses applications critiques en matière de sécurité, car ils produisent moins de substances toxiques et de fumée en cas d'incendie. Mais en même temps, ces produits doivent présenter une résistance élevée aux flammes pour répondre à différentes normes et réglementations. En tant qu'expert en connectique électrique avec de nombreuses années d'expérience, Planet Energy se fera un plaisir de vous aider à choisir les bons câbles et les bons conducteurs."
             },
             back: "Retour"
+        },
+        sitemap: {
+            hero: {
+                title: "Plan du Site",
+                subtitle: "Répertoire complet des services de Planet Energy Systems et des ressources de l'entreprise."
+            },
+            sections: {
+                corporate: "Entreprise",
+                solutions: "Solutions Énergétiques",
+                specialized: "Infrastructures Spécialisées",
+                support: "Support & Juridique"
+            }
         }
     }
 };

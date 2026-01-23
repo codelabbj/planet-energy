@@ -48,7 +48,7 @@ const Navbar = () => {
     '/industrial',
     '/solar',
     '/high-voltage',
-    '/newsroom/halogen-free-cables',
+    '/cables/newsroom',
     '/products',
     '/legal'
   ].includes(location.pathname)
