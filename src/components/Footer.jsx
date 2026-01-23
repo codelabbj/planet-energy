@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="container bottom-flex">
                <p>&copy; {new Date().getFullYear()} Planet Energy System. {t('footer.rights')}</p>
                <div className="legal-links">
-                  {/* <Link to="/legal">{t('footer.links.terms')}</Link> */}
+                  <Link to="/legal">{t('footer.links.terms')}</Link>
                   <Link to="/legal">{t('footer.links.privacy')}</Link>
                   <Link to="/sitemap">{t('footer.links.sitemap')}</Link>
                </div>

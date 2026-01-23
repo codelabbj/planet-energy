@@ -407,6 +407,53 @@ export const translations = {
                 text: "Halogen-free cables and wires have clear advantages in many safety-critical applications, as they produce fewer toxic substances and smoke in the event of a fire. But at the same time, these products must have high flame resistance to meet different standards and regulations. As an expert in electrical connectivity with many years of experience, Planet Energy will be happy to help you choose the right cables and conductors."
             },
             back: "Back"
+        },
+        legal: {
+            impressum: {
+                title: "Terms of Use",
+                sections: {
+                    generalTerms: {
+                        heading: "1. Object",
+                        heading: "1. Object",
+                        content: "The purpose of these general conditions of use is to provide a legal framework for the terms of making the planet-es site services available and their use by the user.\nThey must be accepted by all users wishing to access the site. Access to the site by the user signifies acceptance of these T&Cs.\nPlanet-es reserves the right to unilaterally modify the content of these present conditions at any time."
+                    },
+                    legalMentions: {
+                        heading: "2. Legal Mentions",
+                        subheading: "",
+                        content: "Planet-es is a site hosted on the internet and operated by the company Planet Energy Systems SARL, located in Hai Vive - KARLS Building, Street Facing the new Brewery, Cotonou Benin; registered with the Trade and Personal Property Credit Register N° R.C.C.M. RB/ABC/16B989, N°IFU: 3201641006518, e-Mail: info@planet-es.com, Telephone: +229 69.34.55.55/69.34.66.66 and managed by a President Director General: Mauriel Ahodi;"
+                    },
+                    serviceAccess: {
+                        heading: "3. Access to Services",
+                        subheading: "",
+                        content: "The site is accessible free of charge anywhere to any user with Internet access.\nAny event due to a case of force majeure resulting in a malfunction of the network or server does not engage the responsibility of the site.\nAt any time, access may also be interrupted, suspended, modified without notice for maintenance or any other cause. The user agrees not to claim any compensation in this case. He has the possibility to contact the site by email."
+                    },
+                    intellectualProperty: {
+                        heading: "4. Intellectual Property",
+                        subheading: "",
+                        content: "Unless otherwise stated, Planet-es owns, without limit, all intellectual property rights on the content of the Website, such as source code, databases, texts, trademarks, logos, signs, images etc.\nThe user acknowledges and accepts that he cannot use, reproduce or distribute any content of the Website belonging to Planet-es without obtaining the prior authorization of the site.\mathrm{He is held solely responsible for any content he provides or downloads from the Website.\nThe user's content may be deleted or modified by the site at any time and for any reason without receiving justification and prior notification."
+                    },
+                    personalData: {
+                        heading: "5. Personal Data/Confidentiality",
+                        subheading: "",
+                        content: "The site may collect information of various natures (name, sex, email address, postal address, telephone number etc.).\nThe site assures the user of a collection and processing of personal information in respect of privacy in accordance with the requirements of the APDP.\nFurthermore, the user has a right of access, rectification, deletion and opposition of his personal data.\nThe request for access, rectification or opposition must be introduced by ordinary or electronic mail."
+                    },
+                    contentResponsibility: {
+                        heading: "6. Responsibility for Content",
+                        subheading: "",
+                        content: "The content of our pages was created with the greatest care. However, we cannot assume any liability for the correctness, completeness and topicality of the content. Furthermore, we are responsible for our own content on these pages in accordance with legal provisions. In this context, we would like to point out that we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.\nThe responsibility of the site cannot be engaged in case of force majeure or the unpredictable and insurmountable fact of a third party."
+                    },
+                    linkResponsibility: {
+                        heading: "7. Responsibility for Links",
+                        subheading: "",
+                        content: "The operators of the linked pages are solely responsible for their content. Illegal content was not recognizable at the time of linking. If we become aware of a violation of the law, we will remove these links immediately.\nThe User therefore refrains from engaging the responsibility of the site concerning the content and resources relating to these links."
+                    },
+                    copyright: {
+                        heading: "Copyright",
+                        subheading: "",
+                        content: "Our Websites and their contents are subject to Beninese copyright law. Any form of exploitation, duplication or processing of works protected by copyright on our Websites requires it, unless expressely authorized by law. Unauthorized use of works protected by copyright is a criminal offense."
+                    }
+                }
+            }
         }
     },
     fr: {
@@ -813,6 +860,53 @@ export const translations = {
                 text: "Les câbles et les fils sans halogène présentent des avantages évidents dans de nombreuses applications critiques en matière de sécurité, car ils produisent moins de substances toxiques et de fumée en cas d'incendie. Mais en même temps, ces produits doivent présenter une résistance élevée aux flammes pour répondre à différentes normes et réglementations. En tant qu'expert en connectique électrique avec de nombreuses années d'expérience, Planet Energy se fera un plaisir de vous aider à choisir les bons câbles et les bons conducteurs."
             },
             back: "Retour"
+        },
+        legal: {
+            impressum: {
+                title: "Conditions générales d’utilisation du site",
+                sections: {
+                    generalTerms: {
+                        heading: "1. Objet",
+                        subheading: "",
+                        content: "Les présentes conditions générales d’utilisation ont pour objet l’encadrement juridique des modalités de mise à disposition des services du site planet-es et leur utilisation par l’utilisateur.\nElles doivent être acceptées par tous utilisateurs voulant accéder au site. L’accès au site par l’utilisateur signifie son acceptation des présentes CGU.\nPlanet-es se réserve le droit de modifier unilatéralement et à tout moment le contenu des présentes."
+                    },
+                    legalMentions: {
+                        heading: "2. Mentions légales",
+                        subheading: "",
+                        content: "Planet-es est un site hébergé sur internet et exploité par la société Planet Energy Systems SARL, situé dans la Haie Vive - Immeuble KARLS, Rue Face à la nouvelle Brasserie, Cotonou Benin ; immatriculée au Registre de Commerce et du Crédit Mobilier N° R.C.C.M. RB/ABC/16B989, N°IFU: 3201641006518, e-Mail: info@planet-es.com, Téléphone : +229 69.34.55.55/69.34.66.66 et dirigé par un Président Directeur Général: Mauriel Ahodi ;"
+                    },
+                    serviceAccess: {
+                        heading: "3. Accès aux services",
+                        subheading: "",
+                        content: "Le site est accessible gratuitement en tout lieu à tout utilisateur ayant un accès à Internet.\nTout évènement dû à un cas de force majeure ayant pour conséquence un dysfonctionnement du réseau ou du serveur n’engage pas la responsabilité du site.\nA tout moment, l’accès peut également faire l’objet d’une interruption, d’une suspension, d’une modification sans préavis pour maintenance ou toute autre cause. L’utilisateur s’oblige à ne réclamer aucune indemnisation dans ce cas. Il a la possibilité de contacter le site par messagerie électronique."
+                    },
+                    intellectualProperty: {
+                        heading: "4. Propriété intellectuelle",
+                        subheading: "",
+                        content: "Sauf indication contraire, Planet-es possède, sans limite, tous les droits de propriété intellectuelle sur le contenu du site Web, tels que le code source, les bases de données, les textes, les marques, les logos, les signes, les images etc.\nL’utilisateur reconnait et accepte qu’il ne puisse utiliser, reproduire ou distribuer tout contenu du Site Web appartenant à Planet-es sans obtenir l'autorisation préalable du site.\nIl est tenu seul responsable pour tout contenu qu’il fournit ou télécharge depuis le site Web.\nLe contenu de l’utilisateur peut à tout moment et pour n’importe quelle raison être supprimé ou modifié par le site sans qu’il ne reçoive de justification et notification préalable."
+                    },
+                    personalData: {
+                        heading: "5. Données personnelles/Confidentialité",
+                        subheading: "",
+                        content: "Le site peut collecter des informations de nature diverses (nom, sexe, adresse Email, adresse postale, numéro de téléphone etc.).\nLe site assure à l’utilisateur une collecte et un traitement d’informations personnelles dans le respect de la vie privée conformément aux exigences de l’APDP.\nPar ailleurs, l’utilisateur dispose d’un droit d’accès, de rectification, de suppression et d’opposition de ses données personnelles.\nLa demande d’accès, de rectification ou d’opposition doit être introduite par courrier ordinaire ou électronique."
+                    },
+                    contentResponsibility: {
+                        heading: "6. Responsabilité du contenu",
+                        subheading: "",
+                        content: "Le contenu de nos pages a été créé avec le plus grand soin. Cependant, nous ne pouvons assumer aucune responsabilité pour la justesse, l'exhaustivité et l'actualité du contenu. En outre, nous sommes responsables de notre propre contenu sur ces pages conformément aux dispositions légales. Dans ce contexte, nous tenons à souligner que nous ne sommes pas obligés de surveiller les informations transmises ou stockées par des tiers ou d'enquêter sur les circonstances qui indiquent une activité illégale.\nLa responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d’un tiers."
+                    },
+                    linkResponsibility: {
+                        heading: "7. Responsabilité pour les liens",
+                        subheading: "",
+                        content: "Les opérateurs des pages liées sont seuls responsables de leur contenu. Les contenus illégaux n'étaient pas reconnaissables au moment de la liaison. Si nous prenons connaissance d'une violation de la loi, nous supprimerons immédiatement ces liens.\nL’Utilisateur s’interdit donc à engager la responsabilité du site concernant le contenu et les ressources relatives à ces liens."
+                    },
+                    copyright: {
+                        heading: "Copyright",
+                        subheading: "",
+                        content: "Nos sites Web et leurs contenus sont soumis à la loi béninoise sur le droit d'auteur. Toute forme d'exploitation, de duplication ou de traitement d'œuvres protégées par le droit d'auteur sur nos sites Web l'exige, à moins qu'elle ne soit expressément autorisée par la loi. L'utilisation non autorisée d'œuvres protégées par le droit d'auteur est une infraction pénale."
+                    }
+                }
+            }
         },
         sitemap: {
             hero: {
