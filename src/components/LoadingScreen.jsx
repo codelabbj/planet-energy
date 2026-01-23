@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import logo from '../assets/logo.png'
 
 const LoadingScreen = ({ onComplete }) => {
   const [count, setCount] = useState(0)
@@ -38,17 +39,41 @@ const LoadingScreen = ({ onComplete }) => {
       exit={{ y: '-100%', transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
     >
       <div className="loader-content">
-        <h1 className="loader-title">
-          <span className="stroke">PLANET</span>ENERGY
-        </h1>
+        <motion.div
+          className="logo-wrapper"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{
+            scale: [0.8, 1.05, 1],
+            opacity: 1,
+          }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <motion.img
+            src={logo}
+            alt="Planet Energy"
+            className="loader-logo"
+            animate={{
+              filter: ["drop-shadow(0 0 0px rgba(0,210,106,0))", "drop-shadow(0 0 20px rgba(0,210,106,0.2))", "drop-shadow(0 0 0px rgba(0,210,106,0))"]
+            }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </motion.div>
+
         <div className="counter-wrap">
-          <div className="progress-bar">
-            <motion.div
-              className="fill"
-              style={{ width: `${count}%` }}
-            />
+          <div className="progress-bar-container">
+            <div className="progress-bar">
+              <motion.div
+                className="fill"
+                initial={{ width: 0 }}
+                animate={{ width: `${count}%` }}
+                transition={{ duration: 0.2 }}
+              />
+            </div>
           </div>
-          <span className="count">{Math.round(count)}%</span>
+          <div className="count-display">
+            <span className="count">{Math.round(count)}%</span>
+            <span className="loading-text">Chargement en cours...</span>
+          </div>
         </div>
       </div>
 
@@ -76,52 +101,78 @@ const LoadingScreen = ({ onComplete }) => {
         }
 
         .loader-title {
-          font-family: 'Syne', sans-serif;
-          font-size: 80px;
-          font-weight: 800;
-          letter-spacing: -2px;
-          margin: 0;
+          display: none;
         }
 
-        .stroke {
-          -webkit-text-stroke: 2px transparent;
-          background: linear-gradient(to bottom, #fff 30%, rgba(255,255,255,0.4));
-          -webkit-background-clip: text;
-          color: transparent;
+        .logo-wrapper {
+          margin-bottom: 20px;
+        }
+
+        .loader-logo {
+          height: 80px;
+          width: auto;
+          object-fit: contain;
         }
 
         .counter-wrap {
-          width: 300px;
+          width: 350px;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          gap: 16px;
+          gap: 12px;
+        }
+
+        .progress-bar-container {
+          width: 100%;
+          padding: 4px;
+          background: rgba(255,255,255,0.03);
+          border-radius: 999px;
+          border: 1px solid rgba(255,255,255,0.05);
         }
 
         .progress-bar {
-          flex-grow: 1;
-          height: 2px;
-          background: rgba(255,255,255,0.1);
+          width: 100%;
+          height: 6px;
+          background: rgba(255,255,255,0.05);
+          border-radius: 999px;
           position: relative;
           overflow: hidden;
         }
 
         .fill {
           height: 100%;
-          background: var(--color-accent);
+          background: linear-gradient(90deg, var(--color-accent), #00ff80);
+          border-radius: 999px;
+          box-shadow: 0 0 15px rgba(0,210,106,0.4);
+        }
+
+        .count-display {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 4px;
         }
 
         .count {
           font-family: 'Outfit', sans-serif;
-          font-weight: 600;
-          font-size: 14px;
+          font-weight: 700;
+          font-size: 16px;
           color: var(--color-accent);
-          min-width: 40px;
-          text-align: right;
+          letter-spacing: 1px;
+        }
+
+        .loading-text {
+          font-family: 'Outfit', sans-serif;
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: rgba(255,255,255,0.4);
+          font-weight: 600;
         }
 
         @media (max-width: 768px) {
-          .loader-title { font-size: 40px; }
-          .counter-wrap { width: 200px; }
+          .loader-logo { height: 60px; }
+          .counter-wrap { width: 280px; }
         }
       `}</style>
     </motion.div>
