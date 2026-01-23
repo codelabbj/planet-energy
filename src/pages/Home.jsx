@@ -44,6 +44,10 @@ const Home = () => {
                                     <span className="stat-label">{t('home.intro.stats.years')}</span>
                                 </div>
                                 <div className="stat-item">
+                                    <span className="stat-number">2</span>
+                                    <span className="stat-label">{t('home.intro.stats.continents')}</span>
+                                </div>
+                                <div className="stat-item">
                                     <span className="stat-number">3</span>
                                     <span className="stat-label">{t('home.intro.stats.countries')}</span>
                                 </div>
@@ -209,7 +213,7 @@ const Home = () => {
                 .reach-map-container {
                     position: relative;
                     width: 100%;
-                    max-width: 500px;
+                    max-width: 800px; /* Increased size */
                     margin: 0 auto;
                 }
                 
@@ -228,13 +232,32 @@ const Home = () => {
                     pointer-events: none;
                 }
                 
+                @keyframes blink {
+                    0% {
+                        transform: scale(1);
+                        opacity: 1;
+                        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+                    }
+                    70% {
+                        transform: scale(1.2);
+                        opacity: 0.8;
+                        box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+                    }
+                    100% {
+                        transform: scale(1);
+                        opacity: 1;
+                        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+                    }
+                }
+
                 .map-dot {
                     position: absolute;
-                    width: 10px;
-                    height: 10px;
+                    width: 12px;
+                    height: 12px;
                     background: var(--color-accent);
                     border-radius: 50%;
                     box-shadow: 0 0 15px var(--color-accent);
+                    animation: blink 2s infinite;
                 }
                 
                 /* Split Layout Styles */

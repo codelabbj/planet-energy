@@ -34,7 +34,7 @@ const About = () => {
                             {t('about.main.description2')}
                         </p>
 
-                        <div className="stats-row">
+                        {/* <div className="stats-row">
                             <div className="stat">
                                 <span className="val">25+</span>
                                 <span className="lbl">{t('about.main.stats.years')}</span>
@@ -43,7 +43,7 @@ const About = () => {
                                 <span className="val">50+</span>
                                 <span className="lbl">{t('about.main.stats.projects')}</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
@@ -90,8 +90,8 @@ const About = () => {
 
                 .corporate-hero {
                     background-image: url(${aboutHeroImg});
-                    height: 100vh;
-                    min-height: 800px;
+                    min-height: 80vh;
+                    margin-top: 108px; /* Below Navbar */
                     display: flex;
                     align-items: center;
                     color: white;

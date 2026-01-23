@@ -92,7 +92,7 @@ const CablesLanding = () => {
             subtitle: "Sécurité et performance pour vos projets immobiliers",
             hasButton: true,
             btnText: "DÉCOUVRIR",
-            link: "/products/cables"
+            link: "/cables"
         }
     ]
 

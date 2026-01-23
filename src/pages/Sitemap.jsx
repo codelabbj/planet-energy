@@ -25,7 +25,7 @@ const Sitemap = () => {
                 { name: t('nav.industrial'), path: '/industrial', icon: <Zap size={16} /> },
                 { name: "Industrial Automation", path: '/industrial', icon: <AppWindow size={16} /> },
                 { name: "Siemens High Voltage", path: '/high-voltage', icon: <Zap size={16} /> },
-                { name: "Helukabel Systems", path: '/products/cables', icon: <FileText size={16} /> }
+                { name: "Helukabel Systems", path: '/cables', icon: <FileText size={16} /> }
             ]
         },
         {

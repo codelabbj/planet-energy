@@ -52,7 +52,7 @@ function App() {
                                 <Route path="/operations" element={<Operations />} />
                                 <Route path="/legal" element={<Legal />} />
                                 <Route path="/cables/newsroom" element={<CableNews />} />
-                                <Route path="/products/cables" element={<CablesLanding />} />
+                                <Route path="/cables" element={<CablesLanding />} />
                                 <Route path="/industrial" element={<IndustrialPage />} />
                                 <Route path="/solar" element={<SolarPage />} />
                                 <Route path="/high-voltage" element={<HighVoltagePage />} />

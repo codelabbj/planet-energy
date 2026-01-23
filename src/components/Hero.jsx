@@ -103,11 +103,10 @@ const Hero = () => {
 
       <style jsx>{`
         .hero-premium {
-            height: 100vh;
-            min-height: 800px;
+            height: 99vh;
             position: relative;
             display: flex;
-            /* align-items: center; Removed to allow child to fill height */
+            align-items: center; /* Center content vertically */
             overflow: hidden;
             background: linear-gradient(135deg, #001f35 0%, #0f3355 100%);
         }
@@ -160,14 +159,15 @@ const Hero = () => {
       z-index: 3;
       color: white;
       display: flex;
-      height: 100%; /* Full height */
-      align-items: center; /* Center text vertically */
-      justify-content: space-between;
+      align-items: center; /* Vertical center for the text block */
+      justify-content: flex-start; /* Align text block to the left */
       width: 100%;
+      height: 100%;
     }
 
         .text-block {
             max-width: 1000px;
+            z-index: 4;
         }
 
         .hero-overline {
@@ -194,7 +194,7 @@ const Hero = () => {
       display: flex;
       flex-direction: column;
       gap: 8px;
-      margin-bottom: 80px;
+      margin: 0;
       font-family: 'Outfit', sans-serif;
       text-shadow: 0 4px 30px rgba(0,0,0,0.6);
       border-left: 5px solid var(--color-accent);
@@ -255,11 +255,12 @@ const Hero = () => {
 
         .slide-indicator {
             position: absolute;
-            bottom: 60px;
+            bottom: 40px; /* Anchored to bottom of hero-premium */
             right: 0;
             display: flex;
             align-items: center;
             gap: 16px;
+            z-index: 5;
         }
 
         .slide-line {

@@ -96,8 +96,8 @@ const Operations = () => {
                 .ops-hero {
                     background-image: url(${opsHeroImg});
                     color: white;
-                    height: 100vh;
-                    min-height: 800px;
+                    min-height: 80vh;
+                    margin-top: 108px;
                     display: flex;
                     align-items: center;
                     justify-content: center;

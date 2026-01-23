@@ -62,7 +62,11 @@ const Legal = () => {
 
                 .legal-hero {
                     background: linear-gradient(135deg, #001f35 0%, #0f3355 100%);
-                    padding: 180px 20px 80px;
+                    min-height: 80vh;
+                    margin-top: 108px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     text-align: center;
                     position: relative;
                     overflow: hidden;

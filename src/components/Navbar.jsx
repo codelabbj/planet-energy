@@ -29,7 +29,7 @@ const Navbar = () => {
     { title: t('nav.home'), path: '/' },
     { title: t('nav.industrial'), path: '/industrial' },
     { title: t('nav.hv'), path: '/high-voltage' },
-    { title: t('nav.cabling'), path: '/products/cables' },
+    { title: t('nav.cabling'), path: '/cables' },
     { title: t('nav.solar'), path: '/solar' },
     { title: t('nav.om'), path: '/operations' },
     { title: t('nav.about'), path: '/about' }
@@ -50,7 +50,13 @@ const Navbar = () => {
     '/high-voltage',
     '/cables/newsroom',
     '/products',
-    '/legal'
+    '/legal',
+    '/about',
+    '/operations',
+    '/contact',
+    '/cables',
+    '/sitrain',
+    '/sitemap'
   ].includes(location.pathname)
 
   return (

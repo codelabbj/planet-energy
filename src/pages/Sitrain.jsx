@@ -68,11 +68,11 @@ const Sitrain = () => {
             <style jsx>{`
         .sitrain-page { background: white; }
         .sitrain-hero {
-          height: 80vh;
+          min-height: 80vh;
+          margin-top: 108px;
           display: flex;
           align-items: center;
           color: white;
-          padding-top: 100px;
         }
 
         .academy-badge {

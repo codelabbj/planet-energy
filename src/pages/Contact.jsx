@@ -118,7 +118,11 @@ const Contact = () => {
                                 url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1400') center/cover;
                     background-attachment: fixed;
                     color: white;
-                    padding: 140px 0 120px;
+                    min-height: 80vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 108px;
                     text-align: center;
                     position: relative;
                     overflow: hidden;

@@ -264,6 +264,7 @@ export const translations = {
                 stats: {
                     years: "years",
                     countries: "countries",
+                    continents: "continents",
                     support: "support"
                 }
             },
@@ -717,6 +718,7 @@ export const translations = {
                 stats: {
                     years: "years",
                     countries: "countries",
+                    continents: "continents",
                     support: "support"
                 }
             },

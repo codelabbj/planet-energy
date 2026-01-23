@@ -156,8 +156,8 @@ const IndustrialPage = () => {
 
             <style jsx>{`
                 .industrial-hero {
-                    height: 100vh;
-                    min-height: 800px;
+                    min-height: 80vh;
+                    margin-top: 108px;
                     background-image: url(${heroBg});
                     background-size: cover;
                     background-position: center;

@@ -101,7 +101,11 @@ const Products = () => {
                 .prod-header {
                     background-image: radial-gradient(circle at 15% 25%, rgba(255,255,255,0.02), transparent 12%), linear-gradient(135deg, #003a57 0%, #006a86 100%);
                     color: white;
-                    padding: 140px 0 100px;
+                    min-height: 80vh;
+                    margin-top: 108px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     text-align: center;
                     background-size: cover;
                     background-position: center;

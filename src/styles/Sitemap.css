@@ -9,7 +9,11 @@
 .sitemap-hero {
     background: linear-gradient(135deg, rgba(0, 31, 53, 0.9) 0%, rgba(15, 51, 85, 0.9) 100%),
         url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1400') center/cover;
-    padding: 140px 0 80px;
+    min-height: 80vh;
+    margin-top: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: white;
 }

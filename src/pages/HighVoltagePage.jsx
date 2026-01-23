@@ -35,8 +35,8 @@ const HighVoltagePage = () => {
 
             <style jsx>{`
                 .page-hero {
-                    height: 100vh;
-                    min-height: 600px;
+                    min-height: 80vh;
+                    margin-top: 108px;
                     background-image: url(${heroBg});
                     background-size: cover;
                     background-position: center;
