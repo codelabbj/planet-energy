@@ -282,9 +282,12 @@ const Hero = () => {
             .distributor-text { font-size: 13px; letter-spacing: 2px; white-space: normal; }
             
             /* On mobile, let's keep it absolute but align left or adjust */
-            .slide-indicator { left: 0; right: auto; bottom: 30px; }
+            .slide-indicator { left: 20px; right: auto; bottom: 30px; }
             
-            .hero-content { align-items: flex-start; }
+            .hero-content { 
+                align-items: center; /* Center vertically to avoid nav overlap */
+                padding-top: 60px; /* Extra breathing room from top */
+            }
             .hero-title-main { border-left-width: 3px; padding-left: 20px; }
         }
       `}</style>

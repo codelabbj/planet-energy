@@ -161,6 +161,16 @@ const Home = () => {
                     gap: 48px;
                     border-top: 1px solid rgba(0,0,0,0.1);
                     padding-top: 40px;
+                    flex-wrap: wrap; /* Allow wrapping */
+                }
+
+                @media (max-width: 768px) {
+                    .corporate-stats-row {
+                        gap: 24px;
+                    }
+                    .stat-item {
+                        min-width: 120px; /* Ensure items don't get too squashed */
+                    }
                 }
                 
                 .stat-item {
