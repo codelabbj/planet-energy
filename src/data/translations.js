@@ -81,7 +81,7 @@ export const translations = {
             offices: {
                 cotonou: {
                     name: "Cotonou (HQ)",
-                    description: "Corporate Office, Benin"
+                    description: "Immeuble KARLS - HAIE VIVE, 2me Rue pavé à droite, Cotonou Benin"
                 },
                 ghana: {
                     name: "Ghana (Regional Hub)",
@@ -421,7 +421,7 @@ export const translations = {
                     legalMentions: {
                         heading: "2. Legal Mentions",
                         subheading: "",
-                        content: "Planet-es is a site hosted on the internet and operated by the company Planet Energy Systems SARL, located in Hai Vive - KARLS Building, Street Facing the new Brewery, Cotonou Benin; registered with the Trade and Personal Property Credit Register N° R.C.C.M. RB/ABC/16B989, N°IFU: 3201641006518, e-Mail: info@planet-es.com, Telephone: +229 69.34.55.55/69.34.66.66 and managed by a President Director General: Mauriel Ahodi;"
+                        content: "Planet-es is a site hosted on the internet and operated by the company Planet Energy Systems SARL, located in Immeuble KARLS - HAIE VIVE, 2me Rue pavé à droite, Cotonou Benin; registered with the Trade and Personal Property Credit Register N° R.C.C.M. RB/ABC/16B989, N°IFU: 3201641006518, e-Mail: info@planet-es.com, Telephone: +229 69.34.55.55/69.34.66.66 and managed by a President Director General: Mauriel Ahodi;"
                     },
                     serviceAccess: {
                         heading: "3. Access to Services",
@@ -547,7 +547,7 @@ export const translations = {
             offices: {
                 cotonou: {
                     name: "Cotonou (HQ)",
-                    description: "La Haie Vive - Immeuble KARLS, Rue Face à la nouvelle Brasserie, Cotonou, Benin"
+                    description: "Immeuble KARLS - HAIE VIVE, 2me Rue pavé à droite, Cotonou, Benin"
                 },
                 ghana: {
                     name: "Ghana (Centre Régional)",
@@ -875,7 +875,7 @@ export const translations = {
                     legalMentions: {
                         heading: "2. Mentions légales",
                         subheading: "",
-                        content: "Planet-es est un site hébergé sur internet et exploité par la société Planet Energy Systems SARL, situé dans la Haie Vive - Immeuble KARLS, Rue Face à la nouvelle Brasserie, Cotonou Benin ; immatriculée au Registre de Commerce et du Crédit Mobilier N° R.C.C.M. RB/ABC/16B989, N°IFU: 3201641006518, e-Mail: info@planet-es.com, Téléphone : +229 69.34.55.55/69.34.66.66 et dirigé par un Président Directeur Général: Mauriel Ahodi ;"
+                        content: "Planet-es est un site hébergé sur internet et exploité par la société Planet Energy Systems SARL, situé dans Immeuble KARLS - HAIE VIVE, 2me Rue pavé à droite, Cotonou Benin ; immatriculée au Registre de Commerce et du Crédit Mobilier N° R.C.C.M. RB/ABC/16B989, N°IFU: 3201641006518, e-Mail: info@planet-es.com, Téléphone : +229 69.34.55.55/69.34.66.66 et dirigé par un Président Directeur Général: Mauriel Ahodi ;"
                     },
                     serviceAccess: {
                         heading: "3. Accès aux services",

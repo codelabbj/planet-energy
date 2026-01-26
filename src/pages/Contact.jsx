@@ -33,7 +33,14 @@ const Contact = () => {
                                     <div className="icon-box"><MapPin size={20} /></div>
                                     <div className="details">
                                         <h4>{t('contact.offices.cotonou.name')}</h4>
-                                        <p>{t('contact.offices.cotonou.description')}</p>
+                                        <a
+                                            href="https://www.google.com/maps/search/?api=1&query=6°21'33.3&quot;N+2°23'45.0&quot;E"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="address-link"
+                                        >
+                                            <p>{t('contact.offices.cotonou.description')}</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="office-item">
@@ -321,6 +328,17 @@ const Contact = () => {
                 
                 .submit-btn:hover {
                     background: var(--color-accent);
+                }
+
+                .address-link {
+                    text-decoration: none;
+                    color: inherit;
+                    transition: color 0.2s;
+                    display: block;
+                }
+
+                .address-link:hover p {
+                    color: var(--color-accent);
                 }
 
                 @media (max-width: 1024px) {

@@ -91,6 +91,16 @@
     font-size: 15px;
 }
 
+.footer-address-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+.footer-address-link:hover {
+    color: var(--color-accent);
+}
+
 .c-icon {
     color: var(--color-accent);
     margin-top: 3px;
