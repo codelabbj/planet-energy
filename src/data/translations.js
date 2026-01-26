@@ -2,7 +2,7 @@ export const translations = {
     en: {
         nav: {
             home: "Home",
-            breakers: "Breakers & Industry",
+            industrial: "Breakers & Industries",
             hv: "High Voltage",
             cabling: "Cables & Leds",
             solar: "Solar",
@@ -12,7 +12,7 @@ export const translations = {
         },
         hero: {
             companyName: "PLANET ENERGY SYSTEMS",
-            distributorText: "EXCLUSIVE DISTRIBUTOR FOR HELUKABEL IN BENIN",
+            distributorText: "EXCLUSIVE DISTRIBUTOR OF HELUKABEL IN BENIN",
             title: "POWERING THE ENERGY OF TOMORROW",
             subtitle: "AUTHORIZED NATIONAL DISTRIBUTOR FOR SIEMENS & HELUKABEL",
             cta: "Explore Solutions",
@@ -460,7 +460,7 @@ export const translations = {
     fr: {
         nav: {
             home: "Accueil",
-            industrial: "Disjoncteur et industrie",
+            industrial: "Disjoncteur & Industrie",
             hv: "Haute Tension",
             cabling: "Cables & Leds",
             solar: "Solaire",
