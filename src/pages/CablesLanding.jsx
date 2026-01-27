@@ -58,40 +58,40 @@ const CablesLanding = () => {
     const slideData = [
         {
             image: heroImg,
-            title: "PLANET ENERGY SYSTEMS",
-            subtitle: "DISTRIBUTEUR EXCLUSIF DE HELUKABEL AU BENIN",
+            title: t('cablingLanding.hero.slides.0.title'),
+            subtitle: t('cablingLanding.hero.slides.0.subtitle'),
             hasButton: false
         },
         {
             image: cableeee,
-            title: "Résistance à la flamme",
-            subtitle: "et sans halogène",
+            title: t('cablingLanding.hero.slides.1.title'),
+            subtitle: t('cablingLanding.hero.slides.1.subtitle'),
             hasButton: true,
-            btnText: "VOIR PLUS",
+            btnText: t('cablingLanding.hero.slides.1.btnText'),
             link: "/cables/newsroom"
         },
         {
             image: im1,
-            title: "Câbles pour l'industrie",
-            subtitle: "Des solutions robustes pour les environnements exigeants",
+            title: t('cablingLanding.hero.slides.2.title'),
+            subtitle: t('cablingLanding.hero.slides.2.subtitle'),
             hasButton: true,
-            btnText: "DÉCOUVRIR",
+            btnText: t('cablingLanding.hero.slides.2.btnText'),
             pdf: h5
         },
         {
             image: im2,
-            title: "Énergies Renouvelables",
-            subtitle: "Solutions de câblage pour le solaire et l'éolien",
+            title: t('cablingLanding.hero.slides.3.title'),
+            subtitle: t('cablingLanding.hero.slides.3.subtitle'),
             hasButton: true,
-            btnText: "DÉCOUVRIR",
+            btnText: t('cablingLanding.hero.slides.3.btnText'),
             pdf: h6
         },
         {
             image: im3,
-            title: "Infrastructure & Bâtiment",
-            subtitle: "Sécurité et performance pour vos projets immobiliers",
+            title: t('cablingLanding.hero.slides.4.title'),
+            subtitle: t('cablingLanding.hero.slides.4.subtitle'),
             hasButton: true,
-            btnText: "DÉCOUVRIR",
+            btnText: t('cablingLanding.hero.slides.4.btnText'),
             link: "/cables"
         }
     ]

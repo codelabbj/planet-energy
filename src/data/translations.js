@@ -78,6 +78,16 @@ export const translations = {
         contact: {
             phone: "+229 21 31 16 00",
             email: "info@planet-energy.de",
+            hero: {
+                overline: "CUSTOMER SUPPORT",
+                title: "Contact Us",
+                subtitle: "Our engineering team is ready to help you with your project needs."
+            },
+            info: {
+                title: "Headquarters & Regional Offices",
+                description: "Contact our technical sales team for quotes, product specifications, or partnership inquiries.",
+                directContact: "Direct Contact"
+            },
             offices: {
                 cotonou: {
                     name: "Cotonou (HQ)",
@@ -135,16 +145,16 @@ export const translations = {
             main: {
                 title: "Maximizing",
                 titleAccent: "System Reliability.",
-                description1: "Nous soutenons nos clients dans toutes les tâches techniques de la gestion du bâtiment et nous chargeons du service et de l'entretien durant tout le cycle de vie de votre immeuble.",
-                description2: "L'entretien régulier de votre installation électrique contribue à prévenir les pannes de courant, les dégâts occasionnés sur les équipements et les accidents. Il convient donc par conséquent, de contrôler régulièrement la sécurité technique des installations, particulièrement les plus anciennes.",
+                description1: "We support our customers in all technical building management tasks and take charge of service and maintenance throughout the entire lifecycle of your building.",
+                description2: "Regular maintenance of your electrical installation helps prevent power outages, equipment damage, and accidents. Therefore, it is advisable to regularly check the technical safety of installations, especially older ones.",
                 services: {
                     security: {
-                        title: "Sécurité Technique",
-                        description: "Inspections régulières pour prévenir les accidents et garantir la conformité."
+                        title: "Technical Safety",
+                        description: "Regular inspections to prevent accidents and ensure compliance."
                     },
                     performance: {
-                        title: "Performance Continue",
-                        description: "Optimisation des équipements pour éviter les pannes imprévues."
+                        title: "Continuous Performance",
+                        description: "Equipment optimization to avoid unforeseen breakdowns."
                     }
                 }
             },
@@ -258,8 +268,8 @@ export const translations = {
                 title: "Planet Energy Systems your reliable partner for your electrical and energy solutions"
             },
             intro: {
-                overline: "QUI SOMMES NOUS",
-                title: "Nous sommes une société internationale qui vous propose des solutions intelligentes et innovantes",
+                overline: "WHO WE ARE",
+                title: "We are an international company offering intelligent and innovative solutions",
                 description: "",
                 stats: {
                     years: "years",
@@ -306,6 +316,34 @@ export const translations = {
             }
         },
         cablingLanding: {
+            hero: {
+                slides: [
+                    {
+                        title: "PLANET ENERGY SYSTEMS",
+                        subtitle: "EXCLUSIVE DISTRIBUTOR OF HELUKABEL IN BENIN"
+                    },
+                    {
+                        title: "Flame Resistance",
+                        subtitle: "and Halogen-Free",
+                        btnText: "VIEW MORE"
+                    },
+                    {
+                        title: "Cables for Industry",
+                        subtitle: "Robust solutions for demanding environments",
+                        btnText: "DISCOVER"
+                    },
+                    {
+                        title: "Renewable Energies",
+                        subtitle: "Wiring solutions for solar and wind",
+                        btnText: "DISCOVER"
+                    },
+                    {
+                        title: "Infrastructure & Building",
+                        subtitle: "Security and performance for your building projects",
+                        btnText: "DISCOVER"
+                    }
+                ]
+            },
             brandStory: "Planet Energy Systems is pleased to announce its selection as the exclusive distributor of HELUKABEL in Benin. This strategic partnership combines the expertise of Planet Energy Systems in renewable energies and intelligent technical solutions with the excellence of HELUKABEL, a world leader in cabling technology.",
             intro: "Our domains of offering:",
             domains: [
@@ -760,6 +798,34 @@ export const translations = {
             }
         },
         cablingLanding: {
+            hero: {
+                slides: [
+                    {
+                        title: "PLANET ENERGY SYSTEMS",
+                        subtitle: "DISTRIBUTEUR EXCLUSIF DE HELUKABEL AU BENIN"
+                    },
+                    {
+                        title: "Résistance à la flamme",
+                        subtitle: "et sans halogène",
+                        btnText: "VOIR PLUS"
+                    },
+                    {
+                        title: "Câbles pour l'industrie",
+                        subtitle: "Des solutions robustes pour les environnements exigeants",
+                        btnText: "DÉCOUVRIR"
+                    },
+                    {
+                        title: "Énergies Renouvelables",
+                        subtitle: "Solutions de câblage pour le solaire et l'éolien",
+                        btnText: "DÉCOUVRIR"
+                    },
+                    {
+                        title: "Infrastructure & Bâtiment",
+                        subtitle: "Sécurité et performance pour vos projets immobiliers",
+                        btnText: "DÉCOUVRIR"
+                    }
+                ]
+            },
             brandStory: "Planet Energy Systems a le plaisir d'annoncer sa sélection en tant que distributeur exclusif de HELUKABEL au Bénin. Ce partenariat stratégique combine l'expertise de Planet Energy Systems dans les énergies renouvelables et les solutions techniques intelligentes avec l'excellence de HELUKABEL, un leader mondial de la technologie de câblerie.",
             intro: "Nos domaines d'offre :",
             domains: [
@@ -920,6 +986,500 @@ export const translations = {
                 solutions: "Solutions Énergétiques",
                 specialized: "Infrastructures Spécialisées",
                 support: "Support & Juridique"
+            }
+        }
+    },
+    de: {
+        nav: {
+            home: "Startseite",
+            industrial: "Schutzschalter & Industrie",
+            hv: "Hochspannung",
+            cabling: "Kabel & LEDs",
+            solar: "Solar",
+            om: "O&M (Betrieb & Wartung)",
+            contact: "Kontakt",
+            about: "Über uns"
+        },
+        hero: {
+            companyName: "PLANET ENERGY SYSTEMS",
+            distributorText: "EXKLUSIVER VERTRIEBSPARTNER VON HELUKABEL IN BENIN",
+            title: "DIE ENERGIE VON MORGEN ANTREIBEN",
+            subtitle: "AUTORISIERTER NATIONALER VERTRIEBSPARTNER FÜR SIEMENS & HELUKABEL",
+            cta: "Lösungen erkunden",
+            slides: {
+                label_benin: "HAUPTSITZ: COTONOU - BENIN",
+                label_ghana: "NIEDERLASSUNG: ACCRA - GHANA",
+                label_berlin: "NIEDERLASSUNG: BERLIN - DEUTSCHLAND IN KÜRZE"
+            }
+        },
+        partners: {
+            overline: "WELTWEITES VERTRAUEN",
+            title: "Unsere Partner"
+        },
+        footer: {
+            desc: "Expertenlösungen in elektrischer Infrastruktur, Hochspannungssystemen und industrieller Automatisierung in ganz Afrika.",
+            solutions: "Unsere Lösungen",
+            company: "Unternehmen",
+            contact: "Globale Präsenz",
+            rights: "Alle Rechte vorbehalten.",
+            links: {
+                about: "Über uns",
+                om: "O&M Dienstleistungen",
+                careers: "Karriere",
+                news: "Kabel-Newsroom",
+                privacy: "Datenschutzrichtlinie",
+                terms: "Nutzungsbedingungen",
+                sitemap: "Sitemap"
+            }
+        },
+        about: {
+            hero: {
+                overline: "UNTERNEHMENSPROFIL",
+                title: "Über uns"
+            },
+            main: {
+                title: "Deutsche Präzision trifft auf lokale Expertise.",
+                description1: "Planet Energy Systems ist ein beninisch-deutsches Unternehmen, das innovative Lösungen für die Lieferung von elektrischen und Telekommunikationsgeräten für Nieder- und Hochspannung in allen Sektoren, Sicherheitssystemen (Smart Home) und O&M-Überwachung mit SCADA-Fernüberwachung für alle unsere Installationen anbietet.",
+                description2: "Unser Team besteht aus europäischen und afrikanischen Mitarbeitern, die fundierte Expertise in den genannten Bereichen und im Rahmen internationaler Projekte einbringen. Durch die Zusammenarbeit mit unseren deutschen Partnern sind wir ein internationales Netzwerk, das umfassende und angemessene Lösungen in unseren Tätigkeitsfeldern anbietet. Insbesondere in Afrika ist dies eine anspruchsvolle Aufgabe, die wir jedoch mit dem Ziel annehmen, Arbeitsplätze zu schaffen und die Ausbildung in diesem Bereich zu bereichern. Antrieb und Ziel unserer Arbeit ist es, weltweit eine zuverlässige Energieversorgung zu gewährleisten, insbesondere auf dem afrikanischen Kontinent, mit stabilen Stromnetzen, um den Bürgern eine unabhängige und nachhaltige Entwicklung zu ermöglichen.",
+                stats: {
+                    years: "Jahre aktiv",
+                    projects: "Großprojekte"
+                }
+            },
+            leadership: {
+                title: "Team",
+                founder: {
+                    name: "Mauriel Ahodi",
+                    role: "Gründer, Präsident & CEO",
+                    bio: "Mauriel Ahodi wurde in Benin geboren und wuchs dort auf. Im Jahr 2008 begann er sein Studium der Elektrotechnik an der Technischen Universität Berlin. Parallel zu seinem Studium arbeitete er vier (04) Jahre bei der Skytron Energy GmbH als Systemanalyst in der O&M-Abteilung und als Projektingenieur für Solarkraftwerke. Im Jahr 2015 war er Internationaler Direktor für Erneuerbare Energien bei der Luxra AG. Seit seiner Jugend sah er die Notwendigkeit der Modernisierung der Stromnetze in Benin, seinem Heimatland, und die Integration erneuerbarer Energien, um den Energiebedarf langfristig und sicher zu decken. So entschied er sich nach seinem Studium, sich seinem großen Traum zu widmen, die Energieprobleme in Benin und anderen afrikanischen Ländern zu lösen, um eine nachhaltige Zukunft und Entwicklung zu erreichen. Herr Mauriel Romaric AHODI entschied sich nach der Gründung des internationalen Unternehmens Planet Energy Systems, das auf erneuerbare Energien spezialisiert ist, die während seiner Karriere erworbenen Fähigkeiten und Erfahrungen in den Dienst dieses Unternehmens in Partnerschaft mit seinen deutschen Kollegen zu stellen."
+                },
+                executives: {
+                    deputy: "Stellvertretender Direktor",
+                    legal: "Rechtsdirektor",
+                    financial: "Finanzdirektor",
+                    technical: "Technischer Direktor",
+                    commercial: "Vertriebsdirektor",
+                    service: "Leiter technischer Service",
+                    nomination: "In Ernennung"
+                }
+            },
+            imageCaption: "Hauptsitz Berlin, Deutschland"
+        },
+        contact: {
+            hero: {
+                overline: "KUNDENSUPPORT",
+                title: "Kontaktieren Sie uns",
+                subtitle: "Unser Ingenieurteam steht Ihnen bei Ihren Projektanforderungen zur Verfügung."
+            },
+            info: {
+                title: "Hauptsitz & Regionalbüros",
+                description: "Kontaktieren Sie unser technisches Vertriebsteam für Angebote, Produktspezifikationen oder Partnerschaftsanfragen.",
+                directContact: "Direktkontakt"
+            },
+            offices: {
+                cotonou: {
+                    name: "Cotonou (Hauptsitz)",
+                    description: "Immeuble KARLS - HAIE VIVE, 2me Rue pavé à droite, Cotonou Benin"
+                },
+                ghana: {
+                    name: "Ghana (Regionales Zentrum)",
+                    description: "CRA House Mile 7, Plot 331 Before Achimota Mall P.O.Box WY 807 Kwabenya, GPS: GE-366-5451"
+                }
+            },
+            phone: "+229 01 97 62 00 01 / +229 01 97 62 00 02",
+            email: "info@planet-es.com",
+            form: {
+                title: "Senden Sie uns eine Nachricht",
+                labels: {
+                    fullName: "Vollständiger Name",
+                    email: "E-Mail-Adresse",
+                    company: "Unternehmen / Organisation",
+                    department: "Abteilung",
+                    message: "Nachricht"
+                },
+                placeholders: {
+                    fullName: "z.B. Robert Smith",
+                    email: "robert@company.com",
+                    company: "z.B. Planet Energy Systems",
+                    message: "Wie können wir Ihnen heute helfen?"
+                },
+                options: {
+                    sales: "Verkaufsanfrage",
+                    technical: "Technischer Support",
+                    partnership: "Partnerschaft",
+                    other: "Sonstiges"
+                },
+                submit: "Nachricht senden"
+            }
+        },
+        operations: {
+            hero: {
+                overline: "LEBENSZYKLUS-SERVICES",
+                title: "Betrieb & Wartung",
+                subtitle: "Umfassendes technisches Management und präventive Wartung für elektrische Infrastruktur."
+            },
+            main: {
+                title: "Maximierung der",
+                titleAccent: "Systemzuverlässigkeit.",
+                description1: "Wir unterstützen unsere Kunden bei allen technischen Aufgaben des Gebäudemanagements und kümmern uns um Service und Wartung während des gesamten Lebenszyklus Ihres Gebäudes.",
+                description2: "Die regelmäßige Wartung Ihrer Elektroinstallation hilft, Stromausfälle, Geräteschäden und Unfälle zu vermeiden. Daher empfiehlt es sich, die technische Sicherheit der Anlagen, insbesondere der älteren, regelmäßig zu überprüfen.",
+                services: {
+                    security: {
+                        title: "Technische Sicherheit",
+                        description: "Regelmäßige Inspektionen zur Vermeidung von Unfällen und zur Gewährleistung der Konformität."
+                    },
+                    performance: {
+                        title: "Kontinuierliche Leistung",
+                        description: "Optimierung der Ausrüstung zur Vermeidung unvorhergesehener Ausfälle."
+                    }
+                }
+            },
+            scada: {
+                header: "SCADA-ÜBERWACHUNG AKTIV",
+                metrics: {
+                    voltage: "Spannung",
+                    load: "Last",
+                    status: "Status",
+                    optimal: "OPTIMAL"
+                }
+            }
+        },
+        products: {
+            hero: {
+                overline: "PRODUKTPORTFOLIO",
+                title: "Technische Lösungen",
+                subtitle: "Geprüfte Komponenten für industrielle Infrastruktur und Hochspannungsverteilung."
+            },
+            tabs: {
+                protection: "Stromkreisschutz",
+                switching: "Schalten & Relais",
+                control: "Steuern & Überwachen",
+                loaddrive: "Last & Antrieb"
+            },
+            categories: {
+                acb: "Offene Leistungsschalter (ACB)",
+                mccb: "Kompaktleistungsschalter (MCCB)",
+                mcb: "Leitungsschutzschalter (MCB)",
+                contactors: "Industrieschütze",
+                overloadRelays: "Thermische Überlastrelais",
+                monitoring: "Technische Überwachung",
+                timers: "Industrie-Zeitschaltuhren",
+                signaling: "Signalgeräte",
+                changeover: "Umschalter",
+                superswitch: "Superswitch SDF"
+            }
+        },
+        productShowcase: {
+            overline: "INNOVATIONS-HUB",
+            title: "Vorgestellte Lösungen",
+            viewProduct: "Details anzeigen",
+            sets: [
+                {
+                    category: "Stromkreisschutz",
+                    items: [
+                        { name: "Offene Leistungsschalter", spec: "Hochspannung • 6300A", detail: "Robuster Schutz für die Energieverteilung im industriellen Maßstab." },
+                        { name: "Kompaktleistungsschalter", spec: "Mittelspannung • 1600A", detail: "Kompakte Effizienz für kommerzielle und industrielle Schalttafeln." },
+                        { name: "Leitungsschutzschalter", spec: "Niederspannung • 125A", detail: "Präzisionsschutz für Endverteilungsstromkreise." }
+                    ]
+                },
+                {
+                    category: "Verkabelungssysteme",
+                    items: [
+                        { name: "Industrielle Steuerung", spec: "Flexibel • Abgeschirmt", detail: "Ölbeständige Steuerleitungen für Automatisierungsmaschinen." },
+                        { name: "Datennetzwerk", spec: "CAT6 • Glasfaser", detail: "Hochgeschwindigkeits-Datenübertragung für intelligente Fabriken." },
+                        { name: "Solar PV", spec: "UV-beständig • DC", detail: "Langlebige Verkabelung für die photovoltaische Energiegewinnung." }
+                    ]
+                }
+            ]
+        },
+        sitrain: {
+            hero: {
+                badge: "SIEMENS DIGITAL ACADEMY",
+                title: "SITRAIN Indien",
+                subtitle: "Die Zukunft des industriellen Lernens beginnt hier. Expertengeführte Schulungen für Automatisierung, Antriebssysteme und Energieverteilung.",
+                button: "Kurse erkunden"
+            },
+            features: {
+                digitalFormats: {
+                    title: "Digitale Formate",
+                    description: "Präsenzkurse jetzt in interaktiven digitalen Formaten für berufliches Wachstum aus der Ferne verfügbar."
+                },
+                tsdcKalwa: {
+                    title: "TSDC Kalwa",
+                    description: "Praxisschulung in unserem spezialisierten Technical Service & Development Center in Navi Mumbai."
+                },
+                certifiedMastery: {
+                    title: "Zertifizierte Meisterschaft",
+                    description: "Erhalten Sie Anerkennung für Ihr technisches Fachwissen mit branchenführenden Siemens-Zertifizierungen."
+                }
+            },
+            locations: {
+                title: "Nationale Präsenz",
+                subtitle: "Unsere Schulungszentren befinden sich strategisch günstig in Industriezentren.",
+                centers: {
+                    kalwa: "Kalwa (Hauptzentrum)",
+                    noida: "Noida",
+                    coimbatore: "Coimbatore",
+                    panchakula: "Panchakula",
+                    kolkata: "Kolkata"
+                }
+            }
+        },
+        solar: {
+            hero: { title: "SOLARENERGIELÖSUNGEN" },
+            status: {
+                title: "Demnächst verfügbar",
+                text: "Wir bereiten derzeit unser umfassendes Portfolio an Solarlösungen vor. Bleiben Sie gespannt auf Updates."
+            }
+        },
+        hv: {
+            hero: { title: "HOCHSPANNUNGSSYSTEME" },
+            status: {
+                title: "Demnächst verfügbar",
+                text: "Unser Bereich für Hochspannungsinfrastruktur-Dienstleistungen befindet sich in der Entwicklung. Effiziente Lösungen zur Energieverteilung sind in Arbeit."
+            }
+        },
+        home: {
+            accueil: {
+                title: "Planet Energy Systems Ihr zuverlässiger Partner für Ihre Elektro- und Energielösungen"
+            },
+            intro: {
+                overline: "WER WIR SIND",
+                title: "Wir sind ein internationales Unternehmen, das Ihnen intelligente und innovative Lösungen anbietet",
+                description: "",
+                stats: {
+                    years: "Jahre",
+                    countries: "Länder",
+                    continents: "Kontinente",
+                    support: "Unterstützung"
+                }
+            },
+            connection: {
+                overline: "INTERNATIONALE VERBINDUNG",
+                title: "Deutsche Partnerschaft",
+                description: "Die Zusammenarbeit mit unseren deutschen Partnern ermöglicht dank langjähriger Erfahrung und Kompetenz die bestmögliche Umsetzung Ihrer Projekte – von der Planung über die Installation bis hin zur O&M-Überwachung via SCADA für alle unsere Dienstleistungen."
+            },
+            mission: {
+                overline: "MISSION",
+                title: "Nachhaltige Entwicklung",
+                description: "Unser Ziel ist es, den Energiebedarf von heute und morgen nachhaltig mit erneuerbaren Energien zu decken und die Stromnetze zu modernisieren. Insbesondere in Afrika ist dies eine schwierige Aufgabe, die wir übernehmen, um Ausbildung und Arbeitsplätze in diesem Bereich zu schaffen. Auf diese Weise lösen wir Energieprobleme und geben der lokalen Bevölkerung den Schlüssel zu ihrer unabhängigen und nachhaltigen Entwicklung."
+            }
+        },
+        industrial: {
+            hero: {
+                title: "PLANET ENERGY SYSTEMS",
+                subtitle: "INDUSTRIE- UND AUTOMATISIERUNGSLÖSUNGEN"
+            },
+            intro: {
+                text: "Spezialisierte Lösungen für industrielle Elektroinfrastruktur und Automatisierung."
+            },
+            sections: {
+                breakers: {
+                    title: "Industrie-Leistungsschalter",
+                    text: "Hochleistungs-Stromkreisschutz für anspruchsvolle Industrieanwendungen."
+                },
+                control: {
+                    title: "Steuerungssysteme",
+                    text: "Intelligente Steuerung und Überwachung für dezentrale Energiesysteme."
+                },
+                simocode: {
+                    title: "Siemens SIMOCODE",
+                    text: "Flexibles und modulares Motormanagementsystem für Niederspannungsmotoren."
+                },
+                catalog: {
+                    title: "Produktkatalog"
+                }
+            }
+        },
+        cablingLanding: {
+            hero: {
+                slides: [
+                    {
+                        title: "PLANET ENERGY SYSTEMS",
+                        subtitle: "EXKLUSIVER VERTRIEBSPARTNER VON HELUKABEL IN BENIN"
+                    },
+                    {
+                        title: "Flammwidrigkeit",
+                        subtitle: "und halogenfrei",
+                        btnText: "MEHR ANZEIGEN"
+                    },
+                    {
+                        title: "Kabel für die Industrie",
+                        subtitle: "Robuste Lösungen für anspruchsvolle Umgebungen",
+                        btnText: "ENTDECKEN"
+                    },
+                    {
+                        title: "Erneuerbare Energien",
+                        subtitle: "Verkabelungslösungen für Solar und Wind",
+                        btnText: "ENTDECKEN"
+                    },
+                    {
+                        title: "Infrastruktur & Bauwesen",
+                        subtitle: "Sicherheit und Leistung für Ihre Bauprojekte",
+                        btnText: "ENTDECKEN"
+                    }
+                ]
+            },
+            brandStory: "Planet Energy Systems freut sich, seine Auswahl als exklusiver Vertriebspartner von HELUKABEL in Benin bekannt zu geben. Diese strategische Partnerschaft kombiniert die Expertise von Planet Energy Systems im Bereich erneuerbare Energien und intelligente technische Lösungen mit der Exzellenz von HELUKABEL, einem weltweit führenden Unternehmen in der Verkabelungstechnologie.",
+            intro: "Unsere Angebotsbereiche:",
+            domains: [
+                "Industriekabel & Leitungen",
+                "Daten-, Netzwerk- & Bustechnik",
+                "Medientechnik",
+                "Vorkonfektionierte Kabel",
+                "Kabelzubehör",
+                "Windenergie",
+                "Photovoltaik"
+            ],
+            sections: {
+                movement: {
+                    title: "Meistgesuchte Kategorien",
+                    featured: {
+                        title: "HELUWIND",
+                        subtitle: "Die zuverlässige Verbindung für Windkraftanlagen.",
+                        btn: "MEHR ANZEIGEN"
+                    },
+                    cards: [
+                        { title: "ANTRIEBSSYSTEME", subtitle: "Verbindung von Quelle zu Geschwindigkeit.", btn: "ENTDECKEN" },
+                        { title: "AUTOMATISIERUNG", subtitle: "Kabel für Steuerung und Sensoren.", btn: "ENTDECKEN" },
+                        { title: "ROBOTIK", subtitle: "Flexible Kabel für hohe Dynamik.", btn: "ENTDECKEN" }
+                    ]
+                },
+                catalog: {
+                    consulted: {
+                        title: "Meistgesehene Produkte",
+                        subtitle: "Andere Kunden haben diese Artikel häufig angesehen",
+                        btn: "Artikel ansehen",
+                        products: [
+                            { name: "H07RN-F schwarz 3 G 1,5 mm²", artNo: "37001" },
+                            { name: "HELUTHERM® 145 MULTI schwarz 4 G 2,5 mm²", artNo: "52630" },
+                            { name: "HELUTHERM® 145 schwarz 1 x 1,5 mm²", artNo: "12850" },
+                            { name: "NSGAFÖU 1,8/3 kV SCHWARZ 1 x 2,5 mm²", artNo: "38501" },
+                            { name: "H07Z-K schwarz 1 x 1,5 mm²", artNo: "51768" },
+                            { name: "FIVENORM H07V2-K schwarz 1 x 2,5 mm²", artNo: "64123" },
+                            { name: "H01N2-D schwarz 1 x 16 mm²", artNo: "31001" }
+                        ]
+                    },
+                    halogenFree: {
+                        title: "Halogenfreie Steuer- und Anschlussleitungen",
+                        subtitle: "Hochleistungskomponenten für den Maschinen- und Anlagenbau",
+                        btn: "Produkt ansehen",
+                        products: [
+                            { name: "JZ-600 HMH-C", desc: "Steuer- und Anschlussleitungen, 0,6/1 kV, Nummernkennzeichnung, abgeschirmt" },
+                            { name: "JZ-500 HMH-C / OZ-500 HMH-C", desc: "Steuer- und Anschlussleitungen, 300/500 V, Nummernkennzeichnung, abgeschirmt" },
+                            { name: "JZ-500 HMH / OZ-500 HMH", desc: "Steuer- und Anschlussleitungen, 300/500 V, Nummernkennzeichnung, ungeschirmt" },
+                            { name: "JZ-600 HMH / OZ-600 HMH", desc: "Steuer- und Anschlussleitungen, 0,6/1 kV, Nummernkennzeichnung, ungeschirmt" }
+                        ]
+                    }
+                }
+            }
+        },
+        cableArticle: {
+            breadcrumb: "Newsroom",
+            title: "Flammwidrigkeit bei halogenfreien Kabeln",
+            downloadText: "Downloads technischer Produktdatenblätter.",
+            intro: "Halogenfreie Kabel sind in vielen Bereichen der Industrie und Infrastruktur vorgeschrieben. Im Laufe der Zeit haben sich verschiedene Bezeichnungen etabliert wie FRNC, HFFR, LS0H oder LSZH. Doch was bedeuten diese Abkürzungen und welche Vorteile bieten halogenfreie Leitungen gegenüber halogenhaltigen Produkten? Planet Energy informiert.",
+            section1: {
+                title: "Was sind Halogene?",
+                content: "Halogene (auch als \"Salzbildner\" bekannt) sind chemische Elemente wie Chlor (Cl), Brom (Br), Fluor (F) und Jod (I). In der Kabelherstellung dienen sie dazu, bestimmte Aderisolier- und Mantelwerkstoffe flammwidrig zu machen: Besonders Chlor (als Bestandteil des Kunststoffs PVC oder von Chloropren-Kautschuk) und Fluor (als Teil der Hochtemperaturwerkstoffe FEP, PTFE und ETFE) kommen hier zum Einsatz. Auch Brom wird in Flammschutzmitteln für Kabel und Leitungen verwendet.",
+                problem: "Das Problem: Im Brandfall sind Halogene extrem aggressiv und gesundheitsschädlich. Es entstehen Halogenwasserstoffe, die bei Kontakt mit Feuchtigkeit zu Säuren werden und Verätzungen der Atemwege verursachen können. Zudem führen die freigesetzten Säuren zur Korrosion von Metallteilen und können so Maschinen und sogar die Bewehrung von Betonelementen in Gebäuden beschädigen. Dies kann wiederum aufwendige und teure Sanierungsarbeiten nach sich ziehen."
+            },
+            section2: {
+                title: "Sicherheit geht vor",
+                content: "Aus Gründen des Brandschutzes ist die Flammwidrigkeit von Kabeln und Leitungen natürlich ein wichtiges Kriterium. Es gibt jedoch viele Anwendungen, die zusätzlich explizit halogenfreie Produkte fordern – also Kabel und Leitungen, deren Werkstoffe frei von Chlor, Brom, Fluor und Jod sind. Diese bilden im Brandfall nur wenig Säure, Rauch und eine geringere Toxizität, was Folgeschäden an Personen, Gebäuden und Maschinen erheblich reduziert. Allerdings entstehen auch bei halogenfreien Leitungen im Brandfall giftige Gase wie Kohlenmonoxid.",
+                examples: [
+                    {
+                        category: "Gebäude",
+                        text: "Öffentliche Gebäude wie Büros, Einkaufszentren, Schulen, Krankenhäuser und Flughäfen unterliegen strengen Brand- und Gesundheitsvorschriften. Die meisten Kabel und Leitungen werden dort fest verlegt und müssen keine besonderen chemischen und mechanischen Eigenschaften aufweisen. Oft kommen Kunststoffmischungen auf PE- oder PP-Basis zum Einsatz, welche halogenfrei, flammwidrig, raucharm und wenig toxisch sind."
+                    },
+                    {
+                        category: "Industrielle Automatisierung",
+                        text: "Bei der Verdrahtung von Maschinen und Anlagen wird oft eine hohe chemische und mechanische Beständigkeit von Kabeln und Leitungen verlangt. Besonders hoch sind die Anforderungen bei bewegten Anwendungen wie in Energieführungsketten oder der Robotik. Hierfür finden meist Mantel-Mischungen auf TPE-O oder -U Basis (PUR oder Santoprene) Verwendung."
+                    }
+                ]
+            },
+            designations: {
+                title: "Typische Bezeichnungen für halogenfreie Kabel",
+                intro: "Im Laufe der Jahre sind je nach Hersteller, Markt, Region und Norm verschiedene Bezeichnungen für halogenfreie und flammwidrige Kabel entstanden:",
+                list: [
+                    "FRNC: Flame Retardant Non Corrosive",
+                    "HFFR: Halogen Free Flame Retardant",
+                    "LS0H: Low Smoke 0 Halogen (auch: LSOH)",
+                    "LSZH: Low Smoke Zero Halogen"
+                ],
+                footer: "Allerdings gibt keine dieser Bezeichnungen eine konkrete Auskunft über Flammwidrigkeit, Korrosivität, Toxizität und Lichtdurchlässigkeit. Hierfür sollten Anwender die im Datenblatt des jeweiligen Anbieters aufgeführten Normen heranziehen."
+            },
+            norms: {
+                title: "Was sind typische Normen für halogenfreie Leitungen?",
+                list: [
+                    "Die Norm DIN EN 60754-1 VDE 0482-754-1:2021-02 legt die Prüfgeräte und das Versuchsverfahren zur Bestimmung des Säuregehalts fest. Das Prüfergebnis muss kleiner als 5 mg/g sein, damit das Kabel als halogenfrei gilt.",
+                    "DIN EN 60754-2 VDE 0482-754-2:2021-02 definiert die Messung von pH-Wert und Leitfähigkeit. Das Prüfergebnis muss kleiner als 4,3 für den pH-Wert und 10 µS/mm für die Leitfähigkeit sein.",
+                    "DIN EN 61034-2 VDE 0482-1034-2:2021-02 definiert die Messung der Rauchdichte von brennenden Kabeln. Das Prüfergebnis muss mindestens 60% Lichtdurchlässigkeit erreichen."
+                ]
+            },
+            conclusion: {
+                title: "Fazit",
+                text: "Halogenfreie Kabel und Leitungen haben in vielen sicherheitskritischen Anwendungen klare Vorteile, da sie im Brandfall weniger Giftstoffe und Rauch bilden. Doch gleichzeitig müssen diese Produkte eine hohe Flammwidrigkeit aufweisen, um unterschiedlichen Standards und Vorschriften gerecht zu werden. Als Experte für elektrische Verbindungstechnik mit langjähriger Erfahrung hilft Ihnen Planet Energy gerne bei der Auswahl der passenden Kabel und Leitungen."
+            },
+            back: "Zurück"
+        },
+        legal: {
+            impressum: {
+                title: "Allgemeine Nutzungsbedingungen der Website",
+                sections: {
+                    generalTerms: {
+                        heading: "1. Gegenstand",
+                        subheading: "",
+                        content: "Zweck dieser allgemeinen Nutzungsbedingungen ist es, den rechtlichen Rahmen für die Bereitstellung der Dienste der Website planet-es und deren Nutzung durch den Nutzer festzulegen.\nSie müssen von allen Nutzern akzeptiert werden, die auf die Website zugreifen möchten. Der Zugriff auf die Website bedeutet die Annahme dieser AGB durch den Nutzer.\nPlanet-es behält sich das Recht vor, den Inhalt der vorliegenden Bedingungen jederzeit einseitig zu ändern."
+                    },
+                    legalMentions: {
+                        heading: "2. Rechtliche Hinweise",
+                        subheading: "",
+                        content: "Planet-es ist eine im Internet gehostete Website, die von der Gesellschaft Planet Energy Systems SARL mit Sitz im Immeuble KARLS - HAIE VIVE, 2me Rue pavé à droite, Cotonou Benin betrieben wird; eingetragen im Handels- und mobilen Kreditregister Nr. R.C.C.M. RB/ABC/16B989, IFU-Nr.: 3201641006518, E-Mail: info@planet-es.com, Telefon: +229 69.34.55.55/69.34.66.66 und geleitet von einem geschäftsführenden Präsidenten: Mauriel Ahodi;"
+                    },
+                    serviceAccess: {
+                        heading: "3. Zugang zu den Diensten",
+                        subheading: "",
+                        content: "Die Website ist für jeden Nutzer mit Internetzugang an jedem Ort kostenlos zugänglich.\nJegliche Ereignisse aufgrund höherer Gewalt, die zu einer Fehlfunktion des Netzwerks oder des Servers führen, begründen keine Haftung der Website.\nDer Zugang kann auch jederzeit ohne Vorankündigung wegen Wartungsarbeiten oder aus anderen Gründen unterbrochen, ausgesetzt oder geändert werden. Der Nutzer verpflichtet sich, in diesem Fall keine Entschädigung zu verlangen. Er hat die Möglichkeit, die Website per E-Mail zu kontaktieren."
+                    },
+                    intellectualProperty: {
+                        heading: "4. Geistiges Eigentum",
+                        subheading: "",
+                        content: "Sofern nicht anders angegeben, besitzt Planet-es zeitlich unbegrenzt alle geistigen Eigentumsrechte an den Inhalten der Website, wie Quellcode, Datenbanken, Texte, Marken, Logos, Zeichen, Bilder usw.\nDer Nutzer erkennt an und akzeptiert, dass er keine Inhalte der Website, die Planet-es gehören, ohne vorherige Genehmigung der Website verwenden, vervielfältigen oder verbreiten darf.\nEr trägt die alleinige Verantwortung für alle Inhalte, die er auf die Website hochlädt oder bereitstellt.\nNutzerinhalte können von der Website jederzeit und aus beliebigem Grund ohne Begründung und vorherige Benachrichtigung gelöscht oder geändert werden."
+                    },
+                    personalData: {
+                        heading: "5. Persönliche Daten/Vertraulichkeit",
+                        subheading: "",
+                        content: "Die Website kann Informationen verschiedener Art sammeln (Name, Geschlecht, E-Mail-Adresse, Postanschrift, Telefonnummer usw.).\nDie Website gewährleistet dem Nutzer eine Erhebung und Verarbeitung personenbezogener Daten unter Wahrung der Privatsphäre gemäß den Anforderungen der APDP.\nDarüber hinaus hat der Nutzer ein Recht auf Auskunft, Berichtigung, Löschung und Widerspruch seiner personenbezogenen Daten.\nDer Antrag auf Auskunft, Berichtigung oder Widerspruch muss per Post oder E-Mail gestellt werden."
+                    },
+                    contentResponsibility: {
+                        heading: "6. Verantwortung für den Inhalt",
+                        subheading: "",
+                        content: "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Ferner sind wir für eigene Inhalte auf diesen Seiten nach den gesetzlichen Bestimmungen verantwortlich. In diesem Zusammenhang möchten wir darauf hinweisen, dass wir nicht verpflichtet sind, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hindeuten.\nDie Haftung der Website ist im Falle höherer Gewalt oder unvorhersehbarer und unüberwindbarer Tatsachen Dritter ausgeschlossen."
+                    },
+                    linkResponsibility: {
+                        heading: "7. Verantwortung für Links",
+                        subheading: "",
+                        content: "Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.\nDer Nutzer verzichtet daher darauf, die Website für Inhalte und Ressourcen im Zusammenhang mit diesen Links haftbar zu machen."
+                    },
+                    copyright: {
+                        heading: "Urheberrecht",
+                        subheading: "",
+                        content: "Unsere Websites und deren Inhalte unterliegen dem beninischen Urheberrecht. Jede Form der Verwertung, Vervielfältigung oder Bearbeitung von urheberrechtlich geschützten Werken auf unseren Websites bedarf der vorherigen Zustimmung des jeweiligen Rechteinhabers, sofern nicht ausdrücklich gesetzlich gestattet. Die unerlaubte Nutzung urheberrechtlich geschützter Werke ist strafbar."
+                    }
+                }
+            }
+        },
+        sitemap: {
+            hero: {
+                title: "Sitemap",
+                subtitle: "Vollständiges Verzeichnis der Dienste und Unternehmensressourcen von Planet Energy Systems."
+            },
+            sections: {
+                corporate: "Unternehmen",
+                solutions: "Energielösungen",
+                specialized: "Spezialisierte Infrastruktur",
+                support: "Support & Rechtliches"
             }
         }
     }

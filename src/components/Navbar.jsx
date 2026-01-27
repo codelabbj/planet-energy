@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import MegaMenu from './MegaMenu'
 import { useLanguage } from '../context/LanguageContext'
 import logo from '../assets/logo.png'
@@ -13,7 +13,16 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   // Use Global Language Context
-  const { language, toggleLanguage, t } = useLanguage()
+  const { language, changeLanguage, t } = useLanguage()
+  const [isLangOpen, setIsLangOpen] = useState(false)
+
+  const languages = [
+    { code: 'en', label: 'English', flag: 'https://flagcdn.com/w40/gb.png' },
+    { code: 'fr', label: 'Français', flag: 'https://flagcdn.com/w40/fr.png' },
+    { code: 'de', label: 'Deutsch', flag: 'https://flagcdn.com/w40/de.png' }
+  ]
+
+  const currentLang = languages.find(l => l.code === language) || languages[0]
 
   const location = useLocation()
   const navigate = useNavigate()
@@ -68,20 +77,41 @@ const Navbar = () => {
           </Link>
 
           <div className="nav-actions">
-            <div className="lang-selector">
-              <span
-                className={`lang ${language === 'en' ? 'active' : ''}`}
-                onClick={() => toggleLanguage('en')}
+            <div className="lang-dropdown-container">
+              <button
+                className="lang-dropdown-trigger"
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                onMouseEnter={() => setIsLangOpen(true)}
               >
-                EN
-              </span>
-              <span className="divider">/</span>
-              <span
-                className={`lang ${language === 'fr' ? 'active' : ''}`}
-                onClick={() => toggleLanguage('fr')}
-              >
-                FR
-              </span>
+                <img src={currentLang.flag} alt={currentLang.label} className="lang-flag-img" />
+                <ChevronDown size={14} className={`chevron ${isLangOpen ? 'open' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {isLangOpen && (
+                  <motion.div
+                    className="lang-dropdown-menu"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    onMouseLeave={() => setIsLangOpen(false)}
+                  >
+                    {languages.map((lang) => (
+                      <div
+                        key={lang.code}
+                        className={`lang-option ${language === lang.code ? 'active' : ''}`}
+                        onClick={() => {
+                          changeLanguage(lang.code)
+                          setIsLangOpen(false)
+                        }}
+                      >
+                        <img src={lang.flag} alt={lang.label} className="option-flag-img" />
+                        <span className="option-label">{lang.label}</span>
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
 
             <button className="btn-contact-nav" onClick={() => navigate('/contact')}>
@@ -150,20 +180,20 @@ const Navbar = () => {
               {t('nav.contact')}
             </button>
 
-            <div className="mobile-lang-selector">
-              <span
-                className={`lang ${language === 'en' ? 'active' : ''}`}
-                onClick={() => toggleLanguage('en')}
-              >
-                EN
-              </span>
-              <span className="divider">/</span>
-              <span
-                className={`lang ${language === 'fr' ? 'active' : ''}`}
-                onClick={() => toggleLanguage('fr')}
-              >
-                FR
-              </span>
+            <div className="mobile-lang-grid">
+              {languages.map((lang) => (
+                <div
+                  key={lang.code}
+                  className={`mobile-lang-item ${language === lang.code ? 'active' : ''}`}
+                  onClick={() => {
+                    changeLanguage(lang.code)
+                    setIsMobileMenuOpen(false)
+                  }}
+                >
+                  <img src={lang.flag} alt={lang.label} className="mobile-flag-img" />
+                  <span>{lang.label}</span>
+                </div>
+              ))}
             </div>
           </motion.div>
         )}
@@ -347,18 +377,99 @@ const Navbar = () => {
           gap: 32px;
         }
 
-        .lang-selector {
+        .lang-dropdown-container {
+          position: relative;
+          z-index: 1002;
+        }
+
+        .lang-dropdown-trigger {
           display: flex;
           align-items: center;
           gap: 8px;
-          font-size: 14px; /* Slightly larger for readability */
-          font-weight: 600;
+          background: transparent;
+          border: none;
           color: white;
+          font-weight: 600;
+          font-size: 14px;
+          cursor: pointer;
+          padding: 6px 12px;
+          border-radius: 4px;
+          transition: all 0.3s ease;
         }
 
-        .lang { cursor: pointer; opacity: 0.7; transition: opacity 0.3s; }
-        .lang:hover, .lang.active { opacity: 1; font-weight: 700; }
-        .divider { opacity: 0.4; }
+        .nav-corporate.scrolled .lang-dropdown-trigger {
+          color: var(--color-primary);
+        }
+
+        .lang-dropdown-trigger:hover {
+          background: rgba(255,255,255,0.1);
+        }
+
+        .nav-corporate.scrolled .lang-dropdown-trigger:hover {
+          background: rgba(0,0,0,0.05);
+        }
+
+        .lang-flag-img {
+          width: 24px;
+          height: auto;
+          border-radius: 2px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .chevron {
+          transition: transform 0.3s ease;
+          opacity: 0.8;
+          color: inherit;
+        }
+
+        .chevron.open {
+          transform: rotate(180deg);
+        }
+
+        .lang-dropdown-menu {
+          position: absolute;
+          top: calc(100% + 15px);
+          right: 0;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          width: 180px;
+          overflow: hidden;
+          padding: 8px 0;
+          border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .lang-option {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 12px 16px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          color: var(--color-primary);
+          font-weight: 500;
+        }
+
+        .lang-option:hover {
+          background: #f8fafc;
+          padding-left: 20px;
+        }
+
+        .lang-option.active {
+          background: #f1f5f9;
+          color: var(--color-accent);
+          font-weight: 700;
+        }
+
+        .option-flag-img {
+          width: 20px;
+          height: auto;
+          border-radius: 1px;
+        }
+
+        .option-label {
+          font-size: 14px;
+        }
 
         .btn-contact-nav {
           background: transparent;
@@ -489,35 +600,43 @@ const Navbar = () => {
         }
 
         /* Mobile Language Selector */
-        .mobile-lang-selector {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-          font-size: 14px;
-          font-weight: 600;
-          color: white;
+        .mobile-lang-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
           padding-top: 12px;
         }
 
-        .nav-corporate.scrolled .mobile-lang-selector {
+        .mobile-lang-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 6px;
+          padding: 12px;
+          background: rgba(255,255,255,0.05);
+          border-radius: 8px;
+          color: white;
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .nav-corporate.scrolled .mobile-lang-item {
+          background: rgba(0,0,0,0.03);
           color: var(--color-primary);
         }
 
-        .mobile-lang-selector .lang {
-          cursor: pointer;
-          opacity: 0.7;
-          transition: opacity 0.3s;
+        .mobile-lang-item.active {
+          background: var(--color-accent);
+          color: #001f35;
         }
 
-        .mobile-lang-selector .lang:hover,
-        .mobile-lang-selector .lang.active {
-          opacity: 1;
-          font-weight: 700;
-        }
-
-        .mobile-lang-selector .divider {
-          opacity: 0.4;
+        .mobile-flag-img {
+          width: 32px;
+          height: auto;
+          border-radius: 3px;
+          margin-bottom: 4px;
         }
 
         @media (max-width: 1024px) {

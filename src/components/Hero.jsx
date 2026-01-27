@@ -4,6 +4,8 @@ import { useLanguage } from '../context/LanguageContext'
 import accraImage from '../assets/Acrra Rue.jpg.jpeg'
 import amazoneeImage from '../assets/Amazonee.jpg.jpeg'
 import berlinImage from '../assets/Tour de berlin.jpg.jpeg'
+import cableArticleHero from '../assets/cable fire.jpeg'
+import helukabelLogo from '../assets/logo1.png'
 
 
 
@@ -13,6 +15,11 @@ const Hero = () => {
 
   // Video/Image Slides Configuration
   const slides = [
+    {
+      type: 'image',
+      src: cableArticleHero,
+      logo: helukabelLogo
+    },
     {
       type: 'image',
       src: amazoneeImage,
@@ -97,7 +104,11 @@ const Hero = () => {
 
 
           <div className="slide-line"></div>
-          <span>{slides[index].label}</span>
+          {slides[index].logo ? (
+            <img src={slides[index].logo} alt="Helukabel Logo" className="slide-logo" />
+          ) : (
+            <span>{slides[index].label}</span>
+          )}
         </motion.div>
       </div>
 
@@ -255,7 +266,7 @@ const Hero = () => {
 
         .slide-indicator {
             position: absolute;
-            bottom: 40px; /* Anchored to bottom of hero-premium */
+            bottom: 150px; /* Anchored to bottom of hero-premium */
             right: 0;
             display: flex;
             align-items: center;
@@ -277,12 +288,25 @@ const Hero = () => {
             font-size: 14px;
         }
 
+        .slide-logo {
+            height: 35px; /* Adjust height to fit nicely */
+            width: auto;
+            object-fit: contain;
+            filter: brightness(0) invert(1); /* Make it white to match theme if needed, or remove if logo has colors */
+        }
+
+        @media (max-width: 768px) {
+            .slide-logo {
+                height: 25px;
+            }
+        }
+
         @media (max-width: 768px) {
             .company-name { font-size: 28px; white-space: normal; }
             .distributor-text { font-size: 13px; letter-spacing: 2px; white-space: normal; }
             
             /* On mobile, let's keep it absolute but align left or adjust */
-            .slide-indicator { left: 20px; right: auto; bottom: 30px; }
+            .slide-indicator { left: 20px; right: auto; bottom: 120px; }
             
             .hero-content { 
                 align-items: center; /* Center vertically to avoid nav overlap */
